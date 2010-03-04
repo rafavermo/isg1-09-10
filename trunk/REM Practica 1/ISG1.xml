@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Archivos de programa\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files\REM 1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
-<rem:name>cojones</rem:name>
+<rem:name>ISG1</rem:name>
 <rem:c_requirementsSpecification oid = "CRS-0001">
 <rem:name>Documento de Requisitos del Sistema</rem:name>
 <rem:version>
@@ -109,7 +109,7 @@ Ninguno</rem:comments>
 <rem:organization
  oid = "ORG-0002">
 <rem:name>
-Ingieneríqa de Software UNO</rem:name>
+Antonio SL</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -146,7 +146,7 @@ Ninguno</rem:comments>
 <rem:stakeholder
  oid = "STK-0001">
 <rem:name>
-San Bernardino</rem:name>
+Jesús Antonio Sanchez Mendez</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -158,14 +158,14 @@ San Bernardino</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:stakeholderRole>Juanker</rem:stakeholderRole>
+<rem:stakeholderRole>Editor del contenido</rem:stakeholderRole>
 <rem:isDeveloper/>
 <rem:worksFor organization = "ORG-0001"/>
 </rem:stakeholder>
 <rem:stakeholder
  oid = "STK-0002">
 <rem:name>
-Er_Haze</rem:name>
+Rafael Gómez García</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -177,9 +177,46 @@ Er_Haze</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:stakeholderRole>Useri</rem:stakeholderRole>
-<rem:isUser/>
+<rem:stakeholderRole>Entrevistador</rem:stakeholderRole>
+<rem:isDeveloper/>
 <rem:worksFor organization = "ORG-0002"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0003">
+<rem:name>
+Rafael Vergara</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Editor del contenido</rem:stakeholderRole>
+<rem:isDeveloper/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0004">
+<rem:name>
+Antonio Gómez Tabuenca</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Cliente y futuro usuario de la practica</rem:stakeholderRole>
+<rem:isCustomer/>
+<rem:isUser/>
 </rem:stakeholder>
 </rem:section>
 </rem:section>
@@ -421,7 +458,7 @@ No fue ni el tato</rem:comments>
 </rem:time>
 <rem:place>Alcampo</rem:place>
 <rem:results><rem:tbd/></rem:results>
-	<rem:attenders stakeholders ="STK-0002 STK-0001 "/>
+	<rem:attenders stakeholders ="STK-0001 STK-0002 "/>
 </rem:meeting>
 </rem:section>
 </rem:c_requirementsSpecification>
