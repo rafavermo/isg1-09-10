@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Archivos de programa\REM 1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>ISG1</rem:name>
@@ -146,7 +146,7 @@ Ninguno</rem:comments>
 <rem:stakeholder
  oid = "STK-0001">
 <rem:name>
-Jesús Antonio Sanchez Mendez</rem:name>
+Jesús Antonio Sánchez Méndez</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
