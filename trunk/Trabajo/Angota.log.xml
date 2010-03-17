@@ -145,8 +145,98 @@
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [PRG-0005]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0006</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [IsGlossaryItem] actualizada [false] -> [true]]]></rem:description>
+</rem:change>
+<rem:change>
 <rem:type>C</rem:type>
-<rem:owner>PRG-0004</rem:owner><rem:date>
+<rem:owner>GLO-0006</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>3</rem:month>
 <rem:day>17</rem:day>
@@ -155,18 +245,29 @@
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>PRG-0004</rem:owner><rem:date>
+<rem:owner>GLO-0005</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>3</rem:month>
 <rem:day>17</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [ En 2010 TextilDev aceptó el encargo de Angota Co. de desarrollar un proyecto de gestión de una empresa textil. ] -> [En 2010 TextilDev aceptó el encargo de Angota Co. de desarrollar un proyecto de gestión de una empresa textil. Angota Co. se fundó en el 2004 comenzó su actividad en el poligono Store, con una pequeña nave. Actualmente, tiene 2 naves en el polígono Calonge. La empresa la componen 2 administradores, 16 representantes externos 30 operarios de confección externos, 3 cortadores, 2 patronistas, 2 diseñadores, 1 extendedor, 1 preparador de fornituras, 1 repasador, 1 etiquetador, 1 empaquetador, 4 miembros de atención al cliente, y  transportistas.
-
-La aplicación que se va a desarrollar consiste en un sistema de gestión de diferentes contenidos relacionado con la empresa ANGOTA. Se basará en recapitular informacion relevante tanto a las existencias que se almacenarán, como la metodología que utiliza la empresa. La aplicación intentará recojer las peticiones en formato digital así como informatizar la mayor parte del proceso.
-
-
-//FIXME repasar
-Por último añadir que en el segundo apartado se presentaran los participantes del proyecto, tanto las organizaciones que participan como las personas que intervienen por cada organización. En la tercera seccion se describiran los procedimientos que sigue actualmente la empresa. En la cuarta se describen los objetivos a alcanzar en la aplicacion. La quinta seccion es una de las más extensas, conteniendo los requisitos de informacion, requisitos funcionales (diagrama de acaso de uso, definicion de actores y casos de usos del sistema), regalas de negocio y requisitos no funcionales. En la sexta sección se muestra un grafico con la relacion que existe entre los obejetivos y los diferentes requisitos. Por ultimo tenemos las secciones glosario de terminos, conflictos pendientes y apendice del sistema (documentacion y entrevistas)
-]]]></rem:description>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Desarrollador: ] -> [Desarrollador]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [PRG-0006]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0005</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
 </rem:change>
 </rem:log>

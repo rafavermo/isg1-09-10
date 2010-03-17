@@ -159,7 +159,7 @@ Rafael Gómez García</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:stakeholderRole>Desarrollador</rem:stakeholderRole>
+<rem:stakeholderRole><rem:ref oid="GLO-0005">Desarrollador</rem:ref></rem:stakeholderRole>
 <rem:isDeveloper/>
 <rem:worksFor organization = "ORG-0001"/>
 </rem:stakeholder>
@@ -178,7 +178,7 @@ Rafael Vergara Moreno</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:stakeholderRole>Desarrollador</rem:stakeholderRole>
+<rem:stakeholderRole><rem:ref oid="GLO-0005">Desarrollador</rem:ref></rem:stakeholderRole>
 <rem:isDeveloper/>
 <rem:worksFor organization = "ORG-0001"/>
 </rem:stakeholder>
@@ -197,7 +197,7 @@ Jesús Antonio Sánchez Méndez</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:stakeholderRole>Desarrollador</rem:stakeholderRole>
+<rem:stakeholderRole><rem:ref oid="GLO-0005">Desarrollador</rem:ref></rem:stakeholderRole>
 <rem:isDeveloper/>
 <rem:worksFor organization = "ORG-0001"/>
 </rem:stakeholder>
@@ -389,7 +389,7 @@ Ninguno</rem:comments>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Son partes clave de la prenda. Botones, cremalleras, hilo...</rem:text>
+<rem:text> Son partes clave de la prenda. Botones, cremalleras, hilo...</rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem
  oid = "GLO-0002">
@@ -406,7 +406,7 @@ Ninguno</rem:comments>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Diseño de una prendra dispuesta para ser cortada</rem:text>
+<rem:text> Diseño de una prenda dispuesta para ser cortada</rem:text>
 </rem:glossaryItem>
 <rem:glossaryItem
  oid = "GLO-0003">
@@ -423,7 +423,41 @@ Ninguno</rem:comments>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Telas</rem:text>
+<rem:text> Telas</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0005">
+<rem:name>
+<rem:ref oid="GLO-0005">Desarrollador</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Persona encargada de la realizacion del proyecto<br/><br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0006">
+<rem:name>
+<rem:ref oid="GLO-0006">Mayorista</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Persona que proporciona materias primas.</rem:text>
 </rem:glossaryItem>
 </rem:section>
 <rem:section
