@@ -4,19 +4,21 @@
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Angota</rem:name>
 <rem:c_requirementsSpecification oid = "CRS-0001">
-<rem:name>Documento de Requisitos del Sistema</rem:name>
+<rem:name>Documento de Requisitos del Sistema de control textil</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
 <rem:year>2010</rem:year>
 <rem:month>3</rem:month>
-<rem:day>10</rem:day>
+<rem:day>2</rem:day>
 </rem:date>
 </rem:version>
 <rem:comments>
 Ninguno
 </rem:comments>
+	 <rem:preparedFor organizations = "ORG-0002 "/>
+	 <rem:preparedBy organizations = "ORG-0001 "/>
 <rem:section
  oid = "SEC-0001">
 <rem:name>
@@ -51,7 +53,7 @@ Introducción</rem:name>
 <rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>En 2010 TextilDev aceptó el encargo de Angota Co. de desarrollar un proyecto de gestión de una empresa textil. Angota Co. se fundó en el 2004 comenzó su actividad en el poligono Store, con una pequeña nave. Actualmente, tiene 2 naves en el polígono Calonge. La empresa la componen 2 administradores, 16 representantes externos 30 operarios de confección externos, 3 cortadores, 2 patronistas, 2 diseñadores, 1 extendedor, 1 preparador de <rem:ref oid="GLO-0001">fornituras</rem:ref>, 1 repasador, 1 etiquetador, 1 empaquetador, 4 miembros de atención al cliente, y  transportistas.<br/><br/>La aplicación que se va a desarrollar consiste en un sistema de gestión de diferentes contenidos relacionado con la empresa ANGOTA. Se basará en recapitular informacion relevante tanto a las existencias que se almacenarán, como la metodología que utiliza la empresa. La aplicación intentará recojer las peticiones en formato digital así como informatizar la mayor parte del proceso.<br/><br/><br/>//FIXME repasar<br/>Por último añadir que en el segundo apartado se presentaran los participantes del proyecto, tanto las organizaciones que participan como las personas que intervienen por cada organización. En la tercera seccion se describiran los procedimientos que sigue actualmente la empresa. En la cuarta se describen los objetivos a alcanzar en la aplicacion. La quinta seccion es una de las más extensas, conteniendo los requisitos de informacion, requisitos funcionales (diagrama de acaso de uso, definicion de actores y casos de usos del sistema), regalas de negocio y requisitos no funcionales. En la sexta sección se muestra un grafico con la relacion que existe entre los obejetivos y los diferentes requisitos. Por ultimo tenemos las secciones glosario de terminos, conflictos pendientes y apendice del sistema (documentacion y entrevistas)<br/></rem:text>
+<rem:text>En 2010 TextilDev aceptó el encargo de Angota Co. de desarrollar un proyecto de gestión de una empresa textil. Angota Co. se fundó en el 2004 comenzó su actividad en el poligono Store, con una pequeña nave. Actualmente, tiene 2 naves en el polígono Calonge. La empresa la componen 2 administradores, 16 representantes externos 30 operarios de confección externos, 3 cortadores, 2 patronistas, 2 diseñadores, 1 extendedor, 1 preparador de <rem:ref oid="GLO-0001">fornituras</rem:ref>, 1 repasador, 1 etiquetador, 1 empaquetador, 4 miembros de atención al cliente, y  transportistas.<br/><br/>La aplicación que se va a desarrollar consiste en un sistema de gestión de diferentes contenidos relacionado con la empresa Angota. Se basará en recapitular informacion relevante tanto a las existencias que se almacenarán, como la metodología que utiliza la empresa. La aplicación intentará recojer las peticiones en formato digital así como informatizar la mayor parte del proceso.<br/><br/>Por último el documento se desarrollará en varios apartados: el segundo apartado se presentaran los participantes del proyecto, tanto las organizaciones que participan como las personas que intervienen por cada organización. En la tercera seccion se describiran los procedimientos que sigue actualmente la empresa. En la cuarta se describen los objetivos a alcanzar en la aplicacion. La quinta seccion es una de las más extensas, conteniendo los requisitos de informacion, requisitos funcionales (diagrama de acaso de uso, definicion de actores y casos de usos del sistema), reglas de negocio y requisitos no funcionales. En la sexta sección se muestra un grafico con la relacion que existe entre los obejetivos y los diferentes requisitos. Por ultimo tenemos las secciones glosario de terminos, conflictos pendientes y 2 apéndices del sistema (documentación y entrevistas)<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -271,6 +273,8 @@ Control de almacen de materias primas</rem:name>
 <rem:day>10</rem:day>
 </rem:date>
 </rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0002"/>
@@ -293,6 +297,8 @@ Control de ventas</rem:name>
 <rem:day>10</rem:day>
 </rem:date>
 </rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0002"/>
@@ -301,6 +307,38 @@ Ninguno</rem:comments>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
 Controlar las ventas a tiendas que la empresa media con los proveedores.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0003">
+<rem:name>
+Control de Personal</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+<rem:tbd/></rem:description>
 </rem:objective>
 </rem:section>
 <rem:section
