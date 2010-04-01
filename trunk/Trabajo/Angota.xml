@@ -263,7 +263,7 @@ Ninguno</rem:comments>
 <rem:objective
  oid = "OBJ-0001">
 <rem:name>
-Control de compras y almacen</rem:name>
+Control de compras </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -282,7 +282,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0002"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-Controlar las entradas, salidas y compras de <rem:ref oid="GLO-0001">fornituras</rem:ref>, <rem:ref oid="GLO-0003">tipos</rem:ref>, bolsas, perchas...</rem:description>
+Controlar las compras de <rem:ref oid="GLO-0001">fornituras</rem:ref>, <rem:ref oid="GLO-0003">tipos</rem:ref>, bolsas, perchas...</rem:description>
 </rem:objective>
 <rem:objective
  oid = "OBJ-0002">
@@ -331,6 +331,30 @@ Ninguno</rem:comments>
 <rem:stability value = "SBV-0003"/>
 <rem:description>
 controlar los trabajadores de la empresa y los ajenos a ella (comerciales)</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0004">
+<rem:name>
+Control de almacen </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>1</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+Controlar las entradas y salidas de material del almacen</rem:description>
 </rem:objective>
 </rem:section>
 <rem:section
@@ -1005,7 +1029,7 @@ Ninguno</rem:comments>
 <rem:actor
  oid = "ACT-0001">
 <rem:name>
-Actor 1</rem:name>
+Administrador</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1015,9 +1039,49 @@ Actor 1</rem:name>
 <rem:day>24</rem:day>
 </rem:date>
 </rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:actorRole><rem:tbd/></rem:actorRole>
+<rem:actorRole>al administrador o administradores del sistema que ademas de ser un empleado tiene control sobre el sistema de personal</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0002">
+<rem:name>
+Comercial</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>1</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>a la persona encargada de vender los productos a los clientes</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0003">
+<rem:name>
+Empleado</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>1</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>a la persona encargada de realizar diversas tareas para la empresa</rem:actorRole>
 </rem:actor>
 </rem:section>
 <rem:section

@@ -389,7 +389,7 @@ Objetivos del sistema</h1><a name="OBJ-0001" />
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">OBJ-0001</th>
 <th align="left" valign="top" width="100%">
-Control de compras y almacen</th>
+Control de compras </th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -436,7 +436,7 @@ Antonio Gómez Tabuenca</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-Controlar las entradas, salidas y compras de <a href="#GLO-0001" title="Son partes clave de la prenda. Botones, cremalleras, hilo...">fornituras</a>, <a href="#GLO-0003" title="Telas">tipos</a>, bolsas, perchas...</em>
+Controlar las compras de <a href="#GLO-0001" title="Son partes clave de la prenda. Botones, cremalleras, hilo...">fornituras</a>, <a href="#GLO-0003" title="Telas">tipos</a>, bolsas, perchas...</em>
 </td>
 </tr>
 <tr>
@@ -622,6 +622,88 @@ controlar los trabajadores de la empresa y los ajenos a ella (comerciales)</em>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
 <td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="OBJ-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0004</th>
+<th align="left" valign="top" width="100%">
+Control de almacen </th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 01/04/2010 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Jesús Antonio Sánchez Méndez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Rafael Gómez García</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Rafael Vergara Moreno</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0004">
+Antonio Gómez Tabuenca</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Controlar las entradas y salidas de material del almacen</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">alta</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -820,9 +902,9 @@ Antonio Gómez Tabuenca</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="2">
 <li>
-<a href="#OBJ-0001" title="Control de compras y almacen">
+<a href="#OBJ-0001" title="Control de compras">
                                 [OBJ-0001] 
-Control de compras y almacen</a>
+Control de compras </a>
 </li>
 </td>
 </tr>
@@ -1618,7 +1700,7 @@ Definición de actores</h3><a name="ACT-0001" />
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">ACT-0001</th>
 <th align="left" valign="top" width="100%">
-Actor 1</th>
+Administrador</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -1629,22 +1711,164 @@ Actor 1</th>
 <tr>
 <th align="left" valign="top">Autores</th>
 <td align="left" valign="top" colspan="1">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0003">
+Jesús Antonio Sánchez Méndez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Rafael Gómez García</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Rafael Vergara Moreno</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Fuentes</th>
 <td align="left" valign="top" colspan="1">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0004">
+Antonio Gómez Tabuenca</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Descripción</th>
 <td align="left" valign="top">
     Este actor representa
-<em>
-<font color="red"><b>PD</b></font>
-</em>
+<em>al administrador o administradores del sistema que ademas de ser un empleado tiene control sobre el sistema de personal</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0002</th>
+<th align="left" valign="top" width="100%">
+Comercial</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 01/04/2010 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Jesús Antonio Sánchez Méndez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Rafael Gómez García</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Rafael Vergara Moreno</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0004">
+Antonio Gómez Tabuenca</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a la persona encargada de vender los productos a los clientes</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0003</th>
+<th align="left" valign="top" width="100%">
+Empleado</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 01/04/2010 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Jesús Antonio Sánchez Méndez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Rafael Gómez García</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Rafael Vergara Moreno</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0004">
+Antonio Gómez Tabuenca</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a la persona encargada de realizar diversas tareas para la empresa</em>
 </td>
 </tr>
 <tr>
