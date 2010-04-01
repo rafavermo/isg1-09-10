@@ -389,7 +389,7 @@ Objetivos del sistema</h1><a name="OBJ-0001" />
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">OBJ-0001</th>
 <th align="left" valign="top" width="100%">
-Control de almacen de materias primas</th>
+Control de compras y almacen</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -436,7 +436,7 @@ Antonio Gómez Tabuenca</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-Controlar las entradas y salidas de <a href="#GLO-0001" title="Son partes clave de la prenda. Botones, cremalleras, hilo...">fornituras</a>, <a href="#GLO-0003" title="Telas">tipos</a>, bolsas, perchas...</em>
+Controlar las entradas, salidas y compras de <a href="#GLO-0001" title="Son partes clave de la prenda. Botones, cremalleras, hilo...">fornituras</a>, <a href="#GLO-0003" title="Telas">tipos</a>, bolsas, perchas...</em>
 </td>
 </tr>
 <tr>
@@ -553,7 +553,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">OBJ-0003</th>
 <th align="left" valign="top" width="100%">
-Control de Personal</th>
+Control de personal</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -600,8 +600,7 @@ Antonio Gómez Tabuenca</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+controlar los trabajadores de la empresa y los ajenos a ella (comerciales)</em>
 </td>
 </tr>
 <tr>
@@ -610,27 +609,19 @@ Antonio Gómez Tabuenca</a>
 </tr>
 <tr>
 <th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="1">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="1">importante</td>
 </tr>
 <tr>
 <th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="1">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="1">puede esperar</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="1">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="1">en construcción</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="1">
-<font color="red"><b>PD</b></font>
-</td>
+<td align="left" valign="top" colspan="1">media</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -643,7 +634,424 @@ Ninguno</td>
 <h1 align="left">5 
 Catálogo de requisitos del sistema</h1><a name="SEC-0008" />
 <h2 align="left">5.1 
-Requisitos de información</h2><a name="SEC-0014" />
+Requisitos de información</h2><a name="IRQ-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0001</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Informacion de Clientes</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 01/04/2010 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Jesús Antonio Sánchez Méndez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Rafael Gómez García</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Rafael Vergara Moreno</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0004">
+Antonio Gómez Tabuenca</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+El sistema debera almacenar la informacion correspondiente a datos personales del cliente..
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0002" />
+Nombre</li>
+<li>
+<a name="DAT-0003" />
+Apellidos</li>
+<li>
+<a name="DAT-0004" />
+Direccion</li>
+<li>
+<a name="DAT-0005" />
+Telefono</li>
+<li>
+<a name="DAT-0006" />
+Email</li>
+<li>
+<a name="DAT-0007" />
+CIF/NIF</li>
+<li>
+<a name="DAT-0008" />
+Codigo Postal</li>
+<li>
+<a name="DAT-0009" />
+Descuento</li>
+<li>
+<a name="DAT-0010" />
+Forma de pago 
+								(<em>
+Contado, transferencia y pago aplazado a 30/60/90</em>)
+							</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>99 
+                        año(s)</td>
+<td>99 
+                        año(s)</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>99</td>
+<td>99</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0002</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Informacion de Prooveedores</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 01/04/2010 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Jesús Antonio Sánchez Méndez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Rafael Gómez García</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Rafael Vergara Moreno</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0004">
+Antonio Gómez Tabuenca</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">
+<li>
+<a href="#OBJ-0001" title="Control de compras y almacen">
+                                [OBJ-0001] 
+Control de compras y almacen</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+El sistema debera alamacenar la informacion correspondiente a datos relevantes sobre los proveedores de materias primas..
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0011" />
+Nombre</li>
+<li>
+<a name="DAT-0012" />
+Direccion</li>
+<li>
+<a name="DAT-0013" />
+Telefono</li>
+<li>
+<a name="DAT-0014" />
+Fax</li>
+<li>
+<a name="DAT-0015" />
+Email</li>
+<li>
+<a name="DAT-0016" />
+Web</li>
+<li>
+<a name="DAT-0017" />
+Persona de contacto</li>
+<li>
+<a name="DAT-0018" />
+Tipo de IVA</li>
+<li>
+<a name="DAT-0019" />
+Codigo Postal</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>99 
+                        año(s)</td>
+<td>99 
+                        año(s)</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>99</td>
+<td>99</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0003</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Infomacion de Facturas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 01/04/2010 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Jesús Antonio Sánchez Méndez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Rafael Gómez García</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Rafael Vergara Moreno</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0004">
+Antonio Gómez Tabuenca</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+Factura con desglose de productos, asi como datos del cliente..
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0024" />
+Cliente
+								(<em>
+referencia de cliente </em>)
+							</li>
+<li>
+<a name="DAT-0025" />
+Servicios
+								(<em>
+Referencia de servicios </em>)
+							</li>
+<li>
+<a name="DAT-0026" />
+Importe</li>
+<li>
+<a name="DAT-0027" />
+IVA</li>
+<li>
+<a name="DAT-0028" />
+Importe Total</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>1 
+                        año(s)</td>
+<td>1 
+                        año(s)</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>99</td>
+<td>99</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0014" />
 <h2 align="left">5.2 
 Requisitos funcionales</h2><a name="SEC-0015" />
 <h3 align="left">5.2.1 
