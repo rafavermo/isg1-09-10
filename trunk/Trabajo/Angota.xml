@@ -389,7 +389,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0002"/>
 <rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
-El sistema debera almacenar la informacion correspondiente a datos personales del cliente.</rem:relevantConcept>
+datos personales del cliente</rem:relevantConcept>
 <rem:averageLifeTime>
 <rem:value>99</rem:value>
 <rem:timeUnit value = "TUV-0002"/>
@@ -408,12 +408,6 @@ Nombre</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
-<rem:specificData oid = "DAT-0003">
-<rem:description>
-Apellidos</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:specificData>
 <rem:specificData oid = "DAT-0004">
 <rem:description>
 Direccion</rem:description>
@@ -429,12 +423,6 @@ Ninguno</rem:comments>
 <rem:specificData oid = "DAT-0006">
 <rem:description>
 Email</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:specificData>
-<rem:specificData oid = "DAT-0007">
-<rem:description>
-CIF/NIF</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -479,7 +467,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0002"/>
 <rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
-El sistema debera alamacenar la informacion correspondiente a datos relevantes sobre los proveedores de materias primas.</rem:relevantConcept>
+datos relevantes sobre los proveedores de materias primas</rem:relevantConcept>
 <rem:averageLifeTime>
 <rem:value>99</rem:value>
 <rem:timeUnit value = "TUV-0002"/>
@@ -569,7 +557,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0002"/>
 <rem:stability value = "SBV-0003"/>
 <rem:relevantConcept>
-Factura con desglose de productos, asi como datos del cliente.</rem:relevantConcept>
+Factura con desglose de productos, asi como datos del cliente</rem:relevantConcept>
 <rem:averageLifeTime>
 <rem:value>1</rem:value>
 <rem:timeUnit value = "TUV-0002"/>
@@ -586,13 +574,13 @@ Factura con desglose de productos, asi como datos del cliente.</rem:relevantConc
 <rem:description>
 Cliente</rem:description>
 <rem:comments>
-referencia de cliente </rem:comments>
+Datos del cliente </rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0025">
 <rem:description>
-Servicios</rem:description>
+Productos</rem:description>
 <rem:comments>
-Referencia de servicios </rem:comments>
+Cantidad, referencia y precio.</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0026">
 <rem:description>
@@ -609,6 +597,372 @@ Ninguno</rem:comments>
 <rem:specificData oid = "DAT-0028">
 <rem:description>
 Importe Total</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0029">
+<rem:description>
+Forma de pago</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0004">
+<rem:name>
+Informacion de Comerciales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>1</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:relevantConcept>
+datos relevantes sobre los comerciales externos de la empresa</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:value>99</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:value>99</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:value>99</rem:value>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:value>99</rem:value>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0030">
+<rem:description>
+Nombre</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0039">
+<rem:description>
+Apellidos</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0031">
+<rem:description>
+Direccion</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0032">
+<rem:description>
+Telefono</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0033">
+<rem:description>
+Fax</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0034">
+<rem:description>
+Email</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0035">
+<rem:description>
+Movil</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0038">
+<rem:description>
+Codigo Postal</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0036">
+<rem:description>
+Comision</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0005">
+<rem:name>
+Informacion de productos terminados</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>1</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:relevantConcept>
+datos del producto ya terminado </rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:value>99</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:value>99</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:value>99</rem:value>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:value>99</rem:value>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0041">
+<rem:description>
+Codigo articulo</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0042">
+<rem:description>
+Descripcion </rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0043">
+<rem:description>
+Referencia</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0044">
+<rem:description>
+Color</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0045">
+<rem:description>
+Familia</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0046">
+<rem:description>
+Talla</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0047">
+<rem:description>
+Tipo de material</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0048">
+<rem:description>
+Coste</rem:description>
+<rem:comments>
+Precio coste, descuento, impuesto y precio neto</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0049">
+<rem:description>
+Venta</rem:description>
+<rem:comments>
+Precio de venta y margen de beneficio</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0006">
+<rem:name>
+Infomacion materias primas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>1</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:relevantConcept>
+datos de las materias primas necesarias para la produccion del producto</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:value>99</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:value>99</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:value>99</rem:value>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:value>99</rem:value>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0050">
+<rem:description>
+Codigo articulo</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0051">
+<rem:description>
+Descripcion </rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0052">
+<rem:description>
+Referencia</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0053">
+<rem:description>
+Color</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0054">
+<rem:description>
+Familia</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0055">
+<rem:description>
+Medidas</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0056">
+<rem:description>
+Tipo de material</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0057">
+<rem:description>
+Coste</rem:description>
+<rem:comments>
+Precio coste, descuento, impuesto y precio neto</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0007">
+<rem:name>
+Informacion de Personal </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>1</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:relevantConcept>
+datos relevantes sobre los trabajadores contratados por la empresa</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:value>99</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:value>99</rem:value>
+<rem:timeUnit value = "TUV-0002"/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:value>99</rem:value>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:value>99</rem:value>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0059">
+<rem:description>
+Nombre</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0003">
+<rem:description>
+Apellidos</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0060">
+<rem:description>
+Direccion</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0061">
+<rem:description>
+Telefono</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0062">
+<rem:description>
+Fax</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0063">
+<rem:description>
+Email</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0067">
+<rem:description>
+Codigo Postal</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0068">
+<rem:description>
+Categoria profesional</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0007">
+<rem:description>
+CIF/NIF</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0069">
+<rem:description>
+Jornada laboral</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
