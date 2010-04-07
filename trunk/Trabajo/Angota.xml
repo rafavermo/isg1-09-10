@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "E:\Archivos de programa\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Archivos de programa\REM 1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Angota</rem:name>
@@ -467,6 +467,18 @@ Ninguno</rem:comments>
 Forma de pago </rem:description>
 <rem:comments>
 Contado, transferencia y pago aplazado a 30/60/90</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0090">
+<rem:description>
+Pedidos</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0091">
+<rem:description>
+Fecha de pedidos</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
 </rem:specificData>
 </rem:informationRequirement>
 <rem:informationRequirement
@@ -1125,7 +1137,7 @@ Solo los Administradores del sistema tendrian acceso a realizar esta operacion.<
 <rem:triggeringEvent>
 se proceda al registro de un nuevo trabajador en el sistema</rem:triggeringEvent>
 <rem:precondition>
-El Curriculum Vitae del trabajador debe haber sido validado previamente a esta operación.</rem:precondition>
+No exista ya este trabajador</rem:precondition>
 <rem:postcondition>
 Nuevo trabajador registrado en sistema</rem:postcondition>
 <rem:frequency>
@@ -1138,7 +1150,7 @@ Nuevo trabajador registrado en sistema</rem:postcondition>
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-solicita al sistema el registro de un nuevo agente </rem:description>
+solicita al sistema el registro de un nuevo trabajador</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1147,7 +1159,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
-solicita al administrador los datos personales del agente a registrar</rem:description>
+solicita al administrador los datos personales del trabajador a registrar</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1156,7 +1168,7 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-proporciona al sistema los datos personales del agente</rem:description>
+proporciona al sistema los datos personales del trabajador<br/></rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1165,7 +1177,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-registra al nuevo agente</rem:description>
+registra al nuevo trabajador</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1195,7 +1207,7 @@ Ninguno</rem:comments>
 <rem:triggeringEvent>
 se proceda a registrar una nueva factura en el sistema</rem:triggeringEvent>
 <rem:precondition>
-Expediente registrado y pago efectuado en su totalidad</rem:precondition>
+</rem:precondition>
 <rem:postcondition>
 Sistema con nueva factura registrada en el sistema</rem:postcondition>
 <rem:frequency>

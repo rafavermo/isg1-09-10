@@ -805,6 +805,12 @@ Forma de pago
 								(<em>
 Contado, transferencia y pago aplazado a 30/60/90</em>)
 							</li>
+<li>
+<a name="DAT-0090" />
+Pedidos</li>
+<li>
+<a name="DAT-0091" />
+Fecha de pedidos</li>
 </ul>
 </td>
 </tr>
@@ -1944,7 +1950,7 @@ se proceda al registro de un nuevo trabajador en el sistema</em>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-El Curriculum Vitae del trabajador debe haber sido validado previamente a esta operación.</td>
+No exista ya este trabajador</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="5">Secuencia normal</th>
@@ -1958,7 +1964,7 @@ El Curriculum Vitae del trabajador debe haber sido validado previamente a esta o
 Administrador (ACT-0001)
     </a>
 <em>
-solicita al sistema el registro de un nuevo agente </em>
+solicita al sistema el registro de un nuevo trabajador</em>
 </td>
 </tr>
 <tr>
@@ -1967,7 +1973,7 @@ solicita al sistema el registro de un nuevo agente </em>
 <td>El
      
     sistema<em>
-solicita al administrador los datos personales del agente a registrar</em>
+solicita al administrador los datos personales del trabajador a registrar</em>
 </td>
 </tr>
 <tr>
@@ -1977,7 +1983,9 @@ solicita al administrador los datos personales del agente a registrar</em>
 Administrador (ACT-0001)
     </a>
 <em>
-proporciona al sistema los datos personales del agente</em>
+proporciona al sistema los datos personales del trabajador
+<br />
+</em>
 </td>
 </tr>
 <tr>
@@ -1986,7 +1994,7 @@ proporciona al sistema los datos personales del agente</em>
 <td>El
      
     sistema<em>
-registra al nuevo agente</em>
+registra al nuevo trabajador</em>
 </td>
 </tr>
 <tr>
@@ -2115,7 +2123,7 @@ se proceda a registrar una nueva factura en el sistema</em>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-Expediente registrado y pago efectuado en su totalidad</td>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="5">Secuencia normal</th>
