@@ -394,7 +394,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0001">
 <rem:name>
-Informacion de Clientes</rem:name>
+Información de clientes</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -484,7 +484,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0002">
 <rem:name>
-Informacion de Prooveedores</rem:name>
+Información de proveedores</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -574,7 +574,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0003">
 <rem:name>
-Infomacion de Facturas</rem:name>
+Información de facturas</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -620,9 +620,9 @@ Datos del cliente </rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0025">
 <rem:description>
-Productos</rem:description>
+Lineas de presupuesto</rem:description>
 <rem:comments>
-Cantidad, referencia y precio.</rem:comments>
+Cantidad y descuento</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0026">
 <rem:description>
@@ -652,7 +652,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0004">
 <rem:name>
-Informacion de Comerciales</rem:name>
+Informacion de comerciales</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -742,7 +742,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0005">
 <rem:name>
-Informacion de productos terminados</rem:name>
+Informacion de productos</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -832,7 +832,7 @@ Precio de venta y margen de beneficio</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0006">
 <rem:name>
-Infomacion materias primas</rem:name>
+Informacion de materias primas</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -916,7 +916,7 @@ Precio coste, descuento, impuesto y precio neto</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0007">
 <rem:name>
-Informacion de Personal </rem:name>
+Informacion de personal </rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
