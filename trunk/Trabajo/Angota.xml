@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Archivos de programa\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files\REM 1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Angota</rem:name>
@@ -53,7 +53,7 @@ Introducción</rem:name>
 <rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>En 2010 TextilDev aceptó el encargo de Angota Co. de desarrollar un proyecto de gestión de una empresa textil. Angota Co. se fundó en el 2004 comenzó su actividad en el poligono Store, con una pequeña nave. Actualmente, tiene 2 naves en el polígono Calonge. La empresa la componen 2 administradores, 16 representantes externos 30 operarios de confección externos, 3 cortadores, 2 patronistas, 2 diseñadores, 1 extendedor, 1 preparador de <rem:ref oid="GLO-0001">fornituras</rem:ref>, 1 repasador, 1 etiquetador, 1 empaquetador, 4 miembros de atención al cliente, y  transportistas.<br/><br/>La aplicación que se va a desarrollar consiste en un sistema de gestión de diferentes contenidos relacionado con la empresa Angota. Se basará en recapitular informacion relevante tanto a las existencias que se almacenarán, como la metodología que utiliza la empresa. La aplicación intentará recojer las peticiones en formato digital así como informatizar la mayor parte del proceso.<br/><br/>Por último el documento se desarrollará en varios apartados: el segundo apartado se presentaran los participantes del proyecto, tanto las organizaciones que participan como las personas que intervienen por cada organización. En la tercera seccion se describiran los procedimientos que sigue actualmente la empresa. En la cuarta se describen los objetivos a alcanzar en la aplicacion. La quinta seccion es una de las más extensas, conteniendo los requisitos de informacion, requisitos funcionales (diagrama de acaso de uso, definicion de actores y casos de usos del sistema), reglas de negocio y requisitos no funcionales. En la sexta sección se muestra un grafico con la relacion que existe entre los obejetivos y los diferentes requisitos. Por ultimo tenemos las secciones glosario de terminos, conflictos pendientes y 2 apéndices del sistema (documentación y entrevistas)<br/></rem:text>
+<rem:text>En 2010 TextilDev aceptó el encargo de Angota Co. de desarrollar un proyecto de gestión de una empresa textil. Angota Co. se fundó en el 2004 comenzó su actividad en el poligono Store, con una pequeña nave. Actualmente, tiene 2 naves en el polígono Calonge. La empresa la componen 2 administradores, 16 representantes externos 30 operarios de confección externos, 3 cortadores, 2 patronistas, 2 diseñadores, 1 <rem:ref oid="GLO-0007">extendedor</rem:ref>, 1 preparador de <rem:ref oid="GLO-0001">fornituras</rem:ref>, 1 repasador, 1 etiquetador, 1 empaquetador, 4 miembros de atención al cliente, y  transportistas.<br/><br/>La aplicación que se va a desarrollar consiste en un sistema de gestión de diferentes contenidos relacionado con la empresa Angota. Se basará en recapitular informacion relevante tanto a las existencias que se almacenarán, como la metodología que utiliza la empresa. La aplicación intentará recojer las peticiones en formato digital así como informatizar la mayor parte del proceso.<br/><br/>Por último el documento se desarrollará en varios apartados: el segundo apartado se presentaran los participantes del proyecto, tanto las organizaciones que participan como las personas que intervienen por cada organización. En la tercera seccion se describiran los procedimientos que sigue actualmente la empresa. En la cuarta se describen los objetivos a alcanzar en la aplicacion. La quinta seccion es una de las más extensas, conteniendo los requisitos de informacion, requisitos funcionales (diagrama de acaso de uso, definicion de actores y casos de usos del sistema), reglas de negocio y requisitos no funcionales. En la sexta sección se muestra un grafico con la relacion que existe entre los obejetivos y los diferentes requisitos. Por ultimo tenemos las secciones glosario de terminos, conflictos pendientes y 2 apéndices del sistema (documentación y entrevistas)<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -606,6 +606,12 @@ Factura con desglose de productos, asi como datos del cliente</rem:relevantConce
 </rem:averageOcurrences>
 <rem:maximumOcurrences><rem:value>99</rem:value>
 </rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0092">
+<rem:description>
+Número de Factura</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
 <rem:specificData oid = "DAT-0024">
 <rem:description>
 Cliente</rem:description>
@@ -1056,25 +1062,6 @@ Administrador</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:actorRole>al administrador o administradores del sistema que ademas de ser un empleado tiene control sobre el sistema de personal</rem:actorRole>
-</rem:actor>
-<rem:actor
- oid = "ACT-0002">
-<rem:name>
-Comercial</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>1</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
-<rem:sources stakeholders ="STK-0004 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:actorRole>a la persona encargada de vender los productos a los clientes</rem:actorRole>
 </rem:actor>
 <rem:actor
  oid = "ACT-0003">
@@ -1613,6 +1600,23 @@ Ninguno</rem:comments>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:text> Persona que proporciona materias primas.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0007">
+<rem:name>
+<rem:ref oid="GLO-0007">Extendedor</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>14</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Oficio cuya finalidad es colocar <rem:ref oid="GLO-0003">tipos</rem:ref> uno encima de otro para que el cortador, una vez puesta la marcada, corte las telas.</rem:text>
 </rem:glossaryItem>
 </rem:section>
 <rem:section
