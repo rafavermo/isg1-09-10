@@ -90,6 +90,23 @@ Organizadores</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>2.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0008">
+<rem:name>
+Organizadores</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>En este apartado están las organizaciones participantes en el proyecto, por un lado tenemos TextilDev que será la encargada de realizar la practica y la empresa sobre la que se realizará.</rem:text>
+</rem:paragraph>
 <rem:organization
  oid = "ORG-0001">
 <rem:name>
@@ -146,10 +163,44 @@ Personas</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>2.2 </rem:number>
-<rem:stakeholder
- oid = "STK-0001">
+<rem:paragraph
+ oid = "PRG-0009">
 <rem:name>
-Rafael Gómez García</rem:name>
+Personas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>En este apartado se hace un listado con todas las personas que han formado parte en el desarrollo del proyecto.</rem:text>
+</rem:paragraph>
+<rem:section
+ oid = "SEC-0018">
+<rem:name>
+Empresa</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>2.2.1 </rem:number>
+<rem:stakeholder
+ oid = "STK-0004">
+<rem:name>
+Antonio Gómez Tabuenca</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -161,14 +212,73 @@ Rafael Gómez García</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:stakeholderRole><rem:ref oid="GLO-0005">Desarrollador</rem:ref></rem:stakeholderRole>
-<rem:isDeveloper/>
-<rem:worksFor organization = "ORG-0001"/>
+<rem:stakeholderRole>Gerente</rem:stakeholderRole>
+<rem:isCustomer/>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0002"/>
 </rem:stakeholder>
 <rem:stakeholder
- oid = "STK-0002">
+ oid = "STK-0005">
 <rem:name>
-Rafael Vergara Moreno</rem:name>
+Luis López Martinez</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Administrador</rem:stakeholderRole>
+<rem:isCustomer/>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0002"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0006">
+<rem:name>
+Lucía Parrales Toledo</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Trabajadora</rem:stakeholderRole>
+<rem:isCustomer/>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0002"/>
+</rem:stakeholder>
+</rem:section>
+<rem:section
+ oid = "SEC-0019">
+<rem:name>
+Desarrolladores</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>2.2.2 </rem:number>
+<rem:stakeholder
+ oid = "STK-0001">
+<rem:name>
+Rafael Gómez García</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -204,9 +314,9 @@ Ninguno</rem:comments>
 <rem:worksFor organization = "ORG-0001"/>
 </rem:stakeholder>
 <rem:stakeholder
- oid = "STK-0004">
+ oid = "STK-0002">
 <rem:name>
-Antonio Gómez Tabuenca</rem:name>
+Rafael Vergara Moreno</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -218,11 +328,11 @@ Antonio Gómez Tabuenca</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:stakeholderRole>Jefe</rem:stakeholderRole>
-<rem:isCustomer/>
-<rem:isUser/>
-<rem:worksFor organization = "ORG-0002"/>
+<rem:stakeholderRole><rem:ref oid="GLO-0005">Desarrollador</rem:ref></rem:stakeholderRole>
+<rem:isDeveloper/>
+<rem:worksFor organization = "ORG-0001"/>
 </rem:stakeholder>
+</rem:section>
 </rem:section>
 </rem:section>
 <rem:section
@@ -242,6 +352,60 @@ Descripción  del sistema actual</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>3 </rem:number>
+<rem:section
+ oid = "SEC-0020">
+<rem:name>
+Procedimiento 1: Seleccion de diseños</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.1 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0021">
+<rem:name>
+Procedimiento 2: Ventas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.2 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0022">
+<rem:name>
+Subprocedimiento: Producción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.3 </rem:number>
+</rem:section>
 </rem:section>
 <rem:section
  oid = "SEC-0006">
@@ -1882,9 +2046,6 @@ Ninguno
 <rem:trace source = "IRQ-0001"  target = "OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "IRQ-0002"  target = "OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
 <rem:trace source = "IRQ-0007"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
@@ -1907,6 +2068,9 @@ Ninguno
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "IRQ-0003"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0002"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:predefinedValueTypes>
