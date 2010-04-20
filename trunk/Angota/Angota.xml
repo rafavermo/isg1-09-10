@@ -352,6 +352,23 @@ Descripción  del sistema actual</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>3 </rem:number>
+<rem:paragraph
+ oid = "PRG-0010">
+<rem:name>
+Sistema Actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Actualmente el sistema no está informatizado.</rem:text>
+</rem:paragraph>
 <rem:section
  oid = "SEC-0020">
 <rem:name>
@@ -369,6 +386,23 @@ Procedimiento 1: Seleccion de diseños</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0011">
+<rem:name>
+Descripcion</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>A continuación se muestran los pasos para llegar a seleccionar materias primas y confeccionar el libro de diseños.</rem:text>
+</rem:paragraph>
 </rem:section>
 <rem:section
  oid = "SEC-0021">
@@ -387,6 +421,23 @@ Procedimiento 2: Ventas</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0012">
+<rem:name>
+Descripción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>A continuación se muestra el proceso de venta de la empresa y como, partiendo de una serie de pedidos se realiza el proceso de fabricacion en masa para hacer efectivo el producto final.</rem:text>
+</rem:paragraph>
 </rem:section>
 <rem:section
  oid = "SEC-0022">
@@ -405,6 +456,23 @@ Subprocedimiento: Producción</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.3 </rem:number>
+<rem:paragraph
+ oid = "PRG-0013">
+<rem:name>
+Descripción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Por ultimo se muestra el proceso de producción de diseños o pedidos.</rem:text>
+</rem:paragraph>
 </rem:section>
 </rem:section>
 <rem:section
@@ -446,7 +514,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0002"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-Controlar las compras de <rem:ref oid="GLO-0001">fornituras</rem:ref>, <rem:ref oid="GLO-0003">tipos</rem:ref>, bolsas, perchas...</rem:description>
+Controlar las compras de materias primas y otros elementos que hagan posible el finalizado del producto.</rem:description>
 </rem:objective>
 <rem:objective
  oid = "OBJ-0002">
@@ -470,7 +538,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0002"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-Controlar las ventas a tiendas que la empresa media con los proveedores.</rem:description>
+controlar las ventas a tiendas que la empresa media con los proveedores.</rem:description>
 </rem:objective>
 <rem:objective
  oid = "OBJ-0003">
@@ -494,7 +562,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0002"/>
 <rem:stability value = "SBV-0003"/>
 <rem:description>
-controlar los trabajadores de la empresa y los ajenos a ella (comerciales)</rem:description>
+controlar información sobre trabajadores de la empresa y comerciales.</rem:description>
 </rem:objective>
 <rem:objective
  oid = "OBJ-0004">
@@ -518,7 +586,31 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0002"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-Controlar las entradas y salidas de material del almacen</rem:description>
+controlar las entradas y salidas de material del almacen.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0005">
+<rem:name>
+Control de clientes</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:description>
+controlar la informacion de tiendas o pequeños compradores que consumen los productos de la empresa.</rem:description>
 </rem:objective>
 </rem:section>
 <rem:section
@@ -555,6 +647,23 @@ Requisitos de información</rem:name>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>5.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0014">
+<rem:name>
+//NEED HELP</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>¿Informacion de pedidos?<br/>¿seria necesario?</rem:text>
+</rem:paragraph>
 <rem:informationRequirement
  oid = "IRQ-0001">
 <rem:name>
@@ -1702,6 +1811,7 @@ Ninguno</rem:comments>
 <rem:th oid ="OBJ-0002"/>
 <rem:th oid ="OBJ-0003"/>
 <rem:th oid ="OBJ-0004"/>
+<rem:th oid ="OBJ-0005"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="IRQ-0001"/>
@@ -1709,6 +1819,7 @@ Ninguno</rem:comments>
 <rem:td mark ="yes"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
+<rem:td mark ="yes"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="IRQ-0002"/>
@@ -1716,11 +1827,13 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="yes"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="IRQ-0003"/>
 <rem:td mark ="no"/>
 <rem:td mark ="yes"/>
+<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 </rem:tr>
@@ -1730,6 +1843,7 @@ Ninguno</rem:comments>
 <rem:td mark ="yes"/>
 <rem:td mark ="yes"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="IRQ-0005"/>
@@ -1737,6 +1851,7 @@ Ninguno</rem:comments>
 <rem:td mark ="yes"/>
 <rem:td mark ="no"/>
 <rem:td mark ="yes"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="IRQ-0006"/>
@@ -1744,12 +1859,14 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="yes"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="IRQ-0007"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="yes"/>
+<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 </rem:tr>
 </rem:traceabilityMatrix>
@@ -1775,9 +1892,11 @@ Ninguno</rem:comments>
 <rem:th oid ="OBJ-0002"/>
 <rem:th oid ="OBJ-0003"/>
 <rem:th oid ="OBJ-0004"/>
+<rem:th oid ="OBJ-0005"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0002"/>
+<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -1789,9 +1908,11 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0005"/>
+<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -1803,6 +1924,7 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0007"/>
@@ -1810,9 +1932,11 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
+<rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0008"/>
+<rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -2071,6 +2195,9 @@ Ninguno
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "IRQ-0002"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0001"  target = "OBJ-0005" >
 <rem:isChecked/>
 </rem:trace>
 <rem:predefinedValueTypes>
