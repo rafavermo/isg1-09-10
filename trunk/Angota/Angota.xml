@@ -1560,7 +1560,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0005">
 <rem:name>
-Registrar alta comercial</rem:name>
+Alta comercial</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1630,7 +1630,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0006">
 <rem:name>
-Registrar alta cliente</rem:name>
+Alta cliente</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1767,7 +1767,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0008">
 <rem:name>
-Registrar alta pedido</rem:name>
+Alta pedido</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
