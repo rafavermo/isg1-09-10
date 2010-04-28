@@ -2341,51 +2341,6 @@
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>ACT-0004</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido autor [STK-0001] Rafael Gómez García]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0009</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>ACT-0004</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] actualizada [al gerente de la empresa] -> [al gerente de la empresa.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0011</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [PRG-0014] //NEED HELP con 0 hijos y 0 cambios]]></rem:description>
-</rem:change>
-<rem:change>
 <rem:type>D</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2010</rem:year>
@@ -2393,15 +2348,6 @@
 <rem:day>28</rem:day>
 </rem:date>
 <rem:description><![CDATA[Eliminado el objeto [UC-0011]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>OBJ-0006</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] actualizada [PD] -> [controlar la informacion de las empresas que nos proveen de materiales y materias primas]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>D</rem:type>
@@ -2413,156 +2359,93 @@
 <rem:description><![CDATA[Eliminado el objeto [UC-0010] Registrar venta con 0 hijos y 2 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0012</rem:owner><rem:date>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>4</rem:month>
 <rem:day>28</rem:day>
 </rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [PRG-0014] //NEED HELP con 0 hijos y 0 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>OBJ-0006</rem:owner><rem:date>
+<rem:owner>UC-0008</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>4</rem:month>
 <rem:day>28</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Urgency] actualizada [PD] -> [hay presión]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0009</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Registrar producto] -> [Registrar entrada producto]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>OBJ-0006</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Registrar compra] -> [Registrar venta]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [UC-0003] Registrar compra del proyecto C:\Users\Rafael Gómez\Desktop\ISG1\Angota\Angota.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>OBJ-0006</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadida traza desde [IRQ-0002] Información de proveedores]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>OBJ-0006</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Importance] actualizada [PD] -> [importante]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>OBJ-0006</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Status] actualizada [PD] -> [en construcción]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>OBJ-0006</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Stability] actualizada [PD] -> [media]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>ACT-0004</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] actualizada [al gerente de la empresa.] -> [al usuario con maximos privilegios, ademas de los procesos de informacion que tiene el administrador, puede dar de alta o baja trabajadores internos de la empresa.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0009</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Registrar entrada producto] -> [Entrada producto]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>ACT-0004</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>ACT-0004</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadida fuente [STK-0004] Antonio Gómez Tabuenca]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>OBJ-0006</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido autor [STK-0001] Rafael Gómez García]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>OBJ-0006</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadida fuente [STK-0005] Luis López Martinez]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0011</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Consultar informacion empleado] -> [Consultar empleado]]]></rem:description>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Registrar alta pedido] -> [Alta pedido]]]></rem:description>
 </rem:change>
 </rem:log>
