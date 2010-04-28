@@ -1,0 +1,2932 @@
+<html xmlns:rem="http://rem.lsi.us.es">
+<head>
+<title>Proyecto HispalTour</title>
+<style type="text/css">
+<!--
+            body {
+                font-family: arial,verdana;
+                font-size: 10pt;
+                text-align: justify
+            }
+
+            h1 { font-size: 14pt }
+            h2 { font-size: 13pt }
+            h3 { font-size: 12pt }
+            h4 { font-size: 11pt }
+            h5 { font-size: 10pt }
+            h6 { font-size: 10pt }
+
+            h1.cover { font-size: 20pt }
+
+            tr { font-size: 10pt }
+
+            table { border: black solid; }
+            table.TOC { border: none; }
+            ul {
+                margin-top:    0pt;
+                margin-bottom: 0pt;
+                margin-left:   12pt
+            }
+        -->
+</style>
+</head>
+<body>
+<center>
+<h3>Proyecto HispalTour</h3>
+<p />
+<h1 class="cover">Documento de Análisis del Sistema</h1>
+<p />
+<h3>Versión 1.0</h3>
+<h3>Fecha 03/05/2007</h3>
+<p />
+<h3>Preparado para:</h3>
+<a href="#ORG-0002" title="HispalTour">
+<p> HispalTour</p>
+</a>
+<p />
+<h3>Preparado por:</h3>
+<a href="#ORG-0001" title="Grupo 21">
+<p>
+Grupo 21</p>
+</a>
+<p />
+</center>
+<hr size="4" />
+<p />
+<h1 align="left">Índice</h1>
+<p />
+<table border="0" width="100%" class="TOC">
+<tr>
+<th align="left" valign="top">1 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0025">
+Introduccion</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">2 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0026">
+Modelo Estático del Sistema</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">3 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0027">
+Modelo Dinámico del Sistema</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0031">
+Registrar Expediente</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0038">
+Registrar Mayorista</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0039">
+Registrar Cliente</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.4 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0040">
+Registrar Agente</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.5 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0041">
+Registrar Servicio Mayorista</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.6 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0042">
+Registrar Peticion de Servicio</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.7 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0043">
+Registrar Factura</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.8 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0044">
+Registrar Forma de Pago</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">4 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0028">
+Modelo Funcional del Sistema</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0030">
+Registrar Expediente</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0032">
+Registrar Mayorista</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0033">
+Registrar Cliente</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.4 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0034">
+Registrar Agente</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.5 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0035">
+Registrar Servicio Mayorista</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.6 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0036">
+Registrar Peticion de Servicio</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.7 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0037">
+Registrar Factura</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.8 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0045">
+Registrar Forma de Pago</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">5 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0029">
+Prototipo de Interfaz de Usuario</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0051">
+Interfaz servicioMayorista</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0053">
+Interfaz Agente</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0052">
+Interfaz Cliente</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.4 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0054">
+Interfaz Expediente</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.5 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0055">
+Interfaz FormaDePAgo</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.6 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0056">
+Interfaz Mayorista</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.7 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0057">
+Interfaz Peticion</a>
+</td>
+</tr>
+</table>
+<p />
+<hr size="4" />
+<p />
+<a name="SEC-0025" />
+<h1 align="left">1 
+Introduccion</h1><a name="PRG-0034" />
+<p>La empresa con la que vamos a tratar es una agencia de viajes independiente, aunque esta asociada a un grupo de agencias llamado Grupo Sercom. Se fundo en el 2003 y sus comienzos fueron desde una sucursal en el centro de Sevilla. Actualmente, tiene una unica sucursal en Sevilla, concretamente en la calle Recaredo. La empresa la componen dos administradores y socios capitalistas así como cinco agentes, dos comerciales y un administrativo.
+<br />
+<br />A continuación se procederá al análisis del documento de requisitos del <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a>, mediante la introducción de unos modelos estaticos, dinámicos y funcionales que representan gráfica y funcionalmente las operaciones del <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> con los diferentes usuarios.
+<br />
+<br />Diferenciamos distintas secciones, de forma que en la segunda seccion encontraremos una representacion gráfica con las diferentes clases que mostraria el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a>, asi como las distintas asociaciones. En la tercera sección tenemos diagramas con la interaccion entra el usuario de la aplicacion y el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> para cada una de las operaciones del mismo, modelo dinamico del <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a>. En la siguiente seccion se especificara mas detalladamente cada una de las operaciones anteriormente mostradas. En la quinta, y ultima seccion, presentaremos prototipos de las interfaces de las operaciones del <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a>.</p>
+<a name="SEC-0026" />
+<h1 align="left">2 
+Modelo Estático del Sistema</h1><a name="PRG-0022" />
+<p>Se  muestra un  diagrama donde se representa la relacion existente entre las distintas clases que conforman el proyecto, asi como sus atributos, pertenencias y restricciones de información pertinentes.</p>
+<a name="GRF-0006" />
+<p align="center">
+<img src=".\Material\diagrama de clase.wmf" title=".\Material\diagrama de clase.wmf" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Diagrama de Clase</p>
+<a name="SEC-0027" />
+<h1 align="left">3 
+Modelo Dinámico del Sistema</h1><a name="SEC-0031" />
+<h2 align="left">3.1 
+Registrar Expediente</h2><a name="GRF-0005" />
+<p align="center">
+<img src=".\Material\DS - Registrar Expediente.wmf" title=".\Material\DS - Registrar Expediente.wmf" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Registrar Expediente</p>
+<a name="SEC-0038" />
+<h2 align="left">3.2 
+Registrar Mayorista</h2><a name="GRF-0007" />
+<p align="center">
+<img src=".\Material\DS - Registrar Mayorista.wmf" title=".\Material\DS - Registrar Mayorista.wmf" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Registrar Mayorista</p>
+<a name="SEC-0039" />
+<h2 align="left">3.3 
+Registrar Cliente</h2><a name="GRF-0008" />
+<p align="center">
+<img src=".\Material\DS - Registrar Cliente.wmf" title=".\Material\DS - Registrar Cliente.wmf" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Registrar Cliente</p>
+<a name="SEC-0040" />
+<h2 align="left">3.4 
+Registrar Agente</h2><a name="GRF-0009" />
+<p align="center">
+<img src=".\Material\DS - Registrar Agente.wmf" title=".\Material\DS - Registrar Agente.wmf" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Registrar Agente</p>
+<a name="SEC-0041" />
+<h2 align="left">3.5 
+Registrar Servicio Mayorista</h2><a name="GRF-0010" />
+<p align="center">
+<img src=".\Material\DS - Registrar Servicio Mayorista.wmf" title=".\Material\DS - Registrar Servicio Mayorista.wmf" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Registrar Servicio Mayorista</p>
+<a name="SEC-0042" />
+<h2 align="left">3.6 
+Registrar Peticion de Servicio</h2><a name="GRF-0014" />
+<p align="center">
+<img src=".\Material\DS - Registrar Peticion de Servicio.wmf" title=".\Material\DS - Registrar Peticion de Servicio.wmf" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Registrar Peticion de Servicio</p>
+<a name="SEC-0043" />
+<h2 align="left">3.7 
+Registrar Factura</h2><a name="GRF-0012" />
+<p align="center">
+<img src=".\Material\DS - Registrar Factura.wmf" title=".\Material\DS - Registrar Factura.wmf" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Registrar Factura</p>
+<a name="SEC-0044" />
+<h2 align="left">3.8 
+Registrar Forma de Pago</h2><a name="GRF-0013" />
+<p align="center">
+<img src=".\Material\DS - Registrar Forma de Pago.wmf" title=".\Material\DS - Registrar Forma de Pago.wmf" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Registrar Forma de Pago en Expediente</p>
+<a name="SEC-0028" />
+<h1 align="left">4 
+Modelo Funcional del Sistema</h1><a name="SEC-0030" />
+<h2 align="left">4.1 
+Registrar Expediente</h2><a name="SOP-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0001</th>
+<th align="left" valign="top" width="100%">
+ComenzarAltaExpediente (clienteID,agenteID)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>El valor del identificador del objeto de la clase Expediente que se ha creado</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0004" title="Guardar informacion de expedientes">
+                                [OBJ-0004] 
+Guardar informacion de expedientes</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion del <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> representa la forma de comenzar el alta de un nuevo <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">expediente</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0106" />
+<code>
+clienteID : <code>
+Integer</code> -- <em>
+al identificador único de un objeto de tipo <a href="#GLO-0020" title="Persona interesada en realizar un servicio">cliente</a>
+</em></code><br />
+<a name="PAR-0250" />
+<code>
+agenteID : <code>
+Integer</code> -- <em>
+ al identificador unico de un objeto de la clase <a href="#GLO-0010" title="Persona a cargo de una agencia para gestionar asuntos ajenos o prestar determinados servicios">Agente</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0105" />
+<b>Existencia objeto de la clase Cliente</b>: 
+					<br />
+<a name="PRE-0241" />
+<b>Existencia objeto de la clase Agente</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia objeto de la clase Cliente</b>: Existe un objeto de la clase Cliente en el sistema tal que su identificador es clienteID</code><br />
+<code><b>Existencia objeto de la clase Agente</b>: Existe un objeto de la clase Agente en el sistema tal que su identificador es agenteID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0107" />
+<b>Objeto de la clase Expediente creado</b>: <br />
+<a name="POS-0237" />
+<b>Asociacion a Agente</b>: <br />
+<a name="POS-0239" />
+<b>Asociacion a Cliente</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Objeto de la clase Expediente creado</b>: Se ha creado un objeto de la clase expediente asignándole un valor a su identificador</code><br />
+<code><b>Asociacion a Agente</b>: Se ha asociado el objeto de la clase Agente al objeto de la clase Expediente precisado en la precondicion</code><br />
+<code><b>Asociacion a Cliente</b>: Se ha asociado el objeto de la clase Cliente al objeto de la clase Expediente precisado en la precondicion</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SOP-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0002</th>
+<th align="left" valign="top" width="100%">
+AsignarServiciodeMayorista (expedienteID, servicioMayoristaID,NºPersonas,/Subtotal)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>1- El subtotal se calcula mediante la formula: NºPersonas x PreciodelServicio
+
+2- Descripcion del servicio pasado como argumento tal que su identificador es servicioMayoristaID</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0004" title="Guardar informacion de expedientes">
+                                [OBJ-0004] 
+Guardar informacion de expedientes</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+La operacion del <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> representa la forma de asignar un nuevo <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a> de <a href="#GLO-0011" title="Persona que proporciona los servicios a las agencias">mayorista</a> a un <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">expediente</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0110" />
+<code>
+expedienteID : <code>
+Integer</code> -- <em>
+El identificador único de un objeto de la clase <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">Expediente</a>
+</em></code><br />
+<a name="PAR-0112" />
+<code>
+servicioMayoristaID : <code>
+Integer</code> -- <em>
+el identificador unico de un objeto de la clase ServicioMayorista</em></code><br />
+<a name="PAR-0115" />
+<code>
+NºPersonas : <code>
+Integer</code> -- <em>
+al numero total de personas que contratan el <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0123" />
+<b>Existencia de objeto de la clase Expediente</b>: 
+					<br />
+<a name="PRE-0111" />
+<b>Existencia de objeto de la clase Servicio</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia de objeto de la clase Expediente</b>: Existe un objeto de la clase expediente en el sistema tal que su identificador es expedienteID</code><br />
+<code><b>Existencia de objeto de la clase Servicio</b>: Existe un objeto de la clase Servicio en el sistema tal que su identificador es serviciomayoristaID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0114" />
+<b>Creacion objeto LineaExpediente</b>: <br />
+<a name="POS-0117" />
+<b>Asociacion a Expediente</b>: <br />
+<a name="POS-0118" />
+<b>Asociacion a ServicioMayorista</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Creacion objeto LineaExpediente</b>: Se ha creado un objeto de la clase LineaExpediente asignando a NºPersonas="NºPersonas" y subtotal="subtotal" pasados como argumentos</code><br />
+<code><b>Asociacion a Expediente</b>: Se la ha asociado dicho objeto al objeto de la clase LineaExpediente tal que su identificador es expedienteID</code><br />
+<code><b>Asociacion a ServicioMayorista</b>: Se la ha asociado dicho objeto de la clase LineaExpediente al objeto de la clase ServicioMayorista tal que su identificador es serviciomayoristaID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SOP-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0003</th>
+<th align="left" valign="top" width="100%">
+AñadirLocalizador(expedienteID, Localizador)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>No tiene</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0004" title="Guardar informacion de expedientes">
+                                [OBJ-0004] 
+Guardar informacion de expedientes</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion representa la forma de añadir un localizador a un <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">expediente</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0119" />
+<code>
+Localizador : <code>
+Integer</code> -- <em>
+ a un identificador unico para un <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0121" />
+<code>
+expedienteID : <code>
+Integer</code> -- <em>
+El identificador único de un objeto de la clase <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">Expediente</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0122" />
+<b>Existencia de objeto de la clase Expediente</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia de objeto de la clase Expediente</b>: Existe un objeto de la clase expediente tal que su identificador es expedienteID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0124" />
+<b>Modificado Localizador</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Modificado Localizador</b>: Se ha modificado el valor localizador="localizador" del objeto de la clase expediente tal que su identificador es expedienteID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SOP-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0004</th>
+<th align="left" valign="top" width="100%">
+finalizarAltaExpediente(expedienteID)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>No tiene</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0004" title="Guardar informacion de expedientes">
+                                [OBJ-0004] 
+Guardar informacion de expedientes</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion describe la forma de finalizar el alta de un <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">expediente</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0126" />
+<code>
+expedienteID : <code>
+Integer</code> -- <em>
+El identificador único de un objeto de la clase <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">Expediente</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0254" />
+<b>Existencia de objeto de la clase Expediente</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia de objeto de la clase Expediente</b>: Existe un objeto de la clase expediente en el sistema tal que su identificador es expedienteID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0128" />
+<b>Ninguna</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Ninguna</b>: No tiene</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0032" />
+<h2 align="left">4.2 
+Registrar Mayorista</h2><a name="SOP-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0005</th>
+<th align="left" valign="top" width="100%">
+comenzarAltaMayorista(Nombre,Direccion,Telefono,Fax,EMail,Web,PersonaContacto,TipoIVA)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>El valor del identificador del objeto de la clase Mayorista que se ha creado</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0002" title="Guardar informacion de mayorista">
+                                [OBJ-0002] 
+Guardar informacion de mayorista</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion describe el comienzo del alta de un nuevo <a href="#GLO-0011" title="Persona que proporciona los servicios a las agencias">mayorista</a> en el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0129" />
+<code>
+Nombre : <code>
+String</code> -- <em>
+ el nombre de la persona</em></code><br />
+<a name="PAR-0130" />
+<code>
+Direccion : <code>
+String</code> -- <em>
+ al domicilio actual donde reside la persona</em></code><br />
+<a name="PAR-0131" />
+<code>
+Telefono : <code>
+Integer</code> -- <em>
+ el numero de telefono particular de la persona</em></code><br />
+<a name="PAR-0132" />
+<code>
+Fax : <code>
+Integer</code> -- <em>
+ el numero de FAX si lo posee de la persona</em></code><br />
+<a name="PAR-0133" />
+<code>
+EMail : <code>
+String</code> -- <em>
+ la direccion de correo electronica de la persona</em></code><br />
+<a name="PAR-0134" />
+<code>
+Web : <code>
+String</code> -- <em>
+ a una pagina web asociada a la persona si la posee</em></code><br />
+<a name="PAR-0135" />
+<code>
+PersonaContacto : <code>
+String</code> -- <em>
+ el nombre de la persona con la que contacta la persona</em></code><br />
+<a name="PAR-0136" />
+<code>
+TipoIVA : <code>
+String</code> -- <em>
+ los valores del IVA existentes en la actualidad</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0137" />
+<b>Ninguna</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Ninguna</b>: No tiene</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0138" />
+<b>Creacion objeto de la clase Mayorista</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Creacion objeto de la clase Mayorista</b>: Se ha creado un objeto de la clase Mayorista a la que se le han pasado como argumentos los datos del mayorista, tal que su identificador es mayoristaID </code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SOP-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0006</th>
+<th align="left" valign="top" width="100%">
+finalizarAltaMayorista(mayoristaID)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>No tiene</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0002" title="Guardar informacion de mayorista">
+                                [OBJ-0002] 
+Guardar informacion de mayorista</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion describe como finalizar el registro de un nuevo <a href="#GLO-0011" title="Persona que proporciona los servicios a las agencias">mayorista</a> en el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0140" />
+<code>
+mayoristaID : <code>
+Integer</code> -- <em>
+ al identificador unico de un objeto de la clase <a href="#GLO-0011" title="Persona que proporciona los servicios a las agencias">Mayorista</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0255" />
+<b>Existencia de objeto de la clase Mayorista</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia de objeto de la clase Mayorista</b>: Existe un objeto de la clase Mayorista en el sistema tal que su identificador es mayoristaID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0142" />
+<b>Ninguna</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Ninguna</b>: No tiene</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0033" />
+<h2 align="left">4.3 
+Registrar Cliente</h2><a name="SOP-0007" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0007</th>
+<th align="left" valign="top" width="100%">
+comenzarAltaCliente(Nombre,Apellidos,Direccion,Telefono,EMail,DNI/CIF)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>El valor del identificador del objeto de la clase Cliente que se ha creado</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0001" title="Guardar informacion de cliente">
+                                [OBJ-0001] 
+Guardar informacion de cliente</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion describe el comienzo del alta de un nuevo <a href="#GLO-0020" title="Persona interesada en realizar un servicio">cliente</a> en el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0143" />
+<code>
+Nombre : <code>
+String</code> -- <em>
+ el nombre de la persona</em></code><br />
+<a name="PAR-0157" />
+<code>
+Apellidos : <code>
+String</code> -- <em>
+ los apellidos de la persona</em></code><br />
+<a name="PAR-0144" />
+<code>
+Direccion : <code>
+String</code> -- <em>
+ al domicilio actual donde reside la persona</em></code><br />
+<a name="PAR-0145" />
+<code>
+Telefono : <code>
+Integer</code> -- <em>
+ el numero de telefono particular de la persona</em></code><br />
+<a name="PAR-0147" />
+<code>
+EMail : <code>
+String</code> -- <em>
+ la direccion de correo electronica de la persona</em></code><br />
+<a name="PAR-0158" />
+<code>
+DNI/CIF : <code>
+Integer</code> -- <em>
+ al numero identificativo que puede corresponder a una persona(DNI) o a una empresa(CIF) segun corresponda</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0151" />
+<b>Ninguna</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Ninguna</b>: No tiene</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0152" />
+<b>Creacion objeto de la clase Cliente</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Creacion objeto de la clase Cliente</b>: Se ha creado un objeto de la clase Cliente a la que se le han pasado como argumentos los datos del cliente, tal que su identificador es clienteID </code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SOP-0008" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0008</th>
+<th align="left" valign="top" width="100%">
+finalizarAltaCliente(clienteID)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>No tiene</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0001" title="Guardar informacion de cliente">
+                                [OBJ-0001] 
+Guardar informacion de cliente</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion describe como finalizar el registro de un nuevo <a href="#GLO-0020" title="Persona interesada en realizar un servicio">cliente</a> en el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0153" />
+<code>
+clienteID : <code>
+Integer</code> -- <em>
+ al identificador unico de un objeto de la clase <a href="#GLO-0020" title="Persona interesada en realizar un servicio">Cliente</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0154" />
+<b>Existencia de objeto de la clase Cliente</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia de objeto de la clase Cliente</b>: Existe un objeto de la clase Cliente en el sistema tal que su identificador es clienteID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0155" />
+<b>Ninguna</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Ninguna</b>: No tiene</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0034" />
+<h2 align="left">4.4 
+Registrar Agente</h2><a name="SOP-0009" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0009</th>
+<th align="left" valign="top" width="100%">
+comenzarAltaAgente(Nombre,Apellidos,Direccion,Telefono,Movil,EMailPersonal,EMailHispaltour,DNI,Salario,NºSeguridadSocial)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>El valor del identificador del objeto de la clase Agente que se ha creado</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0006" title="Guardar informacion sobre los Agentes">
+                                [OBJ-0006] 
+Guardar informacion sobre los Agentes</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion describe el comienzo del alta de un nuevo <a href="#GLO-0010" title="Persona a cargo de una agencia para gestionar asuntos ajenos o prestar determinados servicios">agente</a> en el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0159" />
+<code>
+Nombre : <code>
+String</code> -- <em>
+ el nombre de la persona</em></code><br />
+<a name="PAR-0160" />
+<code>
+Apellidos : <code>
+String</code> -- <em>
+ los apellidos de la persona</em></code><br />
+<a name="PAR-0161" />
+<code>
+Direccion : <code>
+String</code> -- <em>
+ al domicilio actual donde reside la persona</em></code><br />
+<a name="PAR-0162" />
+<code>
+Telefono : <code>
+Integer</code> -- <em>
+ el numero de telefono particular de la persona</em></code><br />
+<a name="PAR-0170" />
+<code>
+Movil : <code>
+Integer</code> -- <em>
+ el numero de telefono movil de la persona</em></code><br />
+<a name="PAR-0165" />
+<code> EMailPersonal : <code>
+String</code> -- <em>
+ la direccion de correo electronica de la persona</em></code><br />
+<a name="PAR-0171" />
+<code> EMailHispaltour : <code>
+String</code> -- <em>
+ la direccion de correo electronico perteneciente a la empresa que se le asigna</em></code><br />
+<a name="PAR-0166" />
+<code>
+DNI : <code>
+Integer</code> -- <em>
+ al numero identificativo de la persona</em></code><br />
+<a name="PAR-0172" />
+<code>
+Salario : <code>
+Real</code> -- <em>
+ la cantidad mensual percibida por la persona</em></code><br />
+<a name="PAR-0173" />
+<code>
+NºSeguridadSocial : <code>
+Integer</code> -- <em>
+ el numero de la seguridad social perteciente a la persona</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0163" />
+<b>Ninguna</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Ninguna</b>: No tiene</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0164" />
+<b>Creacion objeto de la clase Agente</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Creacion objeto de la clase Agente</b>: Se ha creado un objeto de la clase Agente a la que se le han pasado como argumentos los datos del agente, tal que su identificador es agenteID </code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SOP-0010" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0010</th>
+<th align="left" valign="top" width="100%">
+finalizarAltaAgente(agenteID)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>No tiene</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0006" title="Guardar informacion sobre los Agentes">
+                                [OBJ-0006] 
+Guardar informacion sobre los Agentes</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion describe como finalizar el registro de un nuevo <a href="#GLO-0010" title="Persona a cargo de una agencia para gestionar asuntos ajenos o prestar determinados servicios">agente</a> en el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0167" />
+<code>
+agenteID : <code>
+Integer</code> -- <em>
+ al identificador unico de un objeto de la clase <a href="#GLO-0010" title="Persona a cargo de una agencia para gestionar asuntos ajenos o prestar determinados servicios">Agente</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0168" />
+<b>Existencia de objeto de la clase Agente</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia de objeto de la clase Agente</b>: Existe un objeto de la clase Agente en el sistema tal que su identificador es agenteID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0169" />
+<b>Ninguna</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Ninguna</b>: No tiene</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0035" />
+<h2 align="left">4.5 
+Registrar Servicio Mayorista</h2><a name="SOP-0011" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0011</th>
+<th align="left" valign="top" width="100%">
+comenzarAltaServicioMayorista(mayoristaID,Nombre,Disponibilidad,Precio,Destino,FechaEntrada,FechaSalida,NºPAX,RegimenDieta,TipoHabitacion,Descripcion)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>El valor del identificador del objeto de la clase ServicioMayorista que se ha creado</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0003" title="Guardar servicios de mayoristas">
+                                [OBJ-0003] 
+Guardar servicios de mayoristas</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion describe el comienzo del alta de un nuevo <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a> de <a href="#GLO-0011" title="Persona que proporciona los servicios a las agencias">mayorista</a> en el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0174" />
+<code>
+Nombre : <code>
+String</code> -- <em>
+ el nombre del <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0187" />
+<code> Disponibilidad : <code>
+String</code> -- <em>
+ la <a href="#GLO-0031" title="Servicios a contratar disponibles actualmente ofertados por el Mayorista">disponibilidad</a> actual del <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0188" />
+<code>
+Precio : <code>
+Real</code> -- <em>
+ el precio del <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0189" />
+<code>
+Destino : <code>
+String</code> -- <em>
+ el lugar de destino perteneciente al <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0190" />
+<code>
+FechaEntrada : <code>
+Date</code> -- <em>
+ la fecha de comienzo del <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0191" />
+<code>
+FechaSalida : <code>
+Date</code> -- <em>
+ la fecha de finalizacion del <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0192" />
+<code>
+NºPAX : <code>
+Integer</code> -- <em>
+ el numero maximo de pasajeros en un <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0193" />
+<code> RegimenDieta : <code>
+String</code> -- <em>
+ el tipo de regimen de comida disponible en un <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0194" />
+<code> TipoHabitacion : <code>
+String</code> -- <em>
+ el tipo de habitacion diponible en un <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0195" />
+<code>
+Descripcion : <code>
+String</code> -- <em>
+ la descripcion general del <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0256" />
+<code>
+mayoristaID : <code>
+Integer</code> -- <em>
+ al identificador unico de un objeto de la clase <a href="#GLO-0011" title="Persona que proporciona los servicios a las agencias">Mayorista</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0182" />
+<b>Existencia de objeto de la clase Mayorista en el sistema</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia de objeto de la clase Mayorista en el sistema</b>: Existe un objeto de la clase Mayorista en el sistema tal que su identificador es mayoristaID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0183" />
+<b>Creacion objeto de la clase ServicioMayorista</b>: <br />
+<a name="POS-0257" />
+<b>Asociacion a Mayorista</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Creacion objeto de la clase ServicioMayorista</b>: Se ha creado un objeto de la clase ServicioMayorista a la que se le han pasado como argumentos los datos del servicio, tal que su identificador es serviciomayoristaID </code><br />
+<code><b>Asociacion a Mayorista</b>: Se la ha asociado dicho objeto al objeto de la clase Mayorista tal que su identificador es mayoristaID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SOP-0012" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0012</th>
+<th align="left" valign="top" width="100%">
+finalizarAltaServicioMayorista(servicioMayoristaID)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>No tiene</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0003" title="Guardar servicios de mayoristas">
+                                [OBJ-0003] 
+Guardar servicios de mayoristas</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion describe como finalizar el registro de un nuevo <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a> de <a href="#GLO-0011" title="Persona que proporciona los servicios a las agencias">mayorista</a> en el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0184" />
+<code>
+servicioMayoristaID : <code>
+Integer</code> -- <em>
+ al identificador unico de un objeto de la clase ServicioMayorista</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0185" />
+<b>Existencia de objeto de la clase ServicioMayorista</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia de objeto de la clase ServicioMayorista</b>: Existe un objeto de la clase ServicioMayorista en el sistema tal que su identificador es servicioMayoristaID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0186" />
+<b>Ninguna</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Ninguna</b>: No tiene</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0036" />
+<h2 align="left">4.6 
+Registrar Peticion de Servicio</h2><a name="SOP-0013" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0013</th>
+<th align="left" valign="top" width="100%">
+comenzarAltaPeticionServicio(FechaEntrada,FechaSalida,NºPAX,RegimenDieta,TipoHabitacion,Descripcion,clienteID,agenteID)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>El valor del identificador del objeto de la clase Peticion que se ha creado</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0007" title="Guardar informacion sobre las peticiones">
+                                [OBJ-0007] 
+Guardar informacion sobre las peticiones</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion describe el comienzo del alta de una nueva <a href="#GLO-0026" title="Documento sin validez oficial que rellena el Cliente en su primera toma de contacto con el Agente donde le comunica sus intenciones de viaje">peticion</a> de <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a> en el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0202" />
+<code>
+FechaEntrada : <code>
+Date</code> -- <em>
+ la fecha de comienzo del <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0203" />
+<code>
+FechaSalida : <code>
+Date</code> -- <em>
+ la fecha de finalizacion del <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0204" />
+<code>
+NºPAX : <code>
+Integer</code> -- <em>
+ el numero maximo de pasajeros en un <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0205" />
+<code> RegimenDieta : <code>
+String</code> -- <em>
+ el tipo de regimen de comida disponible en un <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0206" />
+<code> TipoHabitacion : <code>
+String</code> -- <em>
+ el tipo de habitacion diponible en un <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0207" />
+<code>
+Descripcion : <code>
+String</code> -- <em>
+ la descripcion general del <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</em></code><br />
+<a name="PAR-0249" />
+<code>
+clienteID : <code>
+Integer</code> -- <em>
+ al identificador unico de un objeto de la clase <a href="#GLO-0020" title="Persona interesada en realizar un servicio">Cliente</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0197" />
+<b>Existencia de objeto de la clase Cliente en el sistema</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia de objeto de la clase Cliente en el sistema</b>: Existe un objeto de la clase Cliente en el sistema tal que su identificador es clienteID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0198" />
+<b>Creacion objeto de la clase Peticion</b>: <br />
+<a name="POS-0258" />
+<b>Asociacion a Cliente</b>: <br />
+<a name="POS-0260" />
+<b>Asociacion a Agente</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Creacion objeto de la clase Peticion</b>: Se ha creado un objeto de la clase Peticion a la que se le han pasado como argumentos los datos de la peticion de servicio, tal que su identificador es peticionID </code><br />
+<code><b>Asociacion a Cliente</b>: Se la ha asociado dicho objeto al objeto de la clase Cliente tal que su identificador es clienteID</code><br />
+<code><b>Asociacion a Agente</b>: Se la ha asociado dicho objeto al objeto de la clase Agente tal que su identificador es agenteID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SOP-0015" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0015</th>
+<th align="left" valign="top" width="100%">
+añadirDestionAPeticion(peticionID,destinoID)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>No tiene</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0007" title="Guardar informacion sobre las peticiones">
+                                [OBJ-0007] 
+Guardar informacion sobre las peticiones</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion describe la forma de añadir un nuevo destino a una <a href="#GLO-0026" title="Documento sin validez oficial que rellena el Cliente en su primera toma de contacto con el Agente donde le comunica sus intenciones de viaje">peticion</a> de <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0213" />
+<code>
+destinoID : <code>
+Integer</code> -- <em>
+ al identificador unico para los objetos de la clase Destino</em></code><br />
+<a name="PAR-0212" />
+<code>
+peticionID : <code>
+Integer</code> -- <em>
+ el identificador unico para los objetos de la clase <a href="#GLO-0026" title="Documento sin validez oficial que rellena el Cliente en su primera toma de contacto con el Agente donde le comunica sus intenciones de viaje">Peticion</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0214" />
+<b>Existencia de peticion en el sistema</b>: 
+					<br />
+<a name="PRE-0215" />
+<b>Existencia de destino en el sistema</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia de peticion en el sistema</b>: Existe un objeto de la clase Peticion en el sistema tal que su identificador es peticionID</code><br />
+<code><b>Existencia de destino en el sistema</b>: Existe un objeto de la clase Destino en el sistema tal que su identificador es destinoID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0216" />
+<b>Asociacion a Destino</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Asociacion a Destino</b>: Se ha asociado dicho objeto al objeto de la clase Destino precisado en la precondicion</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SOP-0014" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0014</th>
+<th align="left" valign="top" width="100%">
+finalizarAltaPeticion(peticionID)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>No tiene</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0007" title="Guardar informacion sobre las peticiones">
+                                [OBJ-0007] 
+Guardar informacion sobre las peticiones</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion describe como finalizar el registro de una nueva <a href="#GLO-0026" title="Documento sin validez oficial que rellena el Cliente en su primera toma de contacto con el Agente donde le comunica sus intenciones de viaje">peticion</a> de <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a> en el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0217" />
+<code>
+peticionID : <code>
+Integer</code> -- <em>
+ el identificador unico para los objetos de la clase <a href="#GLO-0026" title="Documento sin validez oficial que rellena el Cliente en su primera toma de contacto con el Agente donde le comunica sus intenciones de viaje">Peticion</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0209" />
+<b>Existencia de objeto de la clase Peticion</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia de objeto de la clase Peticion</b>: Existe un objeto de la clase Peticion en el sistema tal que su identificador es peticionID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0210" />
+<b>Ninguna</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Ninguna</b>: No tiene</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0037" />
+<h2 align="left">4.7 
+Registrar Factura</h2><a name="SOP-0016" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0016</th>
+<th align="left" valign="top" width="100%">
+comenzarCreacionFactura(expedienteID)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>El valor del identificador del objeto de la clase Factura que se ha creado</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0005" title="Guardar informacion de facturas">
+                                [OBJ-0005] 
+Guardar informacion de facturas</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion describe la forma de comenzar la creacion de una nueva <a href="#GLO-0023" title="La factura es un documento que refleja la entrega de un producto o la provisión de un servicio, junto a la fecha de devengo, además de indicar la cantidad a pagar como contraprestación">factura</a> en el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> a partir de un <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">expediente</a>
+<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0219" />
+<code>
+expedienteID : <code>
+Integer</code> -- <em>
+El identificador único de un objeto de la clase <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">Expediente</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0220" />
+<b>Existencia de objeto de la clase Expediente en el sistema</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia de objeto de la clase Expediente en el sistema</b>: Existe un objeto de la clase expediente en el sistema tal que su identificador es expedienteID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0221" />
+<b>Objeto de la clase Factura creado</b>: <br />
+<a name="POS-0262" />
+<b>Asociacion a Expediente</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Objeto de la clase Factura creado</b>: Se ha creado un objeto de la clase Factura asignando los valores de importe,IVA, e importeTotal(calcualdos por el sistema),en el sistema tal que su identificador es facturaID</code><br />
+<code><b>Asociacion a Expediente</b>: Se la ha asociado dicho objeto al objeto de la clase Expediente tal que su identificador es expedienteID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SOP-0018" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0018</th>
+<th align="left" valign="top" width="100%">
+finalizarCreacionDeFactura(facturaID)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>1- El importe sin IVA de la factura se calcula mediante la suma de cada uno de los subtotales de los servicios del expediente
+
+2 - El importe correspondiente al IVA de los servicios
+
+3 - El importe total se calcula mediante la suma del importe sin IVA mas el importe correspondiente al IVA de los servicios</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0005" title="Guardar informacion de facturas">
+                                [OBJ-0005] 
+Guardar informacion de facturas</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion describe la forma de finalizar la creacion de una <a href="#GLO-0023" title="La factura es un documento que refleja la entrega de un producto o la provisión de un servicio, junto a la fecha de devengo, además de indicar la cantidad a pagar como contraprestación">factura</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0230" />
+<code>
+facturaID : <code>
+Integer</code> -- <em>
+ el identificador unico para los objetos de la clase <a href="#GLO-0023" title="La factura es un documento que refleja la entrega de un producto o la provisión de un servicio, junto a la fecha de devengo, además de indicar la cantidad a pagar como contraprestación">Factura</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0228" />
+<b>Ninguna</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Ninguna</b>: No tiene</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0229" />
+<b>Ninguna</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Ninguna</b>: No tiene</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0045" />
+<h2 align="left">4.8 
+Registrar Forma de Pago</h2><a name="SOP-0019" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0019</th>
+<th align="left" valign="top" width="100%">
+comenzarFormaDePago (expedienteID)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>No tiene</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 25/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0004" title="Guardar informacion de expedientes">
+                                [OBJ-0004] 
+Guardar informacion de expedientes</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion representa la forma de comenzar una nueva forma de pago en un <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">expediente</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0232" />
+<code>
+expedienteID : <code>
+Integer</code> -- <em>
+El identificador único de un objeto de la clase <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">Expediente</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0233" />
+<b>Existencia Expediente en el sistema</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia Expediente en el sistema</b>: Existe un objeto de la clase Expediente en el sistema tal que su identificador es expedienteID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0235" />
+<b>Ninguna</b>: <br />
+<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Ninguna</b>: No tiene</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SOP-0020" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0020</th>
+<th align="left" valign="top" width="100%">
+pagarAPlazo(expedienteID)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>No tiene</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 25/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0004" title="Guardar informacion de expedientes">
+                                [OBJ-0004] 
+Guardar informacion de expedientes</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion es referente a la opcion pagar a plazos que posee el <a href="#GLO-0020" title="Persona interesada en realizar un servicio">cliente</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0242" />
+<code>
+expedienteID : <code>
+Integer</code> -- <em>
+El identificador único de un objeto de la clase <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">Expediente</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0243" />
+<b>Existencia de objeto de la clase Expediente</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia de objeto de la clase Expediente</b>: Existe un objeto de la clase Expediente en el sistema tal que su identificador es expedienteID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0244" />
+<b>Ninguna</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Ninguna</b>: No tiene</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SOP-0021" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0021</th>
+<th align="left" valign="top" width="100%">
+pagarContado(expedienteID)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>No tiene</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 25/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0004" title="Guardar informacion de expedientes">
+                                [OBJ-0004] 
+Guardar informacion de expedientes</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion representa la operacion de pagar al contado que es una opcion que tiene el <a href="#GLO-0020" title="Persona interesada en realizar un servicio">cliente</a> para efectuar su pago</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0246" />
+<code>
+expedienteID : <code>
+Integer</code> -- <em>
+El identificador único de un objeto de la clase <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">Expediente</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0247" />
+<b>Existencia de objeto de la clase Expediente</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia de objeto de la clase Expediente</b>: Existe un objeto de la clase Expediente en el sistema tal que su identificador es expedienteID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0248" />
+<b>Ninguna</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Ninguna</b>: No tiene</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SOP-0022" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">SOP-0022</th>
+<th align="left" valign="top" width="100%">
+finalizarFormaDePago(expedienteID)</th>
+</tr>
+<th align="left" valign="top">Tipo del resultado</th>
+<td align="left" valign="top">
+<code>No tiene</code>
+</td>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 25/05/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Alvaro Fuentes Diaz</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Francisco Benitez Sanchez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0004">
+Luis Alberto Agea Duran</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Manuel Molero Busto</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#OBJ-0004" title="Guardar informacion de expedientes">
+                                [OBJ-0004] 
+Guardar informacion de expedientes</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+Esta operacion describe la forma para finalizar un registro de forma de pago en <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">expediente</a> en el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Parámetros</th>
+<td align="left" valign="top">
+<a name="PAR-0251" />
+<code>
+expedienteID : <code>
+Integer</code> -- <em>
+El identificador único de un objeto de la clase <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">Expediente</a>
+</em></code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición</th>
+<td align="left" valign="top">
+<a name="PRE-0252" />
+<b>Existencia de objeto de la clase Expediente</b>: 
+					<br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de precondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Existencia de objeto de la clase Expediente</b>: Existe un objeto de la clase Expediente en el sistema tal que su identificador es expedienteID</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición</th>
+<td align="left" valign="top">
+<a name="POS-0253" />
+<b>Ninguna</b>: <br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresiones de postcondición (OCL)</th>
+<td align="left" valign="top">
+<code><b>Ninguna</b>: No tiene</code><br />
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0029" />
+<h1 align="left">5 
+Prototipo de Interfaz de Usuario</h1><a name="SEC-0051" />
+<h2 align="left">5.1 
+Interfaz servicioMayorista</h2><a name="PRG-0035" />
+<p>En esta pantalla se representa una impresion de pantalla de la interaccion del <a href="#GLO-0010" title="Persona a cargo de una agencia para gestionar asuntos ajenos o prestar determinados servicios">agente</a> con el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> al realizar el registro de un <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a> de <a href="#GLO-0011" title="Persona que proporciona los servicios a las agencias">mayorista</a>. La parte de <a href="#GLO-0011" title="Persona que proporciona los servicios a las agencias">mayorista</a> solo es para indicar a que <a href="#GLO-0011" title="Persona que proporciona los servicios a las agencias">mayorista</a> corresponde dicho <a href="#GLO-0019" title="Conjunto de actividades ofrecidas al cliente (Viaje, vuelo, billete de tren, entradas...)">servicio</a> y por tanto no es modificable, así como el campo "Serv." que lo genera el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> automaticamente.</p>
+<a name="GRF-0019" />
+<p align="center">
+<img src=".\Material\Interfaz\ServicioMayorista.jpg" title=".\Material\Interfaz\ServicioMayorista.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Interfaz servicioMayorista</p>
+<a name="SEC-0053" />
+<h2 align="left">5.2 
+Interfaz Agente</h2><a name="PRG-0036" />
+<p>En esta pantalla se representa una impresion de pantalla de la interacción del <a href="#GLO-0015" title="agente encargado de la administracion de la aplicacion, ademas de tener acceso a todo lo que tendria un agente, este tiene acceso a las altas y bajas de los agente">administrador</a> con el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> al realizar el registro de la ficha de un <a href="#GLO-0010" title="Persona a cargo de una agencia para gestionar asuntos ajenos o prestar determinados servicios">agente</a>. Todos los campos son modificables, excepto  "Cod." que lo genera el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> automaticamente.</p>
+<a name="GRF-0015" />
+<p align="center">
+<img src=".\Material\Interfaz\Agente.jpg" title=".\Material\Interfaz\Agente.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Interfaz Agente</p>
+<a name="SEC-0052" />
+<h2 align="left">5.3 
+Interfaz Cliente</h2><a name="PRG-0037" />
+<p>En esta pantalla se representa una impresion de pantalla de la interacción del <a href="#GLO-0010" title="Persona a cargo de una agencia para gestionar asuntos ajenos o prestar determinados servicios">agente</a> con el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> al realizar el registro de la ficha de un <a href="#GLO-0020" title="Persona interesada en realizar un servicio">cliente</a>. Todos los campos son modificables, excepto  "Cod." que lo genera el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> automaticamente.</p>
+<a name="GRF-0017" />
+<p align="center">
+<img src=".\Material\Interfaz\Cliente.jpg" title=".\Material\Interfaz\Cliente.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Interfaz Cliente</p>
+<a name="SEC-0054" />
+<h2 align="left">5.4 
+Interfaz Expediente</h2><a name="PRG-0040" />
+<p>En esta pantalla se representa una impresion de pantalla de la interaccion del <a href="#GLO-0010" title="Persona a cargo de una agencia para gestionar asuntos ajenos o prestar determinados servicios">agente</a> con el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> al realizar el registro de un <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">expediente</a>. Se divide en 3 partes, la parte de <a href="#GLO-0020" title="Persona interesada en realizar un servicio">cliente</a>, que representa el <a href="#GLO-0020" title="Persona interesada en realizar un servicio">cliente</a> del <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">expediente</a>, la parte de servicios, que describe los servicios del <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">expediente</a> y datos generados por el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> referentes a dicho <a href="#GLO-0018" title="Documento que relaciona unos determinados servicios con un cliente">expediente</a>. Por tanto en esta pantalla solo se incluyen datos, los demas los genera solo el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> automaticamente.</p>
+<a name="GRF-0016" />
+<p align="center">
+<img src=".\Material\Interfaz\Expediente.jpg" title=".\Material\Interfaz\Expediente.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Interfaz Expediente</p>
+<a name="SEC-0055" />
+<h2 align="left">5.5 
+Interfaz FormaDePAgo</h2><a name="PRG-0041" />
+<p>Esta pantalla es similar a la anterior, pero aqui se muestra como el campo "Forma de Pago" esta desplegado indicando las opciones posibles a elegir.</p>
+<a name="GRF-0051" />
+<p align="center">
+<img src=".\Material\Interfaz\FormaPago.jpg" title=".\Material\Interfaz\FormaPago.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Interfaz FormaDePago</p>
+<a name="SEC-0056" />
+<h2 align="left">5.6 
+Interfaz Mayorista</h2><a name="PRG-0038" />
+<p>En esta pantalla se representa una impresion de pantalla de la interacción del <a href="#GLO-0010" title="Persona a cargo de una agencia para gestionar asuntos ajenos o prestar determinados servicios">agente</a> con el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> al realizar el registro de la ficha de un <a href="#GLO-0011" title="Persona que proporciona los servicios a las agencias">mayorista</a>. Todos los campos son modificables, excepto  "Cod." que lo genera el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> automaticamente.</p>
+<a name="GRF-0018" />
+<p align="center">
+<img src=".\Material\Interfaz\Mayorista.jpg" title=".\Material\Interfaz\Mayorista.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Interfaz Mayorista</p>
+<a name="SEC-0057" />
+<h2 align="left">5.7 
+Interfaz Peticion</h2><a name="PRG-0039" />
+<p>En esta pantalla se representa una impresion de pantalla de la interaccion del <a href="#GLO-0010" title="Persona a cargo de una agencia para gestionar asuntos ajenos o prestar determinados servicios">agente</a> con el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> al realizar el registro de una <a href="#GLO-0026" title="Documento sin validez oficial que rellena el Cliente en su primera toma de contacto con el Agente donde le comunica sus intenciones de viaje">peticion</a>. La parte de <a href="#GLO-0020" title="Persona interesada en realizar un servicio">cliente</a> solo es para indicar a que <a href="#GLO-0020" title="Persona interesada en realizar un servicio">cliente</a> corresponde dicha <a href="#GLO-0026" title="Documento sin validez oficial que rellena el Cliente en su primera toma de contacto con el Agente donde le comunica sus intenciones de viaje">peticion</a> y por tanto no es modificable, así como el campo "Pet." que lo genera el <a href="#GLO-0021" title="Aplicacion desarrolada">sistema</a> automaticamente.</p>
+<a name="GRF-0020" />
+<p align="center">
+<img src=".\Material\Interfaz\Peticion.jpg" title=".\Material\Interfaz\Peticion.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Interfaz Peticion</p>
+</body>
+</html>
