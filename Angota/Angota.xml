@@ -1502,13 +1502,13 @@ Alta empleado</rem:name>
 <rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
 <rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
-Solo los Administradores del sistema tendrian acceso a realizar esta operacion.</rem:comments>
+Solo los Gerentes del sistema tendrian acceso a realizar esta operacion.</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0003"/>
 <rem:status value = "STV-0002"/>
 <rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
-se proceda al registro de un nuevo trabajador en el sistema</rem:triggeringEvent>
+se proceda al registro de un nuevo empleado en el sistema</rem:triggeringEvent>
 <rem:precondition>
 No exista ya este trabajador</rem:precondition>
 <rem:postcondition>
@@ -1556,27 +1556,10 @@ registra al nuevo empleado</rem:description>
 Ninguno</rem:comments>
 </rem:step>
 </rem:useCase>
-<rem:paragraph
- oid = "PRG-0014">
-<rem:name>
-TODO</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:text></rem:text>
-</rem:paragraph>
 <rem:useCase
  oid = "UC-0005">
 <rem:name>
-Alta proveedor</rem:name>
+Alta comercial</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1589,7 +1572,7 @@ Alta proveedor</rem:name>
 <rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
 <rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
-Solo los Administradores del sistema tendrian acceso a realizar esta operacion.</rem:comments>
+Solo los administradores y gerentes del sistema tendrian acceso a realizar esta operacion.</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0003"/>
 <rem:status value = "STV-0002"/>
@@ -1659,20 +1642,59 @@ Alta pedido</rem:name>
 <rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
 <rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
-Ninguno</rem:comments>
+Solo los administradores y gerentes del sistema tendrian acceso a realizar esta operacion.</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0002"/>
 <rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
-<rem:tbd/></rem:triggeringEvent>
+queramos dar de alta un pedido</rem:triggeringEvent>
 <rem:precondition>
 No tiene.</rem:precondition>
 <rem:postcondition>
-Perido registrado en el sistema</rem:postcondition>
+Pedido registrado en el sistema</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+4
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
 </rem:frequency>
+<rem:step oid = "STP-0100">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+solicita al sistema el registro de un nuevo pedido</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0101">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+solicita al administrador los datos relacionados con el pedido.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0102">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+proporciona al sistema los datos del pedido</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0103">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+registra el nuevo pedido</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
 </rem:useCase>
 <rem:useCase
  oid = "UC-0007">
@@ -1690,25 +1712,28 @@ Entrada material</rem:name>
 <rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
 <rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
-Ninguno</rem:comments>
+Todos los usuarios del sistema tienen acceso a realizar esta operacion.</rem:comments>
 <rem:importance value = "IMV-0002"/>
 <rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0002"/>
 <rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
-una nueva materia prima en el sistema.</rem:triggeringEvent>
+un nuevo material en el sistema.</rem:triggeringEvent>
 <rem:precondition>
 No tiene.</rem:precondition>
 <rem:postcondition>
-Materias primas registradas en el sistema</rem:postcondition>
+Materiales registrados en el sistema</rem:postcondition>
 <rem:frequency>
-<rem:tbd/>
+<rem:value>
+4
+</rem:value>
+<rem:timeUnit value = "TUV-0007"/>
 </rem:frequency>
 <rem:step oid = "STP-0086">
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0003">
 <rem:description>
-solicita al sistema el registro de una nueva materia prima</rem:description>
+solicita al sistema la entrada de materiales</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1720,13 +1745,13 @@ Ninguno</rem:comments>
 solicita los datos asociados a la nueva materia prima.</rem:description>
 </rem:systemAction>
 <rem:comments>
-Ninguno</rem:comments>
+</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0088">
 <rem:number>3</rem:number>
 <rem:actorAction actor = "ACT-0003">
 <rem:description>
-propocina los datos de la nueva materia prima al sistema.</rem:description>
+propocina los datos de los materiales a introducir.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1735,14 +1760,31 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-registra la nueva materia prima.</rem:description>
+registra los materiales.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
 </rem:useCase>
+<rem:paragraph
+ oid = "PRG-0014">
+<rem:name>
+TODO</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text></rem:text>
+</rem:paragraph>
 <rem:useCase
- oid = "UC-0009">
+ oid = "UC-0013">
 <rem:name>
 Salida producto</rem:name>
 <rem:version>
@@ -1750,33 +1792,66 @@ Salida producto</rem:name>
 <rem:minor>0</rem:minor>
 <rem:date>
 <rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
+<rem:month>5</rem:month>
+<rem:day>4</rem:day>
 </rem:date>
 </rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Todos los usuarios del sistema tienen acceso a realizar esta operacion.</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+un producto </rem:triggeringEvent>
+<rem:precondition>
+No tiene.</rem:precondition>
+<rem:postcondition>
+Materiales registrados en el sistema</rem:postcondition>
+<rem:frequency>
+<rem:value>
+4
+</rem:value>
+<rem:timeUnit value = "TUV-0007"/>
+</rem:frequency>
+<rem:step oid = "STP-0104">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+solicita al sistema la entrada de materiales</rem:description>
+</rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance>
-<rem:tbd/>
-</rem:importance>
-<rem:urgency>
-<rem:tbd/>
-</rem:urgency>
-<rem:status>
-<rem:tbd/>
-</rem:status>
-<rem:stability>
-<rem:tbd/>
-</rem:stability>
-<rem:triggeringEvent>
-<rem:tbd/></rem:triggeringEvent>
-<rem:precondition>
-<rem:tbd/></rem:precondition>
-<rem:postcondition>
-<rem:tbd/></rem:postcondition>
-<rem:frequency>
-<rem:tbd/>
-</rem:frequency>
+</rem:step>
+<rem:step oid = "STP-0105">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+solicita los datos asociados a la nueva materia prima.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0106">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+propocina los datos de los materiales a introducir.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0107">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+registra los materiales.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
 </rem:useCase>
 <rem:useCase
  oid = "UC-0011">
@@ -2255,15 +2330,6 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
-<rem:th oid ="UC-0009"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-</rem:tr>
-<rem:tr>
 <rem:th oid ="UC-0010"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -2283,6 +2349,15 @@ Ninguno</rem:comments>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0012"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="UC-0013"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
