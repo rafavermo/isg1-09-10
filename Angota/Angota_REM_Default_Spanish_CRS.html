@@ -2317,8 +2317,8 @@ No exista ya este trabajador</td>
 <tr>
 <a name="STP-0070" />
 <td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al administrador o administradores del sistema que ademas de poseer los privilegios de empleado también tienen derecho a realizar compras, ventas y añadir clientes o trabajadores ajenos a la empresa.">
-Administrador (ACT-0001)
+<td>El actor<a href="#ACT-0004" title="Este actor representa al usuario con maximos privilegios, ademas de los procesos de informacion que tiene el administrador, puede dar de alta o baja trabajadores internos de la empresa.">
+Gerente (ACT-0004)
     </a>
 <em>
 solicita al sistema el registro de un nuevo empleado</em>
@@ -2330,14 +2330,14 @@ solicita al sistema el registro de un nuevo empleado</em>
 <td>El
      
     sistema<em>
-solicita al administrador los datos personales del empleado a registrar</em>
+solicita al gerente los datos personales del empleado a registrar</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0072" />
 <td align="center" valign="top">3</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa al administrador o administradores del sistema que ademas de poseer los privilegios de empleado también tienen derecho a realizar compras, ventas y añadir clientes o trabajadores ajenos a la empresa.">
-Administrador (ACT-0001)
+<td>El actor<a href="#ACT-0004" title="Este actor representa al usuario con maximos privilegios, ademas de los procesos de informacion que tiene el administrador, puede dar de alta o baja trabajadores internos de la empresa.">
+Gerente (ACT-0004)
     </a>
 <em>
 proporciona al sistema los datos personales del empleado
@@ -2416,183 +2416,15 @@ Solo los Administradores del sistema tendrian acceso a realizar esta operacion.<
 </tr>
 </table>
 <p />
-<a name="UC-0003" />
-<table border="1" width="100%">
-<tr bgcolor="#c8e0e0">
-<th align="left" valign="top">UC-0003</th>
-<th align="left" valign="top" width="100%" colspan="2">
-Registrar compra</th>
-</tr>
-<tr>
-<th align="left" valign="top">Versión</th>
-<td align="left" valign="top" colspan="2">1.0
-            ( 01/04/2010 )
-        </td>
-</tr>
-<tr>
-<th align="left" valign="top">Autores</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0003">
-Jesús Antonio Sánchez Méndez</a>
-<br />
-</li>
-<li>
-<a href="#STK-0001">
-Rafael Gómez García</a>
-<br />
-</li>
-<li>
-<a href="#STK-0002">
-Rafael Vergara Moreno</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Fuentes</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0004">
-Antonio Gómez Tabuenca</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Dependencias</th>
-<td align="left" valign="top" colspan="2">Ninguno</td>
-</tr>
-<tr>
-<th align="left" valign="top">Descripción</th>
-<td colspan="2">
-    El sistema deberá comportarse tal como se describe en el siguiente
-
-    caso de uso cuando
-<em>
-se proceda a registrar una nueva factura en el sistema</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Precondición</th>
-<td align="left" valign="top" colspan="2">
-</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="5">Secuencia normal</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Acción</th>
-</tr>
-<tr>
-<a name="STP-0074" />
-<td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0003" title="Este actor representa a los trabajadores que tienen derecho a realizar consultas en el programa">
-Empleado (ACT-0003)
-    </a>
-<em>
-solicita al sistema la generacion de una nueva factura </em>
-</td>
-</tr>
-<tr>
-<a name="STP-0075" />
-<td align="center" valign="top">2</td>
-<td>El
-     
-    sistema<em>
-procede a generar la factura</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0076" />
-<td align="center" valign="top">3</td>
-<td>El actor<a href="#ACT-0003" title="Este actor representa a los trabajadores que tienen derecho a realizar consultas en el programa">
-Empleado (ACT-0003)
-    </a>
-<em>
-solicita al sistema la impresion de la factura</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0077" />
-<td align="center" valign="top">4</td>
-<td>El
-     
-    sistema<em>
-imprime y registra la factura</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Postcondición</th>
-<td align="left" valign="top" colspan="2">
-Sistema con nueva factura registrada en el sistema</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="2">Excepciones</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Acción</th>
-</tr>
-<tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="2">Rendimiento</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Tiempo máximo</th>
-</tr>
-<tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
-</tr>
-<tr>
-<th align="left" valign="top">Frecuencia esperada</th>
-<td colspan="2">
-3
-veces por
-                         
-                        día(s)</td>
-</tr>
-<tr>
-<th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">importante</td>
-</tr>
-<tr>
-<th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">hay presión</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">en construcción</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">media</td>
-</tr>
-<tr>
-<th align="left" valign="top">Comentarios</th>
-<td align="left" valign="top" colspan="2">
-Ninguno</td>
-</tr>
-</table>
-<p />
+<a name="PRG-0014" />
+<p>
+</p>
 <a name="UC-0005" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0005</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Alta comercial</th>
+Alta proveedor</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -2758,17 +2590,17 @@ Solo los Administradores del sistema tendrian acceso a realizar esta operacion.<
 </tr>
 </table>
 <p />
-<a name="UC-0006" />
+<a name="UC-0008" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
-<th align="left" valign="top">UC-0006</th>
+<th align="left" valign="top">UC-0008</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Alta cliente</th>
+Alta pedido</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
 <td align="left" valign="top" colspan="2">1.0
-            ( 01/04/2007 )
+            ( 07/04/2010 )
         </td>
 </tr>
 <tr>
@@ -2816,59 +2648,32 @@ Antonio Gómez Tabuenca</a>
 
     caso de uso cuando
 <em>
-se realice el registro de un cliente en el sistema</em>
+<font color="red"><b>PD</b></font>
+</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-No tiene</td>
+No tiene.</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="5">Secuencia normal</th>
+<th align="left" valign="top" rowspan="2">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<a name="STP-0082" />
-<td align="center" valign="top">1</td>
-<td>El
-     
-    sistema<em>
-solicita al sistema el registro de un nuevo cliente</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0083" />
-<td align="center" valign="top">2</td>
-<td>El
-     
-    sistema<em>
-solicita los datos personales del cliente</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0084" />
-<td align="center" valign="top">3</td>
-<td>El
-     
-    sistema<em>
-proporciona los datos personales del agente</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0085" />
-<td align="center" valign="top">4</td>
-<td>El
-     
-    sistema<em>
-registra el cliente y el caso de uso termina</em>
-</td>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-Nuevo cliente registrado en el sistema</td>
+Perido registrado en el sistema</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -2899,18 +2704,16 @@ Nuevo cliente registrado en el sistema</td>
 <tr>
 <th align="left" valign="top">Frecuencia esperada</th>
 <td colspan="2">
-5
-veces por
-                         
-                        día(s)</td>
+<font color="red"><b>PD</b></font>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">importante</td>
+<td align="left" valign="top" colspan="2">vital</td>
 </tr>
 <tr>
 <th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">hay presión</td>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
@@ -3096,152 +2899,12 @@ Ninguno</td>
 </tr>
 </table>
 <p />
-<a name="UC-0008" />
-<table border="1" width="100%">
-<tr bgcolor="#c8e0e0">
-<th align="left" valign="top">UC-0008</th>
-<th align="left" valign="top" width="100%" colspan="2">
-Alta pedido</th>
-</tr>
-<tr>
-<th align="left" valign="top">Versión</th>
-<td align="left" valign="top" colspan="2">1.0
-            ( 07/04/2010 )
-        </td>
-</tr>
-<tr>
-<th align="left" valign="top">Autores</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0003">
-Jesús Antonio Sánchez Méndez</a>
-<br />
-</li>
-<li>
-<a href="#STK-0001">
-Rafael Gómez García</a>
-<br />
-</li>
-<li>
-<a href="#STK-0002">
-Rafael Vergara Moreno</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Fuentes</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0004">
-Antonio Gómez Tabuenca</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Dependencias</th>
-<td align="left" valign="top" colspan="2">Ninguno</td>
-</tr>
-<tr>
-<th align="left" valign="top">Descripción</th>
-<td colspan="2">
-    El sistema deberá comportarse tal como se describe en el siguiente
-
-    caso de uso cuando
-<em>
-<font color="red"><b>PD</b></font>
-</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Precondición</th>
-<td align="left" valign="top" colspan="2">
-No tiene.</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="2">Secuencia normal</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Acción</th>
-</tr>
-<tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
-</tr>
-<tr>
-<th align="left" valign="top">Postcondición</th>
-<td align="left" valign="top" colspan="2">
-Perido registrado en el sistema</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="2">Excepciones</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Acción</th>
-</tr>
-<tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="2">Rendimiento</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Tiempo máximo</th>
-</tr>
-<tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
-</tr>
-<tr>
-<th align="left" valign="top">Frecuencia esperada</th>
-<td colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">vital</td>
-</tr>
-<tr>
-<th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">inmediatamente</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">en construcción</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">media</td>
-</tr>
-<tr>
-<th align="left" valign="top">Comentarios</th>
-<td align="left" valign="top" colspan="2">
-Ninguno</td>
-</tr>
-</table>
-<p />
 <a name="UC-0009" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0009</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Entrada producto</th>
+Salida producto</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -3356,6 +3019,626 @@ Entrada producto</th>
 <td align="left" valign="top" colspan="2">
 <font color="red"><b>PD</b></font>
 </td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0011" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0011</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Consulta empleado</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 28/04/2010 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Rafael Gómez García</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0006">
+Lucía Parrales Toledo</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+<font color="red"><b>PD</b></font>
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0012" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0012</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Consulta venta</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 28/04/2010 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Rafael Gómez García</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0005">
+Luis López Martinez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+<font color="red"><b>PD</b></font>
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0006</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Baja empleado</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 01/04/2007 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Jesús Antonio Sánchez Méndez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Rafael Gómez García</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Rafael Vergara Moreno</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0004">
+Antonio Gómez Tabuenca</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+se realice el registro de un cliente en el sistema</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+No tiene</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="5">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0082" />
+<td align="center" valign="top">1</td>
+<td>El
+     
+    sistema<em>
+solicita al sistema el registro de un nuevo cliente</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0083" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+solicita los datos personales del cliente</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0084" />
+<td align="center" valign="top">3</td>
+<td>El
+     
+    sistema<em>
+proporciona los datos personales del agente</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0085" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+registra el cliente y el caso de uso termina</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+Nuevo cliente registrado en el sistema</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+5
+veces por
+                         
+                        día(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0003</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Registrar compra</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 01/04/2010 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Jesús Antonio Sánchez Méndez</a>
+<br />
+</li>
+<li>
+<a href="#STK-0001">
+Rafael Gómez García</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Rafael Vergara Moreno</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0004">
+Antonio Gómez Tabuenca</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+se proceda a registrar una nueva factura en el sistema</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="5">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0074" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0003" title="Este actor representa a los trabajadores que tienen derecho a realizar consultas en el programa">
+Empleado (ACT-0003)
+    </a>
+<em>
+solicita al sistema la generacion de una nueva factura </em>
+</td>
+</tr>
+<tr>
+<a name="STP-0075" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+procede a generar la factura</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0076" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0003" title="Este actor representa a los trabajadores que tienen derecho a realizar consultas en el programa">
+Empleado (ACT-0003)
+    </a>
+<em>
+solicita al sistema la impresion de la factura</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0077" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+imprime y registra la factura</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+Sistema con nueva factura registrada en el sistema</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+3
+veces por
+                         
+                        día(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
 </tr>
 <tr>
 <th align="left" valign="top">Comentarios</th>
@@ -3536,286 +3819,6 @@ Ninguno</td>
 </tr>
 </table>
 <p />
-<a name="UC-0011" />
-<table border="1" width="100%">
-<tr bgcolor="#c8e0e0">
-<th align="left" valign="top">UC-0011</th>
-<th align="left" valign="top" width="100%" colspan="2">
-Consultar empleado</th>
-</tr>
-<tr>
-<th align="left" valign="top">Versión</th>
-<td align="left" valign="top" colspan="2">1.0
-            ( 28/04/2010 )
-        </td>
-</tr>
-<tr>
-<th align="left" valign="top">Autores</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0001">
-Rafael Gómez García</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Fuentes</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0006">
-Lucía Parrales Toledo</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Dependencias</th>
-<td align="left" valign="top" colspan="2">Ninguno</td>
-</tr>
-<tr>
-<th align="left" valign="top">Descripción</th>
-<td colspan="2">
-    El sistema deberá comportarse tal como se describe en el siguiente
-
-    caso de uso cuando
-<em>
-<font color="red"><b>PD</b></font>
-</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Precondición</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="2">Secuencia normal</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Acción</th>
-</tr>
-<tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
-</tr>
-<tr>
-<th align="left" valign="top">Postcondición</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="2">Excepciones</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Acción</th>
-</tr>
-<tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="2">Rendimiento</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Tiempo máximo</th>
-</tr>
-<tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
-</tr>
-<tr>
-<th align="left" valign="top">Frecuencia esperada</th>
-<td colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Comentarios</th>
-<td align="left" valign="top" colspan="2">
-Ninguno</td>
-</tr>
-</table>
-<p />
-<a name="UC-0012" />
-<table border="1" width="100%">
-<tr bgcolor="#c8e0e0">
-<th align="left" valign="top">UC-0012</th>
-<th align="left" valign="top" width="100%" colspan="2">
-Baja empleado</th>
-</tr>
-<tr>
-<th align="left" valign="top">Versión</th>
-<td align="left" valign="top" colspan="2">1.0
-            ( 28/04/2010 )
-        </td>
-</tr>
-<tr>
-<th align="left" valign="top">Autores</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0001">
-Rafael Gómez García</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Fuentes</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0005">
-Luis López Martinez</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Dependencias</th>
-<td align="left" valign="top" colspan="2">Ninguno</td>
-</tr>
-<tr>
-<th align="left" valign="top">Descripción</th>
-<td colspan="2">
-    El sistema deberá comportarse tal como se describe en el siguiente
-
-    caso de uso cuando
-<em>
-<font color="red"><b>PD</b></font>
-</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Precondición</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="2">Secuencia normal</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Acción</th>
-</tr>
-<tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
-</tr>
-<tr>
-<th align="left" valign="top">Postcondición</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="2">Excepciones</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Acción</th>
-</tr>
-<tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="2">Rendimiento</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Tiempo máximo</th>
-</tr>
-<tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
-</tr>
-<tr>
-<th align="left" valign="top">Frecuencia esperada</th>
-<td colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Comentarios</th>
-<td align="left" valign="top" colspan="2">
-Ninguno</td>
-</tr>
-</table>
-<p />
 <a name="SEC-0009" />
 <h1 align="left">6 
 Matriz de rastreabilidad</h1><a name="TRM-0001" />
@@ -3849,7 +3852,7 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;L:\REM-1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -3858,7 +3861,7 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;L:\REM-1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -3869,7 +3872,7 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
 <a href="&#xA;                        #IRQ-0002" title="Información de proveedores">IRQ-0002</a>
 </th>
 <td align="center" valign="top">
-<img src="&#xA;L:\REM-1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -3884,7 +3887,7 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;L:\REM-1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 </tr>
 <tr>
@@ -3895,7 +3898,7 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;L:\REM-1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -3918,10 +3921,10 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;L:\REM-1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
-<img src="&#xA;L:\REM-1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -3941,13 +3944,13 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;L:\REM-1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;L:\REM-1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -3961,7 +3964,7 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
 <a href="&#xA;                        #IRQ-0006" title="Información de material">IRQ-0006</a>
 </th>
 <td align="center" valign="top">
-<img src="&#xA;L:\REM-1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -3970,7 +3973,7 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;L:\REM-1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -3990,7 +3993,7 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;L:\REM-1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -4078,7 +4081,7 @@ Requisitos de información / Objetivos</p>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #UC-0005" title="Alta comercial">UC-0005</a>
+<a href="&#xA;                        #UC-0005" title="Alta proveedor">UC-0005</a>
 </th>
 <td align="center" valign="top">
                 -
@@ -4101,7 +4104,7 @@ Requisitos de información / Objetivos</p>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #UC-0006" title="Alta cliente">UC-0006</a>
+<a href="&#xA;                        #UC-0006" title="Baja empleado">UC-0006</a>
 </th>
 <td align="center" valign="top">
                 -
@@ -4170,7 +4173,7 @@ Requisitos de información / Objetivos</p>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #UC-0009" title="Entrada producto">UC-0009</a>
+<a href="&#xA;                        #UC-0009" title="Salida producto">UC-0009</a>
 </th>
 <td align="center" valign="top">
                 -
@@ -4216,7 +4219,7 @@ Requisitos de información / Objetivos</p>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #UC-0011" title="Consultar empleado">UC-0011</a>
+<a href="&#xA;                        #UC-0011" title="Consulta empleado">UC-0011</a>
 </th>
 <td align="center" valign="top">
                 -
@@ -4239,7 +4242,7 @@ Requisitos de información / Objetivos</p>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #UC-0012" title="Baja empleado">UC-0012</a>
+<a href="&#xA;                        #UC-0012" title="Consulta venta">UC-0012</a>
 </th>
 <td align="center" valign="top">
                 -
