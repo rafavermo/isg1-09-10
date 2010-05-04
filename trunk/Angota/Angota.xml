@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "L:\REM-1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Angota</rem:name>
@@ -53,7 +53,7 @@ Introducción</rem:name>
 <rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>En 2010 TextilDev aceptó el encargo de Angota Co. de desarrollar un proyecto de gestión de una empresa textil. Angota Co. se fundó en el 2004 comenzó su actividad en el poligono Store, con una pequeña nave. Actualmente, tiene 2 naves en el polígono Calonge. La empresa la componen 2 administradores, 16 representantes externos 30 operarios de confección externos, 3 cortadores, 2 patronistas, 2 diseñadores, 1 <rem:ref oid="GLO-0007">extendedor</rem:ref>, 1 preparador de <rem:ref oid="GLO-0001">fornituras</rem:ref>, 1 repasador, 1 etiquetador, 1 empaquetador, 4 miembros de atención al cliente, y  transportistas.<br/><br/>La aplicación que se va a desarrollar consiste en un sistema de gestión de diferentes contenidos relacionado con la empresa Angota. Se basará en recapitular informacion relevante tanto a las existencias que se almacenarán, como la metodología que utiliza la empresa. La aplicación intentará recojer las peticiones en formato digital así como informatizar la mayor parte del proceso.<br/><br/>Por último el documento se desarrollará en varios apartados: el segundo apartado se presentaran los participantes del proyecto, tanto las organizaciones que participan como las personas que intervienen por cada organización. En la tercera seccion se describiran los procedimientos que sigue actualmente la empresa. En la cuarta se describen los objetivos a alcanzar en la aplicacion. La quinta seccion es una de las más extensas, conteniendo los requisitos de informacion, requisitos funcionales (diagrama de acaso de uso, definicion de actores y casos de usos del sistema), reglas de negocio y requisitos no funcionales. En la sexta sección se muestra un grafico con la relacion que existe entre los obejetivos y los diferentes requisitos. Por ultimo tenemos las secciones glosario de terminos, conflictos pendientes y 2 apéndices del sistema (documentación y entrevistas)<br/></rem:text>
+<rem:text>En 2010 TextilDev aceptó el encargo de Angota Co. de desarrollar un proyecto de gestión de una empresa textil. Angota Co. se fundó en el 2004 comenzó su actividad en el poligono Store, con una pequeña nave. Actualmente, tiene 2 naves en el polígono Calonge. La empresa la componen 2 administradores, 16 representantes externos 30 operarios de confección externos, 3 cortadores, 2 patronistas, 2 diseñadores, 1 <rem:ref oid="GLO-0007">extendedor</rem:ref>, 1 preparador de <rem:ref oid="GLO-0001">fornituras</rem:ref>, 1 repasador, 1 etiquetador, 1 empaquetador, 4 miembros de atención al cliente, y transportistas. <br/><br/>La aplicación que se va a desarrollar consiste en un sistema de gestión de diferentes contenidos relacionado con la empresa Angota. Se basará en recapitular información relevante tanto a las existencias que se almacenarán, como la metodología que utiliza la empresa. La aplicación intentará recoger las peticiones en formato digital así como informatizar la mayor parte del proceso. <br/><br/>Por último el documento se desarrollará en varios apartados: el segundo apartado se presentaran los participantes del proyecto, tanto las organizaciones que participan como las personas que intervienen por cada organización. En la tercera sección se describirán los procedimientos que sigue actualmente la empresa. En la cuarta se describen los objetivos a alcanzar en la aplicación. La quinta sección es una de las más extensas, conteniendo los requisitos de información, requisitos funcionales (diagrama de acaso de uso, definición de actores y casos de usos del sistema), reglas de negocio y requisitos no funcionales. En la sexta sección se muestra un grafico con la relación que existe entre los objetivos y los diferentes requisitos. Por último tenemos las secciones glosario de términos, conflictos pendientes y 2 apéndices del sistema (documentación y entrevistas)<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -105,7 +105,7 @@ Organizadores</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>En este apartado están las organizaciones participantes en el proyecto, por un lado tenemos TextilDev que será la encargada de realizar la practica y la empresa sobre la que se realizará.</rem:text>
+<rem:text>En este apartado están las organizaciones participantes en el proyecto, por un lado tenemos TextilDev que será la encargada de realizar la práctica y la empresa sobre la que se realizará.</rem:text>
 </rem:paragraph>
 <rem:organization
  oid = "ORG-0001">
@@ -121,7 +121,7 @@ TextilDev</rem:name>
 </rem:date>
 </rem:version>
 <rem:comments>
-Es una empresa de desarrollo dedicada especialmente al software textil</rem:comments>
+Es una empresa de desarrollo dedicada especialmente al software de gestión textil</rem:comments>
 <rem:address>Avd. Reina Mercedes s/n</rem:address>
 <rem:telephone>+34 954123456</rem:telephone>
 <rem:fax>+34 954123456</rem:fax>
@@ -771,13 +771,13 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0004">
 <rem:description>
-Direccion</rem:description>
+Dirección</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0005">
 <rem:description>
-Telefono</rem:description>
+Teléfono</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -789,7 +789,7 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0008">
 <rem:description>
-Codigo Postal</rem:description>
+Código Postal</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -867,13 +867,13 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0012">
 <rem:description>
-Direccion</rem:description>
+Dirección</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0013">
 <rem:description>
-Telefono</rem:description>
+Teléfono</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -909,7 +909,7 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0019">
 <rem:description>
-Codigo Postal</rem:description>
+Código Postal</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -957,7 +957,7 @@ Factura con desglose de productos, asi como datos del cliente</rem:relevantConce
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0092">
 <rem:description>
-Número de Factura</rem:description>
+Número de factura</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1047,13 +1047,13 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0031">
 <rem:description>
-Direccion</rem:description>
+Dirección</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0032">
 <rem:description>
-Telefono</rem:description>
+Teléfono</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1071,19 +1071,19 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0035">
 <rem:description>
-Movil</rem:description>
+Móvil</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0038">
 <rem:description>
-Codigo Postal</rem:description>
+Código Postal</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0036">
 <rem:description>
-Comision</rem:description>
+Comisión</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1125,13 +1125,13 @@ datos del producto ya terminado </rem:relevantConcept>
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0041">
 <rem:description>
-Codigo articulo</rem:description>
+Código artículo</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0042">
 <rem:description>
-Descripcion </rem:description>
+Descripción </rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1215,13 +1215,13 @@ datos de las materias primas necesarias para la produccion del producto</rem:rel
 </rem:maximumOcurrences>
 <rem:specificData oid = "DAT-0050">
 <rem:description>
-Codigo articulo</rem:description>
+Código artículo</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0051">
 <rem:description>
-Descripcion </rem:description>
+Descripción</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1311,13 +1311,13 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0060">
 <rem:description>
-Direccion</rem:description>
+Dirección</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0061">
 <rem:description>
-Telefono</rem:description>
+Teléfono</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1335,7 +1335,7 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0067">
 <rem:description>
-Codigo Postal</rem:description>
+Código Postal</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1428,7 +1428,7 @@ Administrador</rem:name>
 <rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:actorRole>al administrador o administradores del sistema que ademas de poseer los privilegios de empleado tambien tienen derecho a realizar compras, ventas y añadir clientes o trabajadores ajenos a la empresa.</rem:actorRole>
+<rem:actorRole>al administrador o administradores del sistema que ademas de poseer los privilegios de empleado también tienen derecho a realizar compras, ventas y añadir clientes o trabajadores ajenos a la empresa.</rem:actorRole>
 </rem:actor>
 <rem:actor
  oid = "ACT-0003">
