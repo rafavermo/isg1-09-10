@@ -403,6 +403,25 @@ Descripcion</rem:name>
 Ninguno</rem:comments>
 <rem:text>A continuación se muestran los pasos para llegar a seleccionar materias primas y confeccionar el libro de diseños.</rem:text>
 </rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0001">
+<rem:name>
+</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\metadatas\materias primas.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
 </rem:section>
 <rem:section
  oid = "SEC-0021">
@@ -438,6 +457,25 @@ Descripción</rem:name>
 Ninguno</rem:comments>
 <rem:text>A continuación se muestra el proceso de venta de la empresa y como, partiendo de una serie de pedidos se realiza el proceso de fabricacion en masa para hacer efectivo el producto final.</rem:text>
 </rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0002">
+<rem:name>
+</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\metadatas\ventas.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
 </rem:section>
 <rem:section
  oid = "SEC-0022">
@@ -473,6 +511,25 @@ Descripción</rem:name>
 Ninguno</rem:comments>
 <rem:text>Por ultimo se muestra el proceso de producción de diseños o pedidos.</rem:text>
 </rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0003">
+<rem:name>
+</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\metadatas\fabricacion.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
 </rem:section>
 </rem:section>
 <rem:section
@@ -760,6 +817,12 @@ Fecha de pedidos</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
+<rem:specificData oid = "DAT-0097">
+<rem:description>
+Facturas</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
 </rem:informationRequirement>
 <rem:informationRequirement
  oid = "IRQ-0002">
@@ -847,6 +910,12 @@ Ninguno</rem:comments>
 <rem:specificData oid = "DAT-0019">
 <rem:description>
 Codigo Postal</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0098">
+<rem:description>
+Facturas</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
