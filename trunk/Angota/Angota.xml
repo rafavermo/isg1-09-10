@@ -1486,6 +1486,23 @@ Casos de uso del sistema</rem:name>
 Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>5.2.3 </rem:number>
+<rem:paragraph
+ oid = "PRG-0021">
+<rem:name>
+Casos de uso de personal</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>A continuación se detallan los casos de usos que estan relacionados con personal.</rem:text>
+</rem:paragraph>
 <rem:useCase
  oid = "UC-0002">
 <rem:name>
@@ -1557,289 +1574,9 @@ Ninguno</rem:comments>
 </rem:step>
 </rem:useCase>
 <rem:useCase
- oid = "UC-0005">
-<rem:name>
-Alta comercial</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2007</rem:year>
-<rem:month>4</rem:month>
-<rem:day>1</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
-<rem:sources stakeholders ="STK-0004 "/>
-<rem:comments>
-Solo los administradores y gerentes del sistema tendrian acceso a realizar esta operacion.</rem:comments>
-<rem:importance value = "IMV-0003"/>
-<rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0002"/>
-<rem:stability value = "SBV-0003"/>
-<rem:triggeringEvent>
-se proceda al registro de un nuevo comercial en el sistema</rem:triggeringEvent>
-<rem:precondition>
-No tiene</rem:precondition>
-<rem:postcondition>
-Nuevo Agente registrado en sistema</rem:postcondition>
-<rem:frequency>
-<rem:value>
-1
-</rem:value>
-<rem:timeUnit value = "TUV-0005"/>
-</rem:frequency>
-<rem:step oid = "STP-0078">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-solicita al sistema el registro de un nuevo comercial</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0079">
-<rem:number>2</rem:number>
-<rem:systemAction>
-<rem:description>
-solicita al administrador los datos personales del comercial a registrar</rem:description>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0080">
-<rem:number>3</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-proporciona al sistema los datos personales del comercial</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0081">
-<rem:number>4</rem:number>
-<rem:systemAction>
-<rem:description>
-registra al nuevo comercial</rem:description>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-</rem:useCase>
-<rem:useCase
- oid = "UC-0008">
-<rem:name>
-Alta pedido</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
-<rem:sources stakeholders ="STK-0004 "/>
-<rem:comments>
-Solo los administradores y gerentes del sistema tendrian acceso a realizar esta operacion.</rem:comments>
-<rem:importance value = "IMV-0002"/>
-<rem:urgency value = "URV-0002"/>
-<rem:status value = "STV-0002"/>
-<rem:stability value = "SBV-0003"/>
-<rem:triggeringEvent>
-queramos dar de alta un pedido</rem:triggeringEvent>
-<rem:precondition>
-No tiene.</rem:precondition>
-<rem:postcondition>
-Pedido registrado en el sistema</rem:postcondition>
-<rem:frequency>
-<rem:value>
-4
-</rem:value>
-<rem:timeUnit value = "TUV-0008"/>
-</rem:frequency>
-<rem:step oid = "STP-0100">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-solicita al sistema el registro de un nuevo pedido</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0101">
-<rem:number>2</rem:number>
-<rem:systemAction>
-<rem:description>
-solicita al administrador los datos relacionados con el pedido.</rem:description>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0102">
-<rem:number>3</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-proporciona al sistema los datos del pedido</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0103">
-<rem:number>4</rem:number>
-<rem:systemAction>
-<rem:description>
-registra el nuevo pedido</rem:description>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-</rem:useCase>
-<rem:useCase
- oid = "UC-0007">
-<rem:name>
-Entrada material</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
-<rem:sources stakeholders ="STK-0004 "/>
-<rem:comments>
-Todos los usuarios del sistema tienen acceso a realizar esta operacion.</rem:comments>
-<rem:importance value = "IMV-0002"/>
-<rem:urgency value = "URV-0002"/>
-<rem:status value = "STV-0002"/>
-<rem:stability value = "SBV-0003"/>
-<rem:triggeringEvent>
-un nuevo material en el sistema.</rem:triggeringEvent>
-<rem:precondition>
-No tiene.</rem:precondition>
-<rem:postcondition>
-Materiales registrados en el sistema</rem:postcondition>
-<rem:frequency>
-<rem:value>
-4
-</rem:value>
-<rem:timeUnit value = "TUV-0007"/>
-</rem:frequency>
-<rem:step oid = "STP-0086">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0003">
-<rem:description>
-solicita al sistema la entrada de materiales</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0087">
-<rem:number>2</rem:number>
-<rem:systemAction>
-<rem:description>
-solicita los datos asociados a la nueva materia prima.</rem:description>
-</rem:systemAction>
-<rem:comments>
-</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0088">
-<rem:number>3</rem:number>
-<rem:actorAction actor = "ACT-0003">
-<rem:description>
-propocina los datos de los materiales a introducir.</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0089">
-<rem:number>4</rem:number>
-<rem:systemAction>
-<rem:description>
-registra los materiales.</rem:description>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-</rem:useCase>
-<rem:useCase
- oid = "UC-0013">
-<rem:name>
-Salida producto</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>4</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
-<rem:sources stakeholders ="STK-0004 "/>
-<rem:comments>
-Todos los usuarios del sistema tienen acceso a realizar esta operacion.</rem:comments>
-<rem:importance value = "IMV-0002"/>
-<rem:urgency value = "URV-0002"/>
-<rem:status value = "STV-0002"/>
-<rem:stability value = "SBV-0003"/>
-<rem:triggeringEvent>
-un producto es eliminado del sistema</rem:triggeringEvent>
-<rem:precondition>
-El producto debe de estar registrado en el sistema</rem:precondition>
-<rem:postcondition>
-Un producto menos en el sistema</rem:postcondition>
-<rem:frequency>
-<rem:value>
-4
-</rem:value>
-<rem:timeUnit value = "TUV-0008"/>
-</rem:frequency>
-<rem:step oid = "STP-0104">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0003">
-<rem:description>
-solicita al sistema la salida de un producto</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0105">
-<rem:number>2</rem:number>
-<rem:systemAction>
-<rem:description>
-solicita la cantidad y el producto que se le desea dar salida.</rem:description>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0106">
-<rem:number>3</rem:number>
-<rem:actorAction actor = "ACT-0003">
-<rem:description>
-propocina los datos del producto para locarlizarlo y la cantidad de productos a los que se desea dar salida.</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0107">
-<rem:number>4</rem:number>
-<rem:systemAction>
-<rem:description>
-da salida a los productos.</rem:description>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-</rem:useCase>
-<rem:useCase
  oid = "UC-0014">
 <rem:name>
-Consulta personal</rem:name>
+Consultar personal</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1901,6 +1638,318 @@ Ninguno</rem:comments>
 <rem:systemAction>
 <rem:description>
 muestra la informacion del empleado.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0036">
+<rem:name>
+Modificar personal</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0003"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+se quiera modificar información sobre personal.</rem:triggeringEvent>
+<rem:precondition>
+No se detalla</rem:precondition>
+<rem:postcondition>
+No se detalla</rem:postcondition>
+<rem:frequency>
+<rem:value>
+3
+</rem:value>
+<rem:timeUnit value = "TUV-0007"/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0006">
+<rem:name>
+Baja personal</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2007</rem:year>
+<rem:month>4</rem:month>
+<rem:day>1</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Solo los gerentes del sistema tendrian acceso a realizar esta operacion.</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+se realice la baja de personal del sistema.</rem:triggeringEvent>
+<rem:precondition>
+El empleado debe de estar dado de alta en el sistema.</rem:precondition>
+<rem:postcondition>
+El empleado seleccionado debe de estar dado de baja en el sistema.</rem:postcondition>
+<rem:frequency>
+<rem:value>
+5
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
+</rem:frequency>
+<rem:step oid = "STP-0082">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0004">
+<rem:description>
+solicita al sistema la baja de un empleado.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0083">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+solicita la selección del empleado a dar de baja.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0084">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+selecciona al empleado a dar de baja.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0085">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+da de baja al empleado del sistema.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:paragraph
+ oid = "PRG-0016">
+<rem:name>
+Casos de uso de compras</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>A continuación se detallan los casos de usos que estan relacionados con compras.</rem:text>
+</rem:paragraph>
+<rem:useCase
+ oid = "UC-0003">
+<rem:name>
+Registrar compra</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>1</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+se proceda a registrar una compra en el sistema.</rem:triggeringEvent>
+<rem:precondition>
+</rem:precondition>
+<rem:postcondition>
+Tener una nueva factura en el sistema.</rem:postcondition>
+<rem:frequency>
+<rem:value>
+3
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
+</rem:frequency>
+<rem:step oid = "STP-0074">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+solicita al sistema la generacion de una nueva compra.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0075">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+pide al administrador los datos del articulo a comprar</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0076">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+solicita al sistema la impresion de la factura</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0077">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+registra la factura de compra.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0025">
+<rem:name>
+Consultar compra</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0003"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+se desee consultar alguna compra en el sistema.</rem:triggeringEvent>
+<rem:precondition>
+No se detalla</rem:precondition>
+<rem:postcondition>
+No se detalla</rem:postcondition>
+<rem:frequency>
+<rem:value>
+3
+</rem:value>
+<rem:timeUnit value = "TUV-0007"/>
+</rem:frequency>
+</rem:useCase>
+<rem:paragraph
+ oid = "PRG-0017">
+<rem:name>
+Casos de uso de ventas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>A continuación se detallan los casos de usos que estan relacionados con ventas.</rem:text>
+</rem:paragraph>
+<rem:useCase
+ oid = "UC-0010">
+<rem:name>
+Registrar venta</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+se proceda a registrar una nueva factura en el sistema</rem:triggeringEvent>
+<rem:precondition>
+Tener algún producto para vender.</rem:precondition>
+<rem:postcondition>
+</rem:postcondition>
+<rem:frequency>
+<rem:value>
+3
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
+</rem:frequency>
+<rem:step oid = "STP-0093">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+solicita al sistema la generacion de una venta.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0094">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+pide al administrador introducir datos de la factura.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0095">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+introduce datos de la venta.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0096">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+registra la venta e imprime la factura.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1976,220 +2025,10 @@ muestra la informacion de la venta.</rem:description>
 Ninguno</rem:comments>
 </rem:step>
 </rem:useCase>
-<rem:useCase
- oid = "UC-0006">
-<rem:name>
-Baja personal</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2007</rem:year>
-<rem:month>4</rem:month>
-<rem:day>1</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
-<rem:sources stakeholders ="STK-0004 "/>
-<rem:comments>
-Solo los gerentes del sistema tendrian acceso a realizar esta operacion.</rem:comments>
-<rem:importance value = "IMV-0003"/>
-<rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0002"/>
-<rem:stability value = "SBV-0003"/>
-<rem:triggeringEvent>
-se realice la baja de personal del sistema.</rem:triggeringEvent>
-<rem:precondition>
-El empleado debe de estar dado de alta en el sistema.</rem:precondition>
-<rem:postcondition>
-El empleado seleccionado debe de estar dado de baja en el sistema.</rem:postcondition>
-<rem:frequency>
-<rem:value>
-5
-</rem:value>
-<rem:timeUnit value = "TUV-0008"/>
-</rem:frequency>
-<rem:step oid = "STP-0082">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0004">
-<rem:description>
-solicita al sistema la baja de un empleado.</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0083">
-<rem:number>2</rem:number>
-<rem:systemAction>
-<rem:description>
-solicita la selección del empleado a dar de baja.</rem:description>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0084">
-<rem:number>3</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-selecciona al empleado a dar de baja.</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0085">
-<rem:number>4</rem:number>
-<rem:systemAction>
-<rem:description>
-da de baja al empleado del sistema.</rem:description>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-</rem:useCase>
-<rem:useCase
- oid = "UC-0003">
-<rem:name>
-Registrar compra</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>1</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
-<rem:sources stakeholders ="STK-0004 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:importance value = "IMV-0003"/>
-<rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0002"/>
-<rem:stability value = "SBV-0003"/>
-<rem:triggeringEvent>
-se proceda a registrar una compra en el sistema.</rem:triggeringEvent>
-<rem:precondition>
-</rem:precondition>
-<rem:postcondition>
-Tener una nueva factura en el sistema.</rem:postcondition>
-<rem:frequency>
-<rem:value>
-3
-</rem:value>
-<rem:timeUnit value = "TUV-0008"/>
-</rem:frequency>
-<rem:step oid = "STP-0074">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-solicita al sistema la generacion de una nueva compra.</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0075">
-<rem:number>2</rem:number>
-<rem:systemAction>
-<rem:description>
-pide al administrador los datos del articulo a comprar</rem:description>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0076">
-<rem:number>3</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-solicita al sistema la impresion de la factura</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0077">
-<rem:number>4</rem:number>
-<rem:systemAction>
-<rem:description>
-registra la factura de compra.</rem:description>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-</rem:useCase>
-<rem:useCase
- oid = "UC-0010">
-<rem:name>
-Registrar venta</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>4</rem:month>
-<rem:day>28</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
-<rem:sources stakeholders ="STK-0004 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:importance value = "IMV-0003"/>
-<rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0002"/>
-<rem:stability value = "SBV-0003"/>
-<rem:triggeringEvent>
-se proceda a registrar una nueva factura en el sistema</rem:triggeringEvent>
-<rem:precondition>
-Tener algún producto para vender.</rem:precondition>
-<rem:postcondition>
-</rem:postcondition>
-<rem:frequency>
-<rem:value>
-3
-</rem:value>
-<rem:timeUnit value = "TUV-0008"/>
-</rem:frequency>
-<rem:step oid = "STP-0093">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-solicita al sistema la generacion de una venta.</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0094">
-<rem:number>2</rem:number>
-<rem:systemAction>
-<rem:description>
-pide al administrador introducir datos de la factura.</rem:description>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0095">
-<rem:number>3</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-introduce datos de la venta.</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0096">
-<rem:number>4</rem:number>
-<rem:systemAction>
-<rem:description>
-registra la venta e imprime la factura.</rem:description>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-</rem:useCase>
 <rem:paragraph
  oid = "PRG-0014">
 <rem:name>
-No se detalla</rem:name>
+Casos de uso de clientes</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2201,42 +2040,8 @@ No se detalla</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text></rem:text>
+<rem:text>A continuación se detallan los casos de usos que estan relacionados con clientes.</rem:text>
 </rem:paragraph>
-<rem:useCase
- oid = "UC-0016">
-<rem:name>
-Entrada pedido</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
-<rem:sources stakeholders ="STK-0004 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:importance value = "IMV-0003"/>
-<rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0003"/>
-<rem:stability value = "SBV-0003"/>
-<rem:triggeringEvent>
-se quiera entrada a un pedido en el sistema</rem:triggeringEvent>
-<rem:precondition>
-No se detalla</rem:precondition>
-<rem:postcondition>
-No se detalla</rem:postcondition>
-<rem:frequency>
-<rem:value>
-3
-</rem:value>
-<rem:timeUnit value = "TUV-0007"/>
-</rem:frequency>
-</rem:useCase>
 <rem:useCase
  oid = "UC-0017">
 <rem:name>
@@ -2373,6 +2178,23 @@ No se detalla</rem:postcondition>
 <rem:timeUnit value = "TUV-0007"/>
 </rem:frequency>
 </rem:useCase>
+<rem:paragraph
+ oid = "PRG-0015">
+<rem:name>
+Casos de uso de proveedores</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>A continuación se detallan los casos de usos que estan relacionados con proveedores.</rem:text>
+</rem:paragraph>
 <rem:useCase
  oid = "UC-0021">
 <rem:name>
@@ -2396,40 +2218,6 @@ Ninguno</rem:comments>
 <rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 se quiera dar de alta a un proveedor.</rem:triggeringEvent>
-<rem:precondition>
-No se detalla</rem:precondition>
-<rem:postcondition>
-No se detalla</rem:postcondition>
-<rem:frequency>
-<rem:value>
-3
-</rem:value>
-<rem:timeUnit value = "TUV-0007"/>
-</rem:frequency>
-</rem:useCase>
-<rem:useCase
- oid = "UC-0022">
-<rem:name>
-Modificar proveedor</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
-<rem:sources stakeholders ="STK-0004 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:importance value = "IMV-0003"/>
-<rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0003"/>
-<rem:stability value = "SBV-0003"/>
-<rem:triggeringEvent>
-se quiera modificar un proveedor en el sistema.</rem:triggeringEvent>
 <rem:precondition>
 No se detalla</rem:precondition>
 <rem:postcondition>
@@ -2476,6 +2264,40 @@ No se detalla</rem:postcondition>
 </rem:frequency>
 </rem:useCase>
 <rem:useCase
+ oid = "UC-0022">
+<rem:name>
+Modificar proveedor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0003"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+se quiera modificar un proveedor en el sistema.</rem:triggeringEvent>
+<rem:precondition>
+No se detalla</rem:precondition>
+<rem:postcondition>
+No se detalla</rem:postcondition>
+<rem:frequency>
+<rem:value>
+3
+</rem:value>
+<rem:timeUnit value = "TUV-0007"/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
  oid = "UC-0024">
 <rem:name>
 Baja proveedor</rem:name>
@@ -2509,10 +2331,10 @@ No se detalla</rem:postcondition>
 <rem:timeUnit value = "TUV-0007"/>
 </rem:frequency>
 </rem:useCase>
-<rem:useCase
- oid = "UC-0025">
+<rem:paragraph
+ oid = "PRG-0018">
 <rem:name>
-Consultar compra</rem:name>
+Casos de uso de comerciales</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2522,60 +2344,79 @@ Consultar compra</rem:name>
 <rem:day>7</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
-<rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:importance value = "IMV-0003"/>
-<rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0003"/>
-<rem:stability value = "SBV-0003"/>
-<rem:triggeringEvent>
-se desee consultar alguna compra en el sistema.</rem:triggeringEvent>
-<rem:precondition>
-No se detalla</rem:precondition>
-<rem:postcondition>
-No se detalla</rem:postcondition>
-<rem:frequency>
-<rem:value>
-3
-</rem:value>
-<rem:timeUnit value = "TUV-0007"/>
-</rem:frequency>
-</rem:useCase>
+<rem:text>A continuación se detallan los casos de usos que estan relacionados con comerciales.</rem:text>
+</rem:paragraph>
 <rem:useCase
- oid = "UC-0026">
+ oid = "UC-0005">
 <rem:name>
-Consultar venta</rem:name>
+Alta comercial</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>7</rem:day>
+<rem:year>2007</rem:year>
+<rem:month>4</rem:month>
+<rem:day>1</rem:day>
 </rem:date>
 </rem:version>
 <rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
 <rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
-Ninguno</rem:comments>
+Solo los administradores y gerentes del sistema tendrian acceso a realizar esta operacion.</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0003"/>
+<rem:status value = "STV-0002"/>
 <rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
-se desee consultar alguna venta en el sistema.</rem:triggeringEvent>
+se proceda al registro de un nuevo comercial en el sistema</rem:triggeringEvent>
 <rem:precondition>
-No se detalla</rem:precondition>
+No tiene</rem:precondition>
 <rem:postcondition>
-No se detalla</rem:postcondition>
+Nuevo Agente registrado en sistema</rem:postcondition>
 <rem:frequency>
 <rem:value>
-3
+1
 </rem:value>
-<rem:timeUnit value = "TUV-0007"/>
+<rem:timeUnit value = "TUV-0005"/>
 </rem:frequency>
+<rem:step oid = "STP-0078">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+solicita al sistema el registro de un nuevo comercial</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0079">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+solicita al administrador los datos personales del comercial a registrar</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0080">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+proporciona al sistema los datos personales del comercial</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0081">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+registra al nuevo comercial</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
 </rem:useCase>
 <rem:useCase
  oid = "UC-0027">
@@ -2679,6 +2520,23 @@ No se detalla</rem:postcondition>
 <rem:timeUnit value = "TUV-0007"/>
 </rem:frequency>
 </rem:useCase>
+<rem:paragraph
+ oid = "PRG-0019">
+<rem:name>
+Casos de uso de productos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>A continuación se detallan los casos de usos que estan relacionados con productos.</rem:text>
+</rem:paragraph>
 <rem:useCase
  oid = "UC-0030">
 <rem:name>
@@ -2782,6 +2640,163 @@ No se detalla</rem:postcondition>
 </rem:frequency>
 </rem:useCase>
 <rem:useCase
+ oid = "UC-0013">
+<rem:name>
+Salida producto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Todos los usuarios del sistema tienen acceso a realizar esta operacion.</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+un producto es eliminado del sistema</rem:triggeringEvent>
+<rem:precondition>
+El producto debe de estar registrado en el sistema</rem:precondition>
+<rem:postcondition>
+Un producto menos en el sistema</rem:postcondition>
+<rem:frequency>
+<rem:value>
+4
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
+</rem:frequency>
+<rem:step oid = "STP-0104">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+solicita al sistema la salida de un producto</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0105">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+solicita la cantidad y el producto que se le desea dar salida.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0106">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+propocina los datos del producto para locarlizarlo y la cantidad de productos a los que se desea dar salida.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0107">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+da salida a los productos.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:paragraph
+ oid = "PRG-0020">
+<rem:name>
+Casos de uso de material</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>A continuación se detallan los casos de usos que estan relacionados con material.</rem:text>
+</rem:paragraph>
+<rem:useCase
+ oid = "UC-0007">
+<rem:name>
+Entrada material</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Todos los usuarios del sistema tienen acceso a realizar esta operacion.</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+un nuevo material en el sistema.</rem:triggeringEvent>
+<rem:precondition>
+No tiene.</rem:precondition>
+<rem:postcondition>
+Materiales registrados en el sistema</rem:postcondition>
+<rem:frequency>
+<rem:value>
+4
+</rem:value>
+<rem:timeUnit value = "TUV-0007"/>
+</rem:frequency>
+<rem:step oid = "STP-0086">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+solicita al sistema la entrada de materiales</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0087">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+solicita los datos asociados a la nueva materia prima.</rem:description>
+</rem:systemAction>
+<rem:comments>
+</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0088">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0003">
+<rem:description>
+propocina los datos de los materiales a introducir.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0089">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+registra los materiales.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
  oid = "UC-0033">
 <rem:name>
 Consultar material</rem:name>
@@ -2804,40 +2819,6 @@ Ninguno</rem:comments>
 <rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 se desee consultar información sobre algún material.</rem:triggeringEvent>
-<rem:precondition>
-No se detalla</rem:precondition>
-<rem:postcondition>
-No se detalla</rem:postcondition>
-<rem:frequency>
-<rem:value>
-3
-</rem:value>
-<rem:timeUnit value = "TUV-0007"/>
-</rem:frequency>
-</rem:useCase>
-<rem:useCase
- oid = "UC-0034">
-<rem:name>
-Salida material</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
-<rem:sources stakeholders ="STK-0004 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:importance value = "IMV-0003"/>
-<rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0003"/>
-<rem:stability value = "SBV-0003"/>
-<rem:triggeringEvent>
-se de salida a material.</rem:triggeringEvent>
 <rem:precondition>
 No se detalla</rem:precondition>
 <rem:postcondition>
@@ -2884,9 +2865,9 @@ No se detalla</rem:postcondition>
 </rem:frequency>
 </rem:useCase>
 <rem:useCase
- oid = "UC-0036">
+ oid = "UC-0034">
 <rem:name>
-Modificar personal</rem:name>
+Salida material</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2905,7 +2886,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0003"/>
 <rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
-se quiera modificar información sobre personal.</rem:triggeringEvent>
+se de salida a material.</rem:triggeringEvent>
 <rem:precondition>
 No se detalla</rem:precondition>
 <rem:postcondition>
@@ -2917,10 +2898,97 @@ No se detalla</rem:postcondition>
 <rem:timeUnit value = "TUV-0007"/>
 </rem:frequency>
 </rem:useCase>
-<rem:useCase
- oid = "UC-0037">
+<rem:paragraph
+ oid = "PRG-0022">
 <rem:name>
-Baja pedido</rem:name>
+Casos de uso de pedidos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>A continuación se detallan los casos de usos que estan relacionados con pedidos.</rem:text>
+</rem:paragraph>
+<rem:useCase
+ oid = "UC-0008">
+<rem:name>
+Entrada pedido</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>4</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Solo los administradores y gerentes del sistema tendrian acceso a realizar esta operacion.</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+queramos dar de alta un pedido</rem:triggeringEvent>
+<rem:precondition>
+No tiene.</rem:precondition>
+<rem:postcondition>
+Pedido registrado en el sistema</rem:postcondition>
+<rem:frequency>
+<rem:value>
+4
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
+</rem:frequency>
+<rem:step oid = "STP-0100">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+solicita al sistema el registro de un nuevo pedido</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0101">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+solicita al administrador los datos relacionados con el pedido.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0102">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+proporciona al sistema los datos del pedido</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0103">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+registra el nuevo pedido</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0039">
+<rem:name>
+Consulta pedido</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2939,7 +3007,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0003"/>
 <rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
-se quiera dar de baja un pedido.</rem:triggeringEvent>
+se quiera consultar un pedido.</rem:triggeringEvent>
 <rem:precondition>
 No se detalla</rem:precondition>
 <rem:postcondition>
@@ -2986,9 +3054,9 @@ No se detalla</rem:postcondition>
 </rem:frequency>
 </rem:useCase>
 <rem:useCase
- oid = "UC-0039">
+ oid = "UC-0037">
 <rem:name>
-Consulta pedido</rem:name>
+Baja pedido</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -3007,7 +3075,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0003"/>
 <rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
-se quiera consultar un pedido.</rem:triggeringEvent>
+se quiera dar de baja un pedido.</rem:triggeringEvent>
 <rem:precondition>
 No se detalla</rem:precondition>
 <rem:postcondition>
@@ -3244,15 +3312,6 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
-<rem:th oid ="UC-0016"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-</rem:tr>
-<rem:tr>
 <rem:th oid ="UC-0017"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -3326,15 +3385,6 @@ Ninguno</rem:comments>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0025"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-</rem:tr>
-<rem:tr>
-<rem:th oid ="UC-0026"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -3681,6 +3731,42 @@ Ninguno
 Ninguno
 </rem:comments>
 </rem:changeRequestsSpecification>
+<rem:trace source = "IRQ-0002"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0001"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0007"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0006"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0006"  target = "OBJ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0005"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0005"  target = "OBJ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0004"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0004"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0003"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0001"  target = "OBJ-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "IRQ-0002"  target = "OBJ-0006" >
+<rem:isChecked/>
+</rem:trace>
 <rem:trace source = "UC-0002"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
@@ -3718,42 +3804,6 @@ Ninguno
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "UC-0010"  target = "OBJ-0004" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "IRQ-0002"  target = "OBJ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "IRQ-0001"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "IRQ-0007"  target = "OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "IRQ-0006"  target = "OBJ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "IRQ-0006"  target = "OBJ-0004" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "IRQ-0005"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "IRQ-0005"  target = "OBJ-0004" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "IRQ-0004"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "IRQ-0004"  target = "OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "IRQ-0003"  target = "OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "IRQ-0001"  target = "OBJ-0005" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source = "IRQ-0002"  target = "OBJ-0006" >
 <rem:isChecked/>
 </rem:trace>
 <rem:predefinedValueTypes>
