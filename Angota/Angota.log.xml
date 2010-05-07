@@ -2988,4 +2988,265 @@
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>IRQ-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº6 ([DAT-0117] Proveedor) y nº5 ([DAT-0027] IVA)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>IRQ-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº8 actualizada: [Proveedores] -> [Proveedor]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>IRQ-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº8 ([DAT-0117] Proveedor) y nº7 ([DAT-0029] Forma de pago)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>IRQ-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº7 ([DAT-0117] Proveedor) y nº6 ([DAT-0028] Importe total)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>IRQ-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº8 ([DAT-0117] Proveedores)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminada traza desde [OBJ-0003] Control de personal]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>IRQ-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº5 ([DAT-0117] Proveedor) y nº4 ([DAT-0026] Importe)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>IRQ-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº4 ([DAT-0117] Proveedor) y nº3 ([DAT-0025] Lineas de factura)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>IRQ-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº10 ([DAT-0118] Pedidos)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>IRQ-0008</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>IRQ-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº11 ([DAT-0119] Clientes)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [OBJ-0003] Control de personal]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido autor [STK-0001] Rafael Gómez García]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida fuente [STK-0005] Luis López Martinez]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [FrequencyValue] actualizada: [0.000000] -> [1.000000]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [FrequencyTimeUnit] actualizada [PD] -> [mes(es)]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Urgency] actualizada [PD] -> [hay presión]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Importance] actualizada [PD] -> [importante]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Status] actualizada [PD] -> [en construcción]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Stability] actualizada [PD] -> [media]]]></rem:description>
+</rem:change>
 </rem:log>

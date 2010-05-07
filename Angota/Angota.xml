@@ -967,6 +967,12 @@ Cliente</rem:description>
 <rem:comments>
 Datos del cliente </rem:comments>
 </rem:specificData>
+<rem:specificData oid = "DAT-0117">
+<rem:description>
+Proveedor</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
 <rem:specificData oid = "DAT-0025">
 <rem:description>
 Lineas de factura</rem:description>
@@ -1084,6 +1090,18 @@ Ninguno</rem:comments>
 <rem:specificData oid = "DAT-0036">
 <rem:description>
 Comisión</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0118">
+<rem:description>
+Pedidos</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0119">
+<rem:description>
+Clientes</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1357,6 +1375,46 @@ Jornada laboral</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0008">
+<rem:name>
+Información de Pedidos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+<rem:tbd/></rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
 </rem:informationRequirement>
 </rem:section>
 <rem:section
@@ -2186,6 +2244,40 @@ registra la venta e imprime la factura.</rem:description>
 Ninguno</rem:comments>
 </rem:step>
 </rem:useCase>
+<rem:useCase
+ oid = "UC-0016">
+<rem:name>
+Alta proveedor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+<rem:tbd/></rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0005"/>
+</rem:frequency>
+</rem:useCase>
 </rem:section>
 </rem:section>
 </rem:section>
@@ -2294,6 +2386,15 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 </rem:tr>
+<rem:tr>
+<rem:th oid ="IRQ-0008"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
 </rem:traceabilityMatrix>
 <rem:traceabilityMatrix
  oid = "TRM-0002">
@@ -2313,76 +2414,25 @@ Casos de uso / Objetivos</rem:name>
 Ninguno</rem:comments>
 <rem:tr>
 <rem:th/>
-<rem:th oid ="UC-0002"/>
-<rem:th oid ="UC-0003"/>
-<rem:th oid ="UC-0005"/>
-<rem:th oid ="UC-0006"/>
-<rem:th oid ="UC-0007"/>
-<rem:th oid ="UC-0008"/>
-<rem:th oid ="UC-0010"/>
-<rem:th oid ="UC-0013"/>
-<rem:th oid ="UC-0014"/>
-<rem:th oid ="UC-0015"/>
-</rem:tr>
-<rem:tr>
 <rem:th oid ="OBJ-0001"/>
-<rem:td mark ="no"/>
-<rem:td mark ="yes"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="yes"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-</rem:tr>
-<rem:tr>
 <rem:th oid ="OBJ-0002"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="yes"/>
-<rem:td mark ="yes"/>
-<rem:td mark ="yes"/>
-<rem:td mark ="no"/>
-<rem:td mark ="yes"/>
-</rem:tr>
-<rem:tr>
 <rem:th oid ="OBJ-0003"/>
-<rem:td mark ="yes"/>
-<rem:td mark ="no"/>
-<rem:td mark ="yes"/>
-<rem:td mark ="yes"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="yes"/>
-<rem:td mark ="no"/>
-</rem:tr>
-<rem:tr>
 <rem:th oid ="OBJ-0004"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="yes"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="yes"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
-</rem:tr>
-<rem:tr>
 <rem:th oid ="OBJ-0005"/>
+<rem:th oid ="OBJ-0006"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="UC-0002"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
-<rem:td mark ="no"/>
-<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="UC-0003"/>
+<rem:td mark ="yes"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -2390,11 +2440,79 @@ Ninguno</rem:comments>
 <rem:td mark ="no"/>
 </rem:tr>
 <rem:tr>
-<rem:th oid ="OBJ-0006"/>
+<rem:th oid ="UC-0005"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="UC-0006"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="UC-0007"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="UC-0008"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="UC-0010"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="UC-0013"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="UC-0014"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="UC-0015"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="UC-0016"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -2660,40 +2778,40 @@ Ninguno
 <rem:trace source = "IRQ-0002"  target = "OBJ-0006" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "OBJ-0003"  target = "UC-0002" >
+<rem:trace source = "UC-0002"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "OBJ-0003"  target = "UC-0005" >
+<rem:trace source = "UC-0005"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "OBJ-0002"  target = "UC-0008" >
+<rem:trace source = "UC-0008"  target = "OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "OBJ-0001"  target = "UC-0007" >
+<rem:trace source = "UC-0007"  target = "OBJ-0001" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "OBJ-0004"  target = "UC-0007" >
+<rem:trace source = "UC-0007"  target = "OBJ-0004" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "OBJ-0002"  target = "UC-0013" >
+<rem:trace source = "UC-0013"  target = "OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "OBJ-0004"  target = "UC-0013" >
+<rem:trace source = "UC-0013"  target = "OBJ-0004" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "OBJ-0003"  target = "UC-0014" >
+<rem:trace source = "UC-0014"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "OBJ-0002"  target = "UC-0015" >
+<rem:trace source = "UC-0015"  target = "OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "OBJ-0003"  target = "UC-0006" >
+<rem:trace source = "UC-0006"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "OBJ-0001"  target = "UC-0003" >
+<rem:trace source = "UC-0003"  target = "OBJ-0001" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "OBJ-0002"  target = "UC-0010" >
+<rem:trace source = "UC-0010"  target = "OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
 <rem:predefinedValueTypes>
