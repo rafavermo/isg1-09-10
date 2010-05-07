@@ -3062,118 +3062,19 @@
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
+<rem:owner>UC-0024</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
-<rem:day>5</rem:day>
+<rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº6 ([DAT-0117] Proveedor) y nº5 ([DAT-0027] IVA)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº8 actualizada: [Proveedores] -> [Proveedor]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº8 ([DAT-0117] Proveedor) y nº7 ([DAT-0029] Forma de pago)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº7 ([DAT-0117] Proveedor) y nº6 ([DAT-0028] Importe total)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº8 ([DAT-0117] Proveedores)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0014</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminada traza desde [OBJ-0003] Control de personal]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº5 ([DAT-0117] Proveedor) y nº4 ([DAT-0026] Importe)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº4 ([DAT-0117] Proveedor) y nº3 ([DAT-0025] Lineas de factura)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0004</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº10 ([DAT-0118] Pedidos)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>IRQ-0008</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0004</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº11 ([DAT-0119] Clientes)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0014</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadida traza hacia [OBJ-0003] Control de personal]]></rem:description>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de Alta pedido (5) (3)] -> [Baja proveedor]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>C</rem:type>
 <rem:owner>UC-0016</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
-<rem:day>5</rem:day>
+<rem:day>7</rem:day>
 </rem:date>
 <rem:description><![CDATA[Creación]]></rem:description>
 </rem:change>
@@ -3182,52 +3083,169 @@
 <rem:owner>UC-0016</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
-<rem:day>5</rem:day>
+<rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido autor [STK-0001] Rafael Gómez García]]></rem:description>
+<rem:description><![CDATA[Propiedad [Postcondition] actualizada [PD] -> [No se detalla]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
 <rem:owner>UC-0016</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
-<rem:day>5</rem:day>
+<rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadida fuente [STK-0005] Luis López Martinez]]></rem:description>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [PD] -> [se quiera dar de alta un pedido]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0016] Alta pedido del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [IRQ-0008]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0024</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se quiera dar de alta un pedido] -> [se quiera dar de baja un proveedor.]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
 <rem:owner>UC-0016</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
-<rem:day>5</rem:day>
+<rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [FrequencyValue] actualizada: [0.000000] -> [1.000000]]]></rem:description>
+<rem:description><![CDATA[Propiedad [FrequencyValue] actualizada: [0.000000] -> [3.000000]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>PRG-0014</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
 <rem:owner>UC-0016</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
-<rem:day>5</rem:day>
+<rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [FrequencyTimeUnit] actualizada [PD] -> [mes(es)]]]></rem:description>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se quiera dar de alta un pedido] -> [se quiera entrada a un pedido en el sistema]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
 <rem:owner>UC-0016</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
-<rem:day>5</rem:day>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [FrequencyTimeUnit] actualizada [PD] -> [semana(s)]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se quiera dar de alta un pedido] -> [se quiera dar de baja a un cliente]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Precondition] actualizada [PD] -> [No se detalla]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0021</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0016] Alta pedido del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0023</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0021] Copia de Alta pedido (5) del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Alta pedido] -> [Entrada pedido]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Urgency] actualizada [PD] -> [hay presión]]]></rem:description>
 </rem:change>
 <rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0017</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0016] Alta pedido del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0018</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0016] Alta pedido del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
 <rem:type>U</rem:type>
 <rem:owner>UC-0016</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
-<rem:day>5</rem:day>
+<rem:day>7</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Importance] actualizada [PD] -> [importante]]]></rem:description>
 </rem:change>
@@ -3236,17 +3254,620 @@
 <rem:owner>UC-0016</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
-<rem:day>5</rem:day>
+<rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Status] actualizada [PD] -> [en construcción]]]></rem:description>
+<rem:description><![CDATA[Propiedad [Status] actualizada [PD] -> [pendiente de verificación]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
 <rem:owner>UC-0016</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
-<rem:day>5</rem:day>
+<rem:day>7</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Stability] actualizada [PD] -> [media]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0019</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0016] Alta pedido del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Alta pedido (4)] -> [Baja cliente]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0022</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0021] Copia de Alta pedido (5) del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0017</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Alta pedido] -> [Alta cliente]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0017</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se quiera dar de alta un pedido] -> [se quiera dar de alta a un cliente en el sistema]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0019</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Alta pedido (3)] -> [Modificar cliente]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0024</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0021] Copia de Alta pedido (5) del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0019</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se quiera dar de alta un pedido] -> [se quiera modificar informacion de cliente.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0018</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Alta pedido (2)] -> [Consultar cliente]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0018</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se quiera dar de alta un pedido] -> [se desee consultar informacion de algún cliente.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0025</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0021] Copia de Alta pedido (5) del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0023</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de Alta pedido (5) (2)] -> [Consultar proveedor]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0026</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0025] Consultar compra del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0027</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0026] Copia de Consultar compra del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0021</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Alta pedido (5)] -> [Alta proveedor]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0021</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se quiera dar de alta un pedido] -> [se quiera dar de alta a un proveedor.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0023</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se quiera dar de alta un pedido] -> [se quiera consultar un proveedor insertado en el sistema.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0025</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se quiera dar de alta un pedido] -> [se desee consultar alguna compra en el sistema.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0022</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de Alta pedido (5)] -> [Modificar proveedor]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0022</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se quiera dar de alta un pedido] -> [se quiera modificar un proveedor en el sistema.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0025</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de Alta pedido (5) (4)] -> [Consultar compra]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0028</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0027] Consulta comercial del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0026</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Consultar compra] -> [Consultar venta]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0026</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se desee consultar alguna compra en el sistema.] -> [se desee consultar alguna venta en el sistema.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0027</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de Consultar compra] -> [Consulta comercial]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0027</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se desee consultar alguna compra en el sistema.] -> [se desee consultar informacion sobre un comercial.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0031</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0027] Consulta comercial del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0029</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0027] Consulta comercial del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0030</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0027] Consulta comercial del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0028</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Consulta comercial] -> [Modificar comercial]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0028</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se desee consultar informacion sobre un comercial.] -> [se desee modificar informacion sobre un comercial.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0030</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Consulta comercial (3)] -> [Entrada productor]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0039</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se quiera modificar información sobre personal.] -> [se quiera consultar un pedido.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0029</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Consulta comercial (2)] -> [Baja comercial]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0029</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se desee consultar informacion sobre un comercial.] -> [se desee dar de baja a un comercial.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0038</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de Modificar personal] -> [Modificar pedido]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0038</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se quiera modificar información sobre personal.] -> [se quiera modificar información sobre un pedido.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0039</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de Copia de Modificar personal] -> [Consulta pedido]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0032</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Consulta producto] -> [Modificar producto]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0035</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0034] Salida Material del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0035</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se de salida a material.] -> [se quiera modificar información sobre algún material.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0030</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Entrada productor] -> [Entrada producto]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0030</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se desee consultar informacion sobre un comercial.] -> [quiera dar entrada a un producto.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0034</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Salida Material] -> [Salida material]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0033</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Consulta material] -> [Consultar material]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0032</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0031] Consulta producto del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0033</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0032] Copia de Consulta producto del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0035</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Salida Material] -> [Modificar material]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0034</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0033] Copia de Copia de Consulta producto del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0031</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Consulta comercial (4)] -> [Consulta producto]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0031</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se desee consultar informacion sobre un comercial.] -> [se desee consultar informacion sobre un producto.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0032</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se desee consultar informacion sobre un producto.] -> [se desee modificar informacion de un producto.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0036</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se quiera modificar información sobre algún material.] -> [se quiera modificar información sobre personal.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0033</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de Consulta producto] -> [Consulta material]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0033</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se desee consultar informacion sobre un producto.] -> [se desee consultar información sobre algún material.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0036</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Modificar material] -> [Modificar personal]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0036</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0035] Modificar material del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0034</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Copia de Copia de Consulta producto] -> [Salida Material]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0034</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se desee consultar informacion sobre un producto.] -> [se de salida a material.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0037</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0036] Modificar personal del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0038</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0037] Copia de Modificar personal del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>UC-0039</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [UC-0038] Copia de Copia de Modificar personal del proyecto C:\Users\Rafael Gómez\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0037</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Modificar personal] -> [Baja pedido]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0037</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [se quiera modificar información sobre personal.] -> [se quiera dar de baja un pedido.]]]></rem:description>
 </rem:change>
 </rem:log>
