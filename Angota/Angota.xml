@@ -1177,6 +1177,12 @@ Venta</rem:description>
 <rem:comments>
 Precio de venta y margen de beneficio</rem:comments>
 </rem:specificData>
+<rem:specificData oid = "DAT-0118">
+<rem:description>
+Cantidad o Stock</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
 </rem:informationRequirement>
 <rem:informationRequirement
  oid = "IRQ-0006">
@@ -1260,6 +1266,12 @@ Ninguno</rem:comments>
 Coste</rem:description>
 <rem:comments>
 Precio coste, descuento, impuesto y precio neto</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0117">
+<rem:description>
+Cantidad o stock</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
 </rem:specificData>
 </rem:informationRequirement>
 <rem:informationRequirement
@@ -1527,7 +1539,7 @@ Solo los gerentes del sistema tendrian acceso a realizar esta operacion.</rem:co
 <rem:triggeringEvent>
 se proceda al registro de nuevo personal en el sistema.</rem:triggeringEvent>
 <rem:precondition>
-No exista ya este trabajador</rem:precondition>
+</rem:precondition>
 <rem:postcondition>
 Nuevo trabajador registrado en sistema</rem:postcondition>
 <rem:frequency>
@@ -1560,6 +1572,17 @@ Ninguno</rem:comments>
 <rem:description>
 proporciona al sistema los datos personales del empleado<br/></rem:description>
 </rem:actorAction>
+<rem:stepException oid = "STX-0001">
+<rem:condition>
+Si el NIF ya estaba en el sistema registrado</rem:condition>
+<rem:systemAction>
+<rem:description>
+no permite al gerente registrar al nuevo empleado</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
@@ -1597,9 +1620,9 @@ Solo los gerentes del sistema tendrian acceso a realizar esta operacion.</rem:co
 <rem:triggeringEvent>
 se desea consultar informacion del personal de la empresa.</rem:triggeringEvent>
 <rem:precondition>
-El personal debe de estar registrado en el sistema.</rem:precondition>
+El personal a buscar debe de estar registrado en el sistema.</rem:precondition>
 <rem:postcondition>
-</rem:postcondition>
+La informacion consultada debe permanecer intacta.</rem:postcondition>
 <rem:frequency>
 <rem:value>
 4
@@ -1608,9 +1631,9 @@ El personal debe de estar registrado en el sistema.</rem:precondition>
 </rem:frequency>
 <rem:step oid = "STP-0109">
 <rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0003">
+<rem:actorAction actor = "ACT-0001">
 <rem:description>
-solicita al sistema la consulta de un empleado.</rem:description>
+solicita al sistema la consulta de un personal.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1619,16 +1642,16 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
-solicita seleccionar el empleado entre los los empleados registrados en el sistema.</rem:description>
+muestra una lista con todos los empleados del sistema.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0111">
 <rem:number>3</rem:number>
-<rem:actorAction actor = "ACT-0003">
+<rem:actorAction actor = "ACT-0001">
 <rem:description>
-selecciona el empleado a consultar.</rem:description>
+selecciona el personal a consultar.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1637,7 +1660,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-muestra la informacion del empleado.</rem:description>
+muestra la informacion del personal.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1730,7 +1753,7 @@ Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0084">
 <rem:number>3</rem:number>
-<rem:actorAction actor = "ACT-0001">
+<rem:actorAction actor = "ACT-0004">
 <rem:description>
 selecciona al empleado a dar de baja.</rem:description>
 </rem:actorAction>
@@ -1790,7 +1813,7 @@ se proceda a registrar una compra en el sistema.</rem:triggeringEvent>
 <rem:precondition>
 </rem:precondition>
 <rem:postcondition>
-Tener una nueva factura en el sistema.</rem:postcondition>
+Tener una nueva compra en el sistema.</rem:postcondition>
 <rem:frequency>
 <rem:value>
 3
@@ -1819,8 +1842,19 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-solicita al sistema la impresion de la factura</rem:description>
+introduce los datos de la compra</rem:description>
 </rem:actorAction>
+<rem:stepException oid = "STX-0002">
+<rem:condition>
+no existe algún material en el sistema</rem:condition>
+<rem:systemAction>
+<rem:description>
+llama al caso de uso de &quot;Entrada de material&quot;</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0002"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
@@ -1828,7 +1862,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-registra la factura de compra.</rem:description>
+añade la cantidad o stock introducida por el administrador a ese producto y registra la compra</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1911,7 +1945,7 @@ se proceda a registrar una nueva factura en el sistema</rem:triggeringEvent>
 <rem:precondition>
 Tener algún producto para vender.</rem:precondition>
 <rem:postcondition>
-</rem:postcondition>
+Registro de la venta en el sistema.</rem:postcondition>
 <rem:frequency>
 <rem:value>
 3
@@ -1922,7 +1956,7 @@ Tener algún producto para vender.</rem:precondition>
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
-solicita al sistema la generacion de una venta.</rem:description>
+solicita al sistema la generación de una venta.</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1942,11 +1976,31 @@ Ninguno</rem:comments>
 <rem:description>
 introduce datos de la venta.</rem:description>
 </rem:actorAction>
+<rem:stepException oid = "STX-0004">
+<rem:condition>
+no hay stock de alguno de los productos a vender.</rem:condition>
+<rem:systemAction>
+<rem:description>
+Termina el caso de uso.</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0120">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+resta la cantidad representada en factura del almacen</rem:description>
+</rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0096">
-<rem:number>4</rem:number>
+<rem:number>5</rem:number>
 <rem:systemAction>
 <rem:description>
 registra la venta e imprime la factura.</rem:description>
