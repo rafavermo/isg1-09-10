@@ -3277,22 +3277,13 @@
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:type>D</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº4 actualizada: [registra la factura de compra.] -> [añade la cantidad o stock introducida por el administrador a ese producto.]]]></rem:description>
+<rem:description><![CDATA[Eliminado el objeto [TYP-0001]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
@@ -3304,13 +3295,94 @@
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0002</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>7</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Description] de la excepción nº1 del paso #3 actualizada: [El sistema no permite al gerente registrar al nuevo empleado] -> [no permite al gerente registrar al nuevo empleado]]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
@@ -3323,83 +3395,38 @@
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
+<rem:owner>UC-0007</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
-<rem:day>7</rem:day>
+<rem:day>8</rem:day>
 </rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº5 (El sistema resta la cantidad r...) y nº4 (El sistema registra la venta e...)]]></rem:description>
+<rem:description><![CDATA[Propiedad [Comments] del hijo nº5 actualizada: [Ninguno] -> [En caso de que se registrara en el mismo momento, la cantidad anterior sería 0]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>IRQ-0005</rem:owner><rem:date>
+<rem:owner>UC-0007</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
-<rem:day>7</rem:day>
+<rem:day>8</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº10 ([DAT-0118] Cantidad o Stock)]]></rem:description>
+<rem:description><![CDATA[Intercambiados hijos nº5 (Si no existe el material en el...) y nº4 (El sistema registra los materi...)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>IRQ-0006</rem:owner><rem:date>
+<rem:owner>UC-0007</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
-<rem:day>7</rem:day>
+<rem:day>8</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº9 ([DAT-0117] Cantidad o stock)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
+<rem:description><![CDATA[Añadido hijo nº5 (Si no existe el material en el...)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
+<rem:owner>UC-0007</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
-<rem:day>7</rem:day>
+<rem:day>8</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº4 actualizada: [añade la cantidad o stock introducida por el administrador a ese producto.] -> [añade la cantidad o stock introducida por el administrador a ese producto y registra la compra]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Postcondition] actualizada [Tener una nueva factura en el sistema.] -> [Tener una nueva compra en el sistema.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>D</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado el objeto [TYP-0001]  con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº3 actualizada: [introduce el codigo de identificacion del producto.] -> [introduce los datos de la compra]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº5 (El sistema resta la cantidad r...)]]></rem:description>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº5 actualizada: [registra los materiales.] -> [registra incrementa la cantidad de stock del material entrante a la que habia anteriormente]]]></rem:description>
 </rem:change>
 </rem:log>
