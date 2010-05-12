@@ -4048,6 +4048,159 @@ Ninguno</rem:comments>
 <rem:comments>
 Ninguno
 </rem:comments>
+<rem:objectType
+ oid = "TYP-0001">
+<rem:name>
+Persona</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>12</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:attribute oid = "ATT-0143" baseType = "PVT-0004">
+<rem:name>
+Nombre</rem:name>
+<rem:description>
+el nombre de la persona.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0144" baseType = "PVT-0004">
+<rem:name>
+Apellidos</rem:name>
+<rem:description>
+los apellidos de la persona.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0145" baseType = "PVT-0004">
+<rem:name>
+Direccion</rem:name>
+<rem:description>
+la direccion fisica de la persona</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0146" baseType = "PVT-0002">
+<rem:name>
+Telefono</rem:name>
+<rem:description>
+el numero de telefono para localizar a la persona.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0147" baseType = "PVT-0002">
+<rem:name>
+Codigo Postal</rem:name>
+<rem:description>
+el numero asociado al distrito postal donde vive la persona.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0148" baseType = "PVT-0004">
+<rem:name>
+NIF</rem:name>
+<rem:description>
+el documento nacional del identidad asociado a la persona.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ supertype = "TYP-0001" oid = "TYP-0002">
+<rem:name>
+Comercial</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>12</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:attribute oid = "ATT-0150" baseType = "PVT-0001">
+<rem:name>
+Comision</rem:name>
+<rem:description>
+la comision por ventas que se lleva cada comercial.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ supertype = "TYP-0001" oid = "TYP-0003">
+<rem:name>
+Personal</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>12</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:attribute oid = "ATT-0151" baseType = "PVT-0002">
+<rem:name>
+FAX</rem:name>
+<rem:description>
+el numero del fax asociado al personal.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0152" baseType = "PVT-0004">
+<rem:name>
+Categoria profesional</rem:name>
+<rem:description>
+el puesto que tiene el personal en la empresa.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0153" baseType = "PVT-0006">
+<rem:name>
+Jornada laboral</rem:name>
+<rem:description>
+el numero de horas diarias que debe trabajar.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:disjointSubtypes/>
+</rem:objectType>
 </rem:d_requirementsSpecification>
 <rem:defectsSpecification oid = "DFS-0003">
 <rem:name>Registro de Conflictos y Defectos</rem:name>
@@ -4160,13 +4313,13 @@ Ninguno
 <rem:trace source = "IRQ-0009"  target = "OBJ-0001" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "IRQ-0010"  target = "OBJ-0006" >
+<rem:trace source = "IRQ-0003"  target = "OBJ-0004" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "IRQ-0010"  target = "OBJ-0004" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "IRQ-0003"  target = "OBJ-0004" >
+<rem:trace source = "IRQ-0010"  target = "OBJ-0006" >
 <rem:isChecked/>
 </rem:trace>
 <rem:predefinedValueTypes>
