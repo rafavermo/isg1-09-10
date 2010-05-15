@@ -3547,10 +3547,10 @@ se proceda a registrar una nueva factura en el sistema</em>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-Tener algún producto para vender.</td>
+Exista algun producto en stock para vender y un empleado con privilegios para realizar la venta.</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="6">Secuencia normal</th>
+<th align="left" valign="top" rowspan="9">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
@@ -3570,7 +3570,7 @@ solicita al sistema la generación de una venta.</em>
 <td>El
      
     sistema<em>
-pide al administrador introducir datos de la factura.</em>
+pide al administrador los productos y cantidades de la venta</em>
 </td>
 </tr>
 <tr>
@@ -3584,27 +3584,56 @@ introduce datos de la venta.</em>
 </td>
 </tr>
 <tr>
-<a name="STP-0120" />
+<a name="STP-0165" />
 <td align="center" valign="top">4</td>
 <td>El
      
     sistema<em>
-resta la cantidad representada en factura del almacen</em>
+muestra la informacion de los productos y sus totales parciales</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0166" />
+<td align="center" valign="top">5</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al administrador o administradores del sistema que ademas de poseer los privilegios de empleado también tienen derecho a realizar compras, ventas y añadir clientes o trabajadores ajenos a la empresa.">
+Administrador (ACT-0001)
+    </a>
+<em>
+indica el final de la venta</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0120" />
+<td align="center" valign="top">6</td>
+<td>El
+     
+    sistema<em>
+muestra el resumen completo y la cantidad total de importe de la venta.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0167" />
+<td align="center" valign="top">7</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al administrador o administradores del sistema que ademas de poseer los privilegios de empleado también tienen derecho a realizar compras, ventas y añadir clientes o trabajadores ajenos a la empresa.">
+Administrador (ACT-0001)
+    </a>
+<em>
+Proporciona forma de pago</em>
 </td>
 </tr>
 <tr>
 <a name="STP-0096" />
-<td align="center" valign="top">5</td>
+<td align="center" valign="top">8</td>
 <td>El
      
     sistema<em>
-registra la venta e imprime la factura.</em>
+registra la venta, imprime la factura y elimina del almacen el stock necesario.</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-Registro de la venta en el sistema.</td>
+Se ha registrado una nueva venta en el sistema.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -3615,14 +3644,14 @@ Registro de la venta en el sistema.</td>
 <a name="STX-0004" />
 <td align="center" valign="top">3</td>
 <td>Si<em>
-no hay stock de alguno de los productos a vender.,
+no hay stock de alguno de los productos a vender,
                             </em>el
      
     sistema<em>
-Termina el caso de uso.</em>,
+no permite al Administrador finalizar la compra</em>,
                             a continuación este caso de uso
                              
-                            <em>queda sin efecto</em>
+                            <em>continúa</em>
 </td>
 </tr>
 <tr>
@@ -3652,7 +3681,7 @@ veces por
 </tr>
 <tr>
 <th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">hay presión</td>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estado</th>
