@@ -3475,15 +3475,6 @@
 <rem:description><![CDATA[Eliminado el objeto [VAL-0001]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0008</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadida traza hacia [OBJ-0001] Control de compras ]]></rem:description>
-</rem:change>
-<rem:change>
 <rem:type>D</rem:type>
 <rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2010</rem:year>
@@ -3491,24 +3482,6 @@
 <rem:day>12</rem:day>
 </rem:date>
 <rem:description><![CDATA[Eliminado el objeto [ASO-0001] ( ?, ? ) con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0007</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº8 ([DAT-0163] Sueldo)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadida traza hacia [OBJ-0001] Control de compras ]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
@@ -3543,258 +3516,6 @@
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>12</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DRS-0002</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº9 ([DAT-0154] DNI/NIF) y nº8 ([DAT-0090] Pedidos)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº10 ([DAT-0155] DNI/NIF)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº11 ([DAT-0154] DNI/NIF) y nº10 ([DAT-0097] Facturas)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado hijo nº10 ([DAT-0155] DNI/NIF)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº10 ([DAT-0154] DNI/NIF) y nº9 ([DAT-0091] Fecha de pedidos)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº11 ([DAT-0154] DNI/NIF)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº8 ([DAT-0154] DNI/NIF) y nº7 ([DAT-0010] Forma de pago )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº7 ([DAT-0154] DNI/NIF) y nº6 ([DAT-0009] Descuento)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº6 ([DAT-0154] DNI/NIF) y nº5 ([DAT-0008] Código Postal)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº5 ([DAT-0154] DNI/NIF) y nº4 ([DAT-0006] Email)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº4 ([DAT-0154] DNI/NIF) y nº3 ([DAT-0005] Teléfono)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº3 ([DAT-0154] DNI/NIF) y nº2 ([DAT-0004] Dirección)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº2 ([DAT-0004] Dirección) y nº3 ([DAT-0154] DNI/NIF)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº2 ([DAT-0154] DNI/NIF) y nº3 ([DAT-0004] Dirección)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº8 ([DAT-0159] Empleado) y nº7 ([DAT-0158] Fecha)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº3 ([DAT-0004] Dirección) y nº4 ([DAT-0005] Teléfono)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº4 ([DAT-0004] Dirección) y nº5 ([DAT-0006] Email)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Comments] del hijo nº5 actualizada: [Ninguno] -> [(Calle, ciudad, provincia, codigo postal)]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado hijo nº9 ([DAT-0091] Fecha de pedidos)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado hijo nº6 ([DAT-0008] Código Postal)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Comments] del hijo nº5 actualizada: [(Calle, ciudad, provincia, codigo postal)] -> [(Calle, ciudad, provincia, código postal)]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº6 ([DAT-0159] Empleado) y nº5 ([DAT-0027] IVA)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado hijo nº10 ([DAT-0156] Forma de pago )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº10 ([DAT-0156] Forma de pago )]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado hijo nº10 ([DAT-0157] Pedidos)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº10 ([DAT-0157] Pedidos)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>CRS-0001</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
@@ -3808,168 +3529,6 @@
 <rem:description><![CDATA[Eliminado el objeto [IRQ-0010] Información de facturas de proveedores con 7 hijos y 0 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº6 ([DAT-0028] Importe total) y nº7 ([DAT-0029] Forma de pago)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº8 ([DAT-0158] Fecha)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº9 ([DAT-0159] Empleado)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Comments] actualizada [Ninguno] -> [Facturas de compras o de ventas]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº7 ([DAT-0028] Importe total) y nº8 ([DAT-0158] Fecha)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº7 ([DAT-0159] Empleado) y nº6 ([DAT-0029] Forma de pago)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº8 ([DAT-0028] Importe total) y nº9 ([DAT-0159] Empleado)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº4 ([DAT-0159] Empleado) y nº3 ([DAT-0025] Lineas de factura)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº5 ([DAT-0159] Empleado) y nº4 ([DAT-0026] Importe)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>S</rem:type>
-<rem:owner>DFS-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Documento guardado]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Comments] del hijo nº4 actualizada: [Cantidad, precio, descuento, impuestos, total neto] -> [Código de producto, cantidad, precio, descuento, impuestos, total neto]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Comments] del hijo nº4 actualizada: [Código de producto, cantidad, precio, descuento, impuestos, total neto] -> [Código, cantidad, precio, descuento, impuestos, total neto]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº8 ([DAT-0158] Fecha) y nº7 ([DAT-0029] Forma de pago)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº7 ([DAT-0158] Fecha) y nº6 ([DAT-0027] IVA)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº6 ([DAT-0158] Fecha) y nº5 ([DAT-0026] Importe)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº5 ([DAT-0158] Fecha) y nº4 ([DAT-0025] Lineas de factura)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº4 ([DAT-0158] Fecha) y nº3 ([DAT-0159] Empleado)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0003</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº3 ([DAT-0158] Fecha) y nº2 ([DAT-0024] Cliente/Proveedor)]]></rem:description>
-</rem:change>
-<rem:change>
 <rem:type>D</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2010</rem:year>
@@ -3980,120 +3539,48 @@
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>IRQ-0008</rem:owner><rem:date>
+<rem:owner>IRQ-0002</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº9 actualizada: [Empleado] -> [Empleado/Comercial]]]></rem:description>
+<rem:description><![CDATA[Intercambiados hijos nº10 ([DAT-0164] DNI/NIF) y nº9 ([DAT-0157] Pedidos)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>IRQ-0008</rem:owner><rem:date>
+<rem:owner>IRQ-0002</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Comments] del hijo nº9 actualizada: [Ninguno] -> [Empleado o comercial que realiza el pedido]]]></rem:description>
+<rem:description><![CDATA[Intercambiados hijos nº9 ([DAT-0164] DNI/NIF) y nº8 ([DAT-0098] Facturas)]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0008</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº9 ([DAT-0160] Empleado)]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0008</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº9 ([DAT-0160] Empleado/Comercial) y nº8 ([DAT-0128] Forma de pago)]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0008</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº8 ([DAT-0160] Empleado/Comercial) y nº7 ([DAT-0127] Importe total)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0008</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº7 ([DAT-0160] Empleado/Comercial) y nº6 ([DAT-0126] IVA)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0008</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº6 ([DAT-0160] Empleado/Comercial) y nº5 ([DAT-0125] Importe)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0008</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº5 ([DAT-0160] Empleado/Comercial) y nº4 ([DAT-0124] Lineas de pedido)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0004</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº6 ([DAT-0155] DNI/NIF) y nº5 ([DAT-0036] Comisión)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0004</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº5 ([DAT-0155] DNI/NIF) y nº4 ([DAT-0034] Email)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0004</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº7 ([DAT-0161] Clientes)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0004</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº4 ([DAT-0155] DNI/NIF) y nº3 ([DAT-0032] Teléfono)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>IRQ-0004</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>15</rem:day>
-</rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº3 ([DAT-0155] DNI/NIF) y nº2 ([DAT-0031] Dirección)]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>S</rem:type>
@@ -4106,11 +3593,155 @@
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>IRQ-0004</rem:owner><rem:date>
+<rem:owner>IRQ-0002</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº8 ([DAT-0162] Pedidos)]]></rem:description>
+<rem:description><![CDATA[Intercambiados hijos nº5 ([DAT-0164] DNI/NIF) y nº4 ([DAT-0015] Email)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>SEC-0023</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>IRQ-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº8 ([DAT-0164] DNI/NIF) y nº7 ([DAT-0156] Forma de pago )]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>IRQ-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº6 ([DAT-0164] DNI/NIF) y nº5 ([DAT-0016] Web)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>IRQ-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº4 ([DAT-0164] DNI/NIF) y nº3 ([DAT-0012] Dirección)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>IRQ-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº10 ([DAT-0164] DNI/NIF)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>IRQ-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº7 ([DAT-0164] DNI/NIF) y nº6 ([DAT-0018] Tipo de descuento)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>IRQ-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº3 ([DAT-0164] DNI/NIF) y nº2 ([DAT-0013] Teléfono)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [NFR-0001]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 </rem:log>

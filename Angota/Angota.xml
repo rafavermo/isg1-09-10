@@ -859,6 +859,12 @@ Nombre</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
+<rem:specificData oid = "DAT-0164">
+<rem:description>
+DNI/NIF</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
 <rem:specificData oid = "DAT-0013">
 <rem:description>
 Teléfono</rem:description>
@@ -3242,6 +3248,24 @@ No se detalla</rem:postcondition>
 </rem:useCase>
 </rem:section>
 </rem:section>
+<rem:section
+ oid = "SEC-0023">
+<rem:name>
+Requisitos no funcionales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>5.3 </rem:number>
+</rem:section>
 </rem:section>
 <rem:section
  oid = "SEC-0009">
@@ -3547,7 +3571,7 @@ Ninguno</rem:comments>
 </rem:tr>
 <rem:tr>
 <rem:th oid ="UC-0025"/>
-<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -3639,7 +3663,7 @@ Ninguno</rem:comments>
 <rem:th oid ="UC-0036"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
-<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
 <rem:td mark ="no"/>
@@ -4131,6 +4155,12 @@ Ninguno
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "IRQ-0008"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0036"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0025"  target = "OBJ-0001" >
 <rem:isChecked/>
 </rem:trace>
 <rem:predefinedValueTypes>
