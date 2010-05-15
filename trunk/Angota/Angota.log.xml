@@ -3727,111 +3727,228 @@
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº6 (Actor Administrador indica el ...) y nº5 (El sistema resta la cantidad r...)]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
+<rem:owner>SEC-0024</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº8 (Actor Administrador Proporcion...) y nº7 (El sistema registra la venta e...)]]></rem:description>
+<rem:description><![CDATA[Añadido hijo nº3 ([TYP-0003] Personal)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
+<rem:owner>SEC-0024</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº5 (El sistema muestra la informac...) y nº4 (El sistema resta la cantidad r...)]]></rem:description>
+<rem:description><![CDATA[Añadido hijo nº2 ([TYP-0002] Comercial)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
+<rem:owner>SEC-0026</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº7 (Actor Administrador indica el ...) y nº6 (El sistema registra la venta e...)]]></rem:description>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Modelado dinámico del sistema] -> [Modelado funcional]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
+<rem:owner>SEC-0025</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº6 actualizada: [resta la cantidad representada en factura del almacen] -> [resta la cantidad de stock en el almacen.]]]></rem:description>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Modelado estatico del sistema] -> [Modelado dinámico del sistema]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
+<rem:owner>SEC-0024</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº6 actualizada: [resta la cantidad de stock en el almacen.] -> [muestra el resumen completo y la cantidad total de importe de la venta.]]]></rem:description>
+<rem:description><![CDATA[Eliminado hijo nº1 ([TYP-0001] Persona)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>SEC-0024</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [SEC-0027] Copia de Copia de Modelado dinámico del sistema con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
+<rem:owner>SEC-0025</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº6 (El sistema muestra la informac...)]]></rem:description>
+<rem:description><![CDATA[Añadido hijo nº2 ([TYP-0002] Comercial)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
+<rem:owner>SEC-0025</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Intercambiados hijos nº6 (El sistema muestra la informac...) y nº5 (El sistema registra la venta e...)]]></rem:description>
+<rem:description><![CDATA[Añadido hijo nº1 ([TYP-0001] Persona)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>SEC-0025</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [SEC-0024] Modelado estatico del sistema del proyecto C:\Users\Rafael\Desktop\ISG1\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>SEC-0026</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [SEC-0025] Modelado dinámico del sistema del proyecto C:\Users\Rafael\Desktop\ISG1\Angota\Angota.rem]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
+<rem:owner>SEC-0024</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº7 (Actor Administrador indica el ...)]]></rem:description>
+<rem:description><![CDATA[Eliminado hijo nº1 ([TYP-0002] Comercial)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
+<rem:owner>SEC-0024</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Description] de la excepción nº1 del paso #3 actualizada: [Termina el caso de uso.] -> [no permite al Administrador finalizar la compra]]]></rem:description>
+<rem:description><![CDATA[Añadido hijo nº1 ([TYP-0001] Persona)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
+<rem:owner>SEC-0025</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº8 actualizada: [registra la venta e imprime la factura.] -> [registra la venta, imprime la factura y elimina del almacen el stock necesario.]]]></rem:description>
+<rem:description><![CDATA[Eliminado hijo nº1 ([TYP-0001] Persona)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0010</rem:owner><rem:date>
+<rem:owner>SEC-0024</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>15</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº8 (Actor Administrador Proporcion...)]]></rem:description>
+<rem:description><![CDATA[Eliminado hijo nº1 ([TYP-0003] Personal)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0025</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº3 ([TYP-0003] Personal)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0024</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 ([TYP-0001] Persona)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0025</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 ([TYP-0002] Comercial)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0024</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 ([TYP-0002] Comercial)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0025</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 ([TYP-0003] Personal)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0024</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº3 ([TYP-0003] Personal)]]></rem:description>
 </rem:change>
 </rem:log>

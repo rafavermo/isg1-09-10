@@ -2517,7 +2517,7 @@ se proceda al registro de nuevo personal en el sistema.</em>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-</td>
+Exista un empleado con el rol de gerente en la empresa.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="5">Secuencia normal</th>
@@ -2531,7 +2531,7 @@ se proceda al registro de nuevo personal en el sistema.</em>
 Gerente (ACT-0004)
     </a>
 <em>
-solicita al sistema el registro de un nuevo empleado</em>
+solicita al sistema el registro de un nuevo personal</em>
 </td>
 </tr>
 <tr>
@@ -2540,7 +2540,7 @@ solicita al sistema el registro de un nuevo empleado</em>
 <td>El
      
     sistema<em>
-solicita al gerente los datos personales del empleado a registrar</em>
+solicita al gerente los datos personales del personal a registrar</em>
 </td>
 </tr>
 <tr>
@@ -2550,7 +2550,7 @@ solicita al gerente los datos personales del empleado a registrar</em>
 Gerente (ACT-0004)
     </a>
 <em>
-proporciona al sistema los datos personales del empleado
+proporciona al sistema los datos personales del personal.
 <br />
 </em>
 </td>
@@ -2561,13 +2561,13 @@ proporciona al sistema los datos personales del empleado
 <td>El
      
     sistema<em>
-registra al nuevo empleado</em>
+registra al nuevo personal.</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Postcondición</th>
 <td align="left" valign="top" colspan="2">
-Nuevo trabajador registrado en sistema</td>
+Nuevo trabajador registrado en sistema.</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Excepciones</th>
@@ -2578,7 +2578,7 @@ Nuevo trabajador registrado en sistema</td>
 <a name="STX-0001" />
 <td align="center" valign="top">3</td>
 <td>Si<em>
-Si el NIF ya estaba en el sistema registrado,
+El NIF ya estaba en el sistema registrado,
                             </em>el
      
     sistema<em>
@@ -2628,7 +2628,7 @@ veces por
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Solo los gerentes del sistema tendrian acceso a realizar esta operacion.</td>
+Ninguno</td>
 </tr>
 </table>
 <p />
@@ -2702,7 +2702,7 @@ se desea consultar informacion del personal de la empresa.</em>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-El personal a buscar debe de estar registrado en el sistema.</td>
+Que exista un personal con rol gerente o administrador en el sistema</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="5">Secuencia normal</th>
