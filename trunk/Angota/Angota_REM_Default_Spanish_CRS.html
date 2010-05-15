@@ -1091,8 +1091,8 @@ datos personales del cliente.
 <a name="DAT-0002" />
 Nombre</li>
 <li>
-<a name="DAT-0004" />
-Dirección</li>
+<a name="DAT-0154" />
+DNI/NIF</li>
 <li>
 <a name="DAT-0005" />
 Teléfono</li>
@@ -1100,8 +1100,11 @@ Teléfono</li>
 <a name="DAT-0006" />
 Email</li>
 <li>
-<a name="DAT-0008" />
-Código Postal</li>
+<a name="DAT-0004" />
+Dirección
+								(<em>
+(Calle, ciudad, provincia, código postal)</em>)
+							</li>
 <li>
 <a name="DAT-0009" />
 Descuento</li>
@@ -1114,9 +1117,6 @@ Contado, transferencia y pago aplazado a 30/60/90</em>)
 <li>
 <a name="DAT-0090" />
 Pedidos</li>
-<li>
-<a name="DAT-0091" />
-Fecha de pedidos</li>
 <li>
 <a name="DAT-0097" />
 Facturas</li>
@@ -1246,14 +1246,17 @@ datos relevantes sobre los proveedores de materias primas.
 <a name="DAT-0011" />
 Nombre</li>
 <li>
-<a name="DAT-0012" />
-Dirección</li>
-<li>
 <a name="DAT-0013" />
-Teléfono</li>
+Teléfono
+								(<em>
+Fijo, fax, móvil...</em>)
+							</li>
 <li>
-<a name="DAT-0014" />
-Fax</li>
+<a name="DAT-0012" />
+Dirección
+								(<em>
+Calle, ciudad, provincia, código postal</em>)
+							</li>
 <li>
 <a name="DAT-0015" />
 Email</li>
@@ -1261,17 +1264,20 @@ Email</li>
 <a name="DAT-0016" />
 Web</li>
 <li>
-<a name="DAT-0017" />
-Persona de contacto</li>
-<li>
 <a name="DAT-0018" />
-Tipo de IVA</li>
+Tipo de descuento</li>
 <li>
-<a name="DAT-0019" />
-Código Postal</li>
+<a name="DAT-0156" />
+Forma de pago 
+								(<em>
+Contado, transferencia y pago aplazado a 30/60/90</em>)
+							</li>
 <li>
 <a name="DAT-0098" />
 Facturas</li>
+<li>
+<a name="DAT-0157" />
+Pedidos</li>
 </ul>
 </td>
 </tr>
@@ -1323,7 +1329,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0003</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Información de facturas a clientes</th>
+Información de factura</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -1378,6 +1384,11 @@ Control de ventas</a>
                                 [OBJ-0004] 
 Control de almacen </a>
 </li>
+<li>
+<a href="#OBJ-0001" title="Control de compras">
+                                [OBJ-0001] 
+Control de compras </a>
+</li>
 </td>
 </tr>
 <tr>
@@ -1398,16 +1409,25 @@ Factura con desglose de productos, asi como datos del cliente.
 <a name="DAT-0092" />
 Número de factura</li>
 <li>
+<a name="DAT-0158" />
+Fecha</li>
+<li>
 <a name="DAT-0024" />
-Cliente
+Cliente/Proveedor
 								(<em>
-Datos del cliente </em>)
+Datos del cliente o del proveedor</em>)
+							</li>
+<li>
+<a name="DAT-0159" />
+Empleado
+								(<em>
+Persona que realiza la factura</em>)
 							</li>
 <li>
 <a name="DAT-0025" />
 Lineas de factura
 								(<em>
-Cantidad, precio, descuento, impuestos, total neto</em>)
+Código, cantidad, precio, descuento, impuestos, total neto</em>)
 							</li>
 <li>
 <a name="DAT-0026" />
@@ -1416,11 +1436,11 @@ Importe</li>
 <a name="DAT-0027" />
 IVA</li>
 <li>
-<a name="DAT-0028" />
-Importe total</li>
-<li>
 <a name="DAT-0029" />
 Forma de pago</li>
+<li>
+<a name="DAT-0028" />
+Importe total</li>
 </ul>
 </td>
 </tr>
@@ -1463,7 +1483,7 @@ Forma de pago</li>
 <tr>
 <th align="left" valign="top">Comentarios</th>
 <td align="left" valign="top" colspan="2">
-Ninguno</td>
+Facturas de compras o de ventas</td>
 </tr>
 </table>
 <p />
@@ -1472,7 +1492,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">IRQ-0008</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Información de pedidos de clientes</th>
+Información de pedido</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -1522,294 +1542,6 @@ Antonio Gómez Tabuenca</a>
                                 [OBJ-0002] 
 Control de ventas</a>
 </li>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Descripción</th>
-<td colspan="2">
-    El sistema deberá almacenar la información correspondiente a 
-<em>
-Pedido con desglose de productos, asi como datos del cliente.
-				</em>
-    En concreto:
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Datos específicos</th>
-<td colspan="2" align="left" valign="top">
-<ul>
-<li>
-<a name="DAT-0122" />
-Número de pedido</li>
-<li>
-<a name="DAT-0123" />
-Cliente
-								(<em>
-Datos del cliente </em>)
-							</li>
-<li>
-<a name="DAT-0124" />
-Lineas de factura
-								(<em>
-Cantidad, precio, descuento, impuestos, total neto</em>)
-							</li>
-<li>
-<a name="DAT-0125" />
-Importe</li>
-<li>
-<a name="DAT-0126" />
-IVA</li>
-<li>
-<a name="DAT-0127" />
-Importe total</li>
-<li>
-<a name="DAT-0128" />
-Forma de pago</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
-<th align="left" valign="top">Medio</th>
-<th align="left" valign="top">Máximo</th>
-</tr>
-<tr>
-<td>1 
-                        año(s)</td>
-<td>1 
-                        año(s)</td>
-</tr>
-<tr>
-<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
-<th align="left" valign="top">Medio</th>
-<th align="left" valign="top">Máximo</th>
-</tr>
-<tr>
-<td>99</td>
-<td>99</td>
-</tr>
-<tr>
-<th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">importante</td>
-</tr>
-<tr>
-<th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">inmediatamente</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">en construcción</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">media</td>
-</tr>
-<tr>
-<th align="left" valign="top">Comentarios</th>
-<td align="left" valign="top" colspan="2">
-Ninguno</td>
-</tr>
-</table>
-<p />
-<a name="IRQ-0010" />
-<table border="1" width="100%">
-<tr bgcolor="#c8e0e0">
-<th align="left" valign="top">IRQ-0010</th>
-<th align="left" valign="top" width="100%" colspan="2">
-Información de facturas de proveedores</th>
-</tr>
-<tr>
-<th align="left" valign="top">Versión</th>
-<td align="left" valign="top" colspan="2">1.0 
-			( 10/05/2010 )
-        </td>
-</tr>
-<tr>
-<th align="left" valign="top">Autores</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0003">
-Jesús Antonio Sánchez Méndez</a>
-<br />
-</li>
-<li>
-<a href="#STK-0001">
-Rafael Gómez García</a>
-<br />
-</li>
-<li>
-<a href="#STK-0002">
-Rafael Vergara Moreno</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Fuentes</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0004">
-Antonio Gómez Tabuenca</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Dependencias</th>
-<td align="left" valign="top" colspan="2">
-<li>
-<a href="#OBJ-0004" title="Control de almacen">
-                                [OBJ-0004] 
-Control de almacen </a>
-</li>
-<li>
-<a href="#OBJ-0006" title="Control de proveedores">
-                                [OBJ-0006] 
-Control de proveedores</a>
-</li>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Descripción</th>
-<td colspan="2">
-    El sistema deberá almacenar la información correspondiente a 
-<em>
-Factura con desglose de productos, asi como datos del proveedor.
-				</em>
-    En concreto:
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Datos específicos</th>
-<td colspan="2" align="left" valign="top">
-<ul>
-<li>
-<a name="DAT-0136" />
-Número de factura</li>
-<li>
-<a name="DAT-0137" />
-Cliente
-								(<em>
-Datos del cliente </em>)
-							</li>
-<li>
-<a name="DAT-0138" />
-Lineas de factura
-								(<em>
-Cantidad, precio, descuento, impuestos, total neto</em>)
-							</li>
-<li>
-<a name="DAT-0139" />
-Importe</li>
-<li>
-<a name="DAT-0140" />
-IVA</li>
-<li>
-<a name="DAT-0141" />
-Importe total</li>
-<li>
-<a name="DAT-0142" />
-Forma de pago</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
-<th align="left" valign="top">Medio</th>
-<th align="left" valign="top">Máximo</th>
-</tr>
-<tr>
-<td>1 
-                        año(s)</td>
-<td>1 
-                        año(s)</td>
-</tr>
-<tr>
-<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
-<th align="left" valign="top">Medio</th>
-<th align="left" valign="top">Máximo</th>
-</tr>
-<tr>
-<td>99</td>
-<td>99</td>
-</tr>
-<tr>
-<th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">importante</td>
-</tr>
-<tr>
-<th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">inmediatamente</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">en construcción</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">media</td>
-</tr>
-<tr>
-<th align="left" valign="top">Comentarios</th>
-<td align="left" valign="top" colspan="2">
-Ninguno</td>
-</tr>
-</table>
-<p />
-<a name="IRQ-0009" />
-<table border="1" width="100%">
-<tr bgcolor="#c8e0e0">
-<th align="left" valign="top">IRQ-0009</th>
-<th align="left" valign="top" width="100%" colspan="2">
-Información de pedidos a proveedores</th>
-</tr>
-<tr>
-<th align="left" valign="top">Versión</th>
-<td align="left" valign="top" colspan="2">1.0 
-			( 10/05/2010 )
-        </td>
-</tr>
-<tr>
-<th align="left" valign="top">Autores</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0003">
-Jesús Antonio Sánchez Méndez</a>
-<br />
-</li>
-<li>
-<a href="#STK-0001">
-Rafael Gómez García</a>
-<br />
-</li>
-<li>
-<a href="#STK-0002">
-Rafael Vergara Moreno</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Fuentes</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0004">
-Antonio Gómez Tabuenca</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Dependencias</th>
-<td align="left" valign="top" colspan="2">
 <li>
 <a href="#OBJ-0001" title="Control de compras">
                                 [OBJ-0001] 
@@ -1822,7 +1554,7 @@ Control de compras </a>
 <td colspan="2">
     El sistema deberá almacenar la información correspondiente a 
 <em>
-Pedido con desglose de productos, asi como datos del proveedor.
+Pedido con desglose de productos, asi como datos del cliente/proveedor.
 				</em>
     En concreto:
 </td>
@@ -1832,31 +1564,40 @@ Pedido con desglose de productos, asi como datos del proveedor.
 <td colspan="2" align="left" valign="top">
 <ul>
 <li>
-<a name="DAT-0129" />
+<a name="DAT-0122" />
 Número de pedido</li>
 <li>
-<a name="DAT-0130" />
-Proveedor
+<a name="DAT-0091" />
+Fecha</li>
+<li>
+<a name="DAT-0123" />
+Cliente/Proveedores
 								(<em>
-Datos del cliente </em>)
+Datos del cliente o del proveedor</em>)
 							</li>
 <li>
-<a name="DAT-0131" />
+<a name="DAT-0160" />
+Empleado/Comercial
+								(<em>
+Empleado o comercial que realiza el pedido</em>)
+							</li>
+<li>
+<a name="DAT-0124" />
 Lineas de pedido
 								(<em>
-Cantidad, precio, descuento, impuestos, total neto</em>)
+Código, cantidad, precio, descuento, impuestos, total neto</em>)
 							</li>
 <li>
-<a name="DAT-0132" />
+<a name="DAT-0125" />
 Importe</li>
 <li>
-<a name="DAT-0133" />
+<a name="DAT-0126" />
 IVA</li>
 <li>
-<a name="DAT-0134" />
+<a name="DAT-0127" />
 Importe total</li>
 <li>
-<a name="DAT-0135" />
+<a name="DAT-0128" />
 Forma de pago</li>
 </ul>
 </td>
@@ -1984,29 +1725,32 @@ datos relevantes sobre los comerciales externos de la empresa.
 <a name="DAT-0030" />
 Nombre</li>
 <li>
-<a name="DAT-0039" />
-Apellidos</li>
+<a name="DAT-0155" />
+DNI/NIF</li>
 <li>
 <a name="DAT-0031" />
-Dirección</li>
+Dirección
+								(<em>
+Calle, ciudad, provincia, código postal</em>)
+							</li>
 <li>
 <a name="DAT-0032" />
-Teléfono</li>
-<li>
-<a name="DAT-0033" />
-Fax</li>
+Teléfono
+								(<em>
+Fijo, fax, móvil</em>)
+							</li>
 <li>
 <a name="DAT-0034" />
 Email</li>
 <li>
-<a name="DAT-0035" />
-Móvil</li>
-<li>
-<a name="DAT-0038" />
-Código Postal</li>
-<li>
 <a name="DAT-0036" />
 Comisión</li>
+<li>
+<a name="DAT-0161" />
+Clientes</li>
+<li>
+<a name="DAT-0162" />
+Pedidos</li>
 </ul>
 </td>
 </tr>
@@ -2131,13 +1875,13 @@ datos del producto ya terminado .
 <ul>
 <li>
 <a name="DAT-0041" />
-Código artículo</li>
+Código</li>
 <li>
 <a name="DAT-0042" />
 Descripción </li>
 <li>
-<a name="DAT-0043" />
-Referencia</li>
+<a name="DAT-0118" />
+Cantidad o Stock</li>
 <li>
 <a name="DAT-0044" />
 Color</li>
@@ -2149,7 +1893,7 @@ Familia</li>
 Talla</li>
 <li>
 <a name="DAT-0047" />
-Tipo de material</li>
+Materiales</li>
 <li>
 <a name="DAT-0048" />
 Coste
@@ -2158,13 +1902,10 @@ Precio coste, descuento, impuesto y precio neto</em>)
 							</li>
 <li>
 <a name="DAT-0049" />
-Venta
+Precio de venta
 								(<em>
 Precio de venta y margen de beneficio</em>)
 							</li>
-<li>
-<a name="DAT-0118" />
-Cantidad o Stock</li>
 </ul>
 </td>
 </tr>
@@ -2289,13 +2030,19 @@ datos de las materias primas necesarias para la produccion del producto.
 <ul>
 <li>
 <a name="DAT-0050" />
-Código artículo</li>
+Código</li>
+<li>
+<a name="DAT-0117" />
+Cantidad o stock</li>
 <li>
 <a name="DAT-0051" />
 Descripción</li>
 <li>
 <a name="DAT-0052" />
-Referencia</li>
+Referencia
+								(<em>
+Código asignado por el proveedor</em>)
+							</li>
 <li>
 <a name="DAT-0053" />
 Color</li>
@@ -2314,9 +2061,6 @@ Coste
 								(<em>
 Precio coste, descuento, impuesto y precio neto</em>)
 							</li>
-<li>
-<a name="DAT-0117" />
-Cantidad o stock</li>
 </ul>
 </td>
 </tr>
@@ -2438,32 +2182,26 @@ datos relevantes sobre los trabajadores contratados por la empresa.
 <a name="DAT-0059" />
 Nombre</li>
 <li>
-<a name="DAT-0003" />
-Apellidos</li>
+<a name="DAT-0007" />
+DNI/NIF</li>
 <li>
 <a name="DAT-0060" />
-Dirección</li>
+Calle, ciudad, provincia, código postal</li>
 <li>
 <a name="DAT-0061" />
-Teléfono</li>
-<li>
-<a name="DAT-0062" />
-Fax</li>
+Fijo, fax, móvil</li>
 <li>
 <a name="DAT-0063" />
 Email</li>
 <li>
-<a name="DAT-0067" />
-Código Postal</li>
-<li>
 <a name="DAT-0068" />
 Categoria profesional</li>
 <li>
-<a name="DAT-0007" />
-CIF/NIF</li>
-<li>
 <a name="DAT-0069" />
 Jornada laboral</li>
+<li>
+<a name="DAT-0163" />
+Sueldo</li>
 </ul>
 </td>
 </tr>
@@ -7684,7 +7422,7 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7693,7 +7431,7 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7704,7 +7442,7 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
 <a href="&#xA;                        #IRQ-0002" title="Información de proveedores">IRQ-0002</a>
 </th>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7719,24 +7457,24 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #IRQ-0003" title="Información de facturas a clientes">IRQ-0003</a>
+<a href="&#xA;                        #IRQ-0003" title="Información de factura">IRQ-0003</a>
 </th>
 <td align="center" valign="top">
-                -
-            </td>
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7753,10 +7491,10 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7776,13 +7514,13 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7796,7 +7534,7 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
 <a href="&#xA;                        #IRQ-0006" title="Información de material">IRQ-0006</a>
 </th>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7805,7 +7543,7 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7825,7 +7563,7 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7839,13 +7577,13 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #IRQ-0008" title="Información de pedidos de clientes">IRQ-0008</a>
+<a href="&#xA;                        #IRQ-0008" title="Información de pedido">IRQ-0008</a>
 </th>
 <td align="center" valign="top">
-                -
-            </td>
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
+</td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7859,52 +7597,6 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
 <td align="center" valign="top">
                 -
             </td>
-</tr>
-<tr>
-<th align="left" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #IRQ-0009" title="Información de pedidos a proveedores">IRQ-0009</a>
-</th>
-<td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
-</td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
-</tr>
-<tr>
-<th align="left" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #IRQ-0010" title="Información de facturas de proveedores">IRQ-0010</a>
-</th>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
-</td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
-</td>
 </tr>
 </table>
 <p align="center">
@@ -7945,7 +7637,7 @@ Requisitos de información / Objetivos</p>
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7962,7 +7654,7 @@ Requisitos de información / Objetivos</p>
 <a href="&#xA;                        #UC-0003" title="Registrar compra">UC-0003</a>
 </th>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -7991,7 +7683,7 @@ Requisitos de información / Objetivos</p>
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -8014,7 +7706,7 @@ Requisitos de información / Objetivos</p>
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -8031,7 +7723,7 @@ Requisitos de información / Objetivos</p>
 <a href="&#xA;                        #UC-0007" title="Entrada material">UC-0007</a>
 </th>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -8040,7 +7732,7 @@ Requisitos de información / Objetivos</p>
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -8057,7 +7749,7 @@ Requisitos de información / Objetivos</p>
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -8080,13 +7772,13 @@ Requisitos de información / Objetivos</p>
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -8103,13 +7795,13 @@ Requisitos de información / Objetivos</p>
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -8129,7 +7821,7 @@ Requisitos de información / Objetivos</p>
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
@@ -8149,7 +7841,7 @@ Requisitos de información / Objetivos</p>
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Archivos de programa\REM 1.2.2\xml\default\trace.gif&#xA;" />
+<img src="&#xA;C:\Program Files\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
                 -
