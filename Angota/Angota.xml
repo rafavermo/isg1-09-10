@@ -2009,15 +2009,15 @@ Registrar venta</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0003"/>
-<rem:urgency value = "URV-0003"/>
+<rem:urgency value = "URV-0002"/>
 <rem:status value = "STV-0002"/>
 <rem:stability value = "SBV-0003"/>
 <rem:triggeringEvent>
 se proceda a registrar una nueva factura en el sistema</rem:triggeringEvent>
 <rem:precondition>
-Tener algún producto para vender.</rem:precondition>
+Exista algun producto en stock para vender y un empleado con privilegios para realizar la venta.</rem:precondition>
 <rem:postcondition>
-Registro de la venta en el sistema.</rem:postcondition>
+Se ha registrado una nueva venta en el sistema.</rem:postcondition>
 <rem:frequency>
 <rem:value>
 3
@@ -2037,7 +2037,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
-pide al administrador introducir datos de la factura.</rem:description>
+pide al administrador los productos y cantidades de la venta</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2050,32 +2050,59 @@ introduce datos de la venta.</rem:description>
 </rem:actorAction>
 <rem:stepException oid = "STX-0004">
 <rem:condition>
-no hay stock de alguno de los productos a vender.</rem:condition>
+no hay stock de alguno de los productos a vender</rem:condition>
 <rem:systemAction>
 <rem:description>
-Termina el caso de uso.</rem:description>
+no permite al Administrador finalizar la compra</rem:description>
 </rem:systemAction>
-<rem:termination value = "TEV-0003"/>
+<rem:termination value = "TEV-0002"/>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:stepException>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
-<rem:step oid = "STP-0120">
+<rem:step oid = "STP-0165">
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-resta la cantidad representada en factura del almacen</rem:description>
+muestra la informacion de los productos y sus totales parciales</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
-<rem:step oid = "STP-0096">
+<rem:step oid = "STP-0166">
 <rem:number>5</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+indica el final de la venta</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0120">
+<rem:number>6</rem:number>
 <rem:systemAction>
 <rem:description>
-registra la venta e imprime la factura.</rem:description>
+muestra el resumen completo y la cantidad total de importe de la venta.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0167">
+<rem:number>7</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+Proporciona forma de pago</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0096">
+<rem:number>8</rem:number>
+<rem:systemAction>
+<rem:description>
+registra la venta, imprime la factura y elimina del almacen el stock necesario.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -4199,13 +4226,13 @@ Ninguno
 <rem:trace source = "UC-0029"  target = "OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source = "UC-0032"  target = "OBJ-0004" >
-<rem:isChecked/>
-</rem:trace>
 <rem:trace source = "UC-0030"  target = "OBJ-0004" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "UC-0031"  target = "OBJ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0032"  target = "OBJ-0004" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "UC-0033"  target = "OBJ-0004" >
