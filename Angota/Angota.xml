@@ -1603,7 +1603,7 @@ Alta personal</rem:name>
 <rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
 <rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
-Solo los gerentes del sistema tendrian acceso a realizar esta operacion.</rem:comments>
+Ninguno</rem:comments>
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0003"/>
 <rem:status value = "STV-0002"/>
@@ -1611,9 +1611,9 @@ Solo los gerentes del sistema tendrian acceso a realizar esta operacion.</rem:co
 <rem:triggeringEvent>
 se proceda al registro de nuevo personal en el sistema.</rem:triggeringEvent>
 <rem:precondition>
-</rem:precondition>
+Exista un empleado con el rol de gerente en la empresa.</rem:precondition>
 <rem:postcondition>
-Nuevo trabajador registrado en sistema</rem:postcondition>
+Nuevo trabajador registrado en sistema.</rem:postcondition>
 <rem:frequency>
 <rem:value>
 1
@@ -1624,7 +1624,7 @@ Nuevo trabajador registrado en sistema</rem:postcondition>
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0004">
 <rem:description>
-solicita al sistema el registro de un nuevo empleado</rem:description>
+solicita al sistema el registro de un nuevo personal</rem:description>
 </rem:actorAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1633,7 +1633,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
-solicita al gerente los datos personales del empleado a registrar</rem:description>
+solicita al gerente los datos personales del personal a registrar</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1642,11 +1642,11 @@ Ninguno</rem:comments>
 <rem:number>3</rem:number>
 <rem:actorAction actor = "ACT-0004">
 <rem:description>
-proporciona al sistema los datos personales del empleado<br/></rem:description>
+proporciona al sistema los datos personales del personal.<br/></rem:description>
 </rem:actorAction>
 <rem:stepException oid = "STX-0001">
 <rem:condition>
-Si el NIF ya estaba en el sistema registrado</rem:condition>
+El NIF ya estaba en el sistema registrado</rem:condition>
 <rem:systemAction>
 <rem:description>
 no permite al gerente registrar al nuevo empleado</rem:description>
@@ -1662,7 +1662,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-registra al nuevo empleado</rem:description>
+registra al nuevo personal.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1692,7 +1692,7 @@ Solo los gerentes del sistema tendrian acceso a realizar esta operacion.</rem:co
 <rem:triggeringEvent>
 se desea consultar informacion del personal de la empresa.</rem:triggeringEvent>
 <rem:precondition>
-El personal a buscar debe de estar registrado en el sistema.</rem:precondition>
+Que exista un personal con rol gerente o administrador en el sistema</rem:precondition>
 <rem:postcondition>
 La informacion consultada debe permanecer intacta.</rem:postcondition>
 <rem:frequency>
@@ -3913,6 +3913,23 @@ Ninguno</rem:comments>
 <rem:comments>
 Ninguno
 </rem:comments>
+<rem:section
+ oid = "SEC-0024">
+<rem:name>
+Modelado estatico del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>1 </rem:number>
 <rem:objectType
  oid = "TYP-0001">
 <rem:name>
@@ -4066,6 +4083,43 @@ Ninguno</rem:comments>
 </rem:attribute>
 <rem:disjointSubtypes/>
 </rem:objectType>
+</rem:section>
+<rem:section
+ oid = "SEC-0025">
+<rem:name>
+Modelado dinámico del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>2 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0026">
+<rem:name>
+Modelado funcional</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>15</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>3 </rem:number>
+</rem:section>
 </rem:d_requirementsSpecification>
 <rem:defectsSpecification oid = "DFS-0003">
 <rem:name>Registro de Conflictos y Defectos</rem:name>
