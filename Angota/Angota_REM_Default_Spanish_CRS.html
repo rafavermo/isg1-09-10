@@ -793,7 +793,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">OBJ-0004</th>
 <th align="left" valign="top" width="100%">
-Control de almacen </th>
+Control de almacén </th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -1390,9 +1390,9 @@ Antonio Gómez Tabuenca</a>
 Control de ventas</a>
 </li>
 <li>
-<a href="#OBJ-0004" title="Control de almacen">
+<a href="#OBJ-0004" title="Control de almacén">
                                 [OBJ-0004] 
-Control de almacen </a>
+Control de almacén </a>
 </li>
 <li>
 <a href="#OBJ-0001" title="Control de compras">
@@ -1863,9 +1863,9 @@ Antonio Gómez Tabuenca</a>
 Control de ventas</a>
 </li>
 <li>
-<a href="#OBJ-0004" title="Control de almacen">
+<a href="#OBJ-0004" title="Control de almacén">
                                 [OBJ-0004] 
-Control de almacen </a>
+Control de almacén </a>
 </li>
 </td>
 </tr>
@@ -2018,9 +2018,9 @@ Antonio Gómez Tabuenca</a>
 Control de compras </a>
 </li>
 <li>
-<a href="#OBJ-0004" title="Control de almacen">
+<a href="#OBJ-0004" title="Control de almacén">
                                 [OBJ-0004] 
-Control de almacen </a>
+Control de almacén </a>
 </li>
 </td>
 </tr>
@@ -2268,7 +2268,16 @@ Ninguno</td>
 <h2 align="left">5.2 
 Requisitos funcionales</h2><a name="SEC-0017" />
 <h3 align="left">5.2.1 
-Diagramas de casos de uso</h3><a name="SEC-0015" />
+Diagramas de casos de uso</h3><a name="PRG-0023" />
+<p>
+</p>
+<a name="PRG-0024" />
+<p>
+</p>
+<a name="PRG-0025" />
+<p>
+</p>
+<a name="SEC-0015" />
 <h3 align="left">5.2.2 
 Definición de actores</h3><a name="ACT-0003" />
 <table border="1" width="100%">
@@ -3026,7 +3035,7 @@ se realice la baja de personal del sistema.</em>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-El empleado debe de estar dado de alta en el sistema.</td>
+Debe haber al menos un empleado con el rol de Gerente</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="5">Secuencia normal</th>
@@ -3082,12 +3091,18 @@ El empleado seleccionado debe de estar dado de baja en el sistema.</td>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
+<a name="STX-0010" />
+<td align="center" valign="top">3</td>
+<td>Si<em>
+si no existe el empleado a dar de baja,
+                            </em>el
+     
+    sistema<em>
+muestra un mensaje de que no ha podido realizarse la accion</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Rendimiento</th>
@@ -3191,9 +3206,9 @@ Antonio Gómez Tabuenca</a>
 Control de compras </a>
 </li>
 <li>
-<a href="#OBJ-0004" title="Control de almacen">
+<a href="#OBJ-0004" title="Control de almacén">
                                 [OBJ-0004] 
-Control de almacen </a>
+Control de almacén </a>
 </li>
 </td>
 </tr>
@@ -3210,10 +3225,10 @@ se proceda a registrar una compra en el sistema.</em>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-</td>
+Debe existir al menos un empleado con el rol administrador o gerente</td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="5">Secuencia normal</th>
+<th align="left" valign="top" rowspan="7">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
@@ -3233,7 +3248,7 @@ solicita al sistema la generacion de una nueva compra.</em>
 <td>El
      
     sistema<em>
-pide al administrador los datos del articulo a comprar</em>
+pide al administrador los datos de código y cantidad a comprar.</em>
 </td>
 </tr>
 <tr>
@@ -3243,16 +3258,35 @@ pide al administrador los datos del articulo a comprar</em>
 Administrador (ACT-0001)
     </a>
 <em>
-introduce los datos de la compra</em>
+introduce los datos.</em>
 </td>
 </tr>
 <tr>
-<a name="STP-0077" />
+<a name="STP-0168" />
 <td align="center" valign="top">4</td>
 <td>El
      
     sistema<em>
-añade la cantidad o stock introducida por el administrador a ese producto y registra la compra</em>
+muestra la información de todos los productos e importe total de esa compra.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0169" />
+<td align="center" valign="top">5</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa al administrador o administradores del sistema que ademas de poseer los privilegios de empleado también tienen derecho a realizar compras, ventas y añadir clientes o trabajadores ajenos a la empresa.">
+Administrador (ACT-0001)
+    </a>
+<em>
+comprueba que todo esta correcto y pulsa en el boton finalizar</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0077" />
+<td align="center" valign="top">6</td>
+<td>El
+     
+    sistema<em>
+añade la cantidades de stock de los productos en el almacen, registra la compra en el sistema.</em>
 </td>
 </tr>
 <tr>
@@ -3273,7 +3307,7 @@ no existe algún material en el sistema,
                             </em>el
      
     sistema<em>
-llama al caso de uso de "Entrada de material"</em>,
+se abre un caso de uso del tipo "entrada de material" por cada material que no exista en el sistema</em>,
                             a continuación este caso de uso
                              
                             <em>continúa</em>
@@ -3528,9 +3562,9 @@ Antonio Gómez Tabuenca</a>
 Control de ventas</a>
 </li>
 <li>
-<a href="#OBJ-0004" title="Control de almacen">
+<a href="#OBJ-0004" title="Control de almacén">
                                 [OBJ-0004] 
-Control de almacen </a>
+Control de almacén </a>
 </li>
 </td>
 </tr>
@@ -5127,7 +5161,7 @@ se proceda al registro de un nuevo comercial en el sistema</em>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-No tiene</td>
+La existencia de al menos un empleado con el rol de administrador o gerente</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="5">Secuencia normal</th>
@@ -5160,7 +5194,7 @@ solicita al administrador los datos personales del comercial a registrar</em>
 Administrador (ACT-0001)
     </a>
 <em>
-proporciona al sistema los datos personales del comercial</em>
+proporciona al sistema los datos personales del comercial.</em>
 </td>
 </tr>
 <tr>
@@ -5734,9 +5768,9 @@ Antonio Gómez Tabuenca</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="2">
 <li>
-<a href="#OBJ-0004" title="Control de almacen">
+<a href="#OBJ-0004" title="Control de almacén">
                                 [OBJ-0004] 
-Control de almacen </a>
+Control de almacén </a>
 </li>
 </td>
 </tr>
@@ -5881,9 +5915,9 @@ Antonio Gómez Tabuenca</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="2">
 <li>
-<a href="#OBJ-0004" title="Control de almacen">
+<a href="#OBJ-0004" title="Control de almacén">
                                 [OBJ-0004] 
-Control de almacen </a>
+Control de almacén </a>
 </li>
 </td>
 </tr>
@@ -6028,9 +6062,9 @@ Antonio Gómez Tabuenca</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="2">
 <li>
-<a href="#OBJ-0004" title="Control de almacen">
+<a href="#OBJ-0004" title="Control de almacén">
                                 [OBJ-0004] 
-Control de almacen </a>
+Control de almacén </a>
 </li>
 </td>
 </tr>
@@ -6180,9 +6214,9 @@ Antonio Gómez Tabuenca</a>
 Control de ventas</a>
 </li>
 <li>
-<a href="#OBJ-0004" title="Control de almacen">
+<a href="#OBJ-0004" title="Control de almacén">
                                 [OBJ-0004] 
-Control de almacen </a>
+Control de almacén </a>
 </li>
 </td>
 </tr>
@@ -6199,7 +6233,7 @@ se da salida a un producto de almacen.</em>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-</td>
+Que exista un empleado en el sistema registrado</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="5">Secuencia normal</th>
@@ -6263,7 +6297,7 @@ no hay suficiente stock en almacen,
 Empleado (ACT-0003)
     </a>
 <em>
-Cambia la cantidad de productos a una menor o igual que la que hay en stock en almacen</em>,
+debe cambiar la cantidad de productos a una menor o igual que la que hay en stock en almacen</em>,
                             a continuación este caso de uso
                              
                             <em>continúa</em>
@@ -6371,9 +6405,9 @@ Antonio Gómez Tabuenca</a>
 Control de compras </a>
 </li>
 <li>
-<a href="#OBJ-0004" title="Control de almacen">
+<a href="#OBJ-0004" title="Control de almacén">
                                 [OBJ-0004] 
-Control de almacen </a>
+Control de almacén </a>
 </li>
 </td>
 </tr>
@@ -6390,7 +6424,7 @@ un nuevo material en el sistema.</em>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-No tiene.</td>
+Exista un empleado registrado en el sistema</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="6">Secuencia normal</th>
@@ -6561,9 +6595,9 @@ Antonio Gómez Tabuenca</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="2">
 <li>
-<a href="#OBJ-0004" title="Control de almacen">
+<a href="#OBJ-0004" title="Control de almacén">
                                 [OBJ-0004] 
-Control de almacen </a>
+Control de almacén </a>
 </li>
 </td>
 </tr>
@@ -6708,9 +6742,9 @@ Antonio Gómez Tabuenca</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="2">
 <li>
-<a href="#OBJ-0004" title="Control de almacen">
+<a href="#OBJ-0004" title="Control de almacén">
                                 [OBJ-0004] 
-Control de almacen </a>
+Control de almacén </a>
 </li>
 </td>
 </tr>
@@ -6855,9 +6889,9 @@ Antonio Gómez Tabuenca</a>
 <th align="left" valign="top">Dependencias</th>
 <td align="left" valign="top" colspan="2">
 <li>
-<a href="#OBJ-0004" title="Control de almacen">
+<a href="#OBJ-0004" title="Control de almacén">
                                 [OBJ-0004] 
-Control de almacen </a>
+Control de almacén </a>
 </li>
 </td>
 </tr>
@@ -7028,7 +7062,7 @@ queramos dar de alta un pedido</em>
 <tr>
 <th align="left" valign="top">Precondición</th>
 <td align="left" valign="top" colspan="2">
-No tiene.</td>
+Debe existir al menos un empleado con el rol de administrador o gerente</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="5">Secuencia normal</th>
@@ -7609,7 +7643,7 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
 <a href="&#xA;                        #OBJ-0003" title="Control de personal">OBJ-0003</a>
 </th>
 <th align="center" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #OBJ-0004" title="Control de almacen">OBJ-0004</a>
+<a href="&#xA;                        #OBJ-0004" title="Control de almacén">OBJ-0004</a>
 </th>
 <th align="center" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #OBJ-0005" title="Control de clientes">OBJ-0005</a>
@@ -7821,7 +7855,7 @@ Requisitos de información / Objetivos</p>
 <a href="&#xA;                        #OBJ-0003" title="Control de personal">OBJ-0003</a>
 </th>
 <th align="center" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #OBJ-0004" title="Control de almacen">OBJ-0004</a>
+<a href="&#xA;                        #OBJ-0004" title="Control de almacén">OBJ-0004</a>
 </th>
 <th align="center" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #OBJ-0005" title="Control de clientes">OBJ-0005</a>
