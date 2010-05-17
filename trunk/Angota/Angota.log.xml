@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
 <rem:log xmlns:rem="http://rem.lsi.us.es">
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>SEC-0027</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>17</rem:day>
-</rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
-</rem:change>
-<rem:change>
 <rem:type>U</rem:type>
-<rem:owner>GRF-0004</rem:owner><rem:date>
+<rem:owner>SOP-0001</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>17</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [FileName] actualizada [..\..\..\..\Escritorio\Diagramas de secuencias\DS - Entrada Pedido.wmf] -> [..\..\..\..\Escritorio\Diagramas de secuencias\DS - Entrada Pedido.jpg]]]></rem:description>
+<rem:description><![CDATA[Añadido hijo nº5 ([PRE-0176] Existencia de objeto de Proveedor)]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>C</rem:type>
@@ -3997,17 +3988,44 @@
 <rem:description><![CDATA[Eliminado el objeto [GRF-0004]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GRF-0004</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>17</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [FileName] actualizada [..\..\..\..\Escritorio\Diagramas de secuencias\DS - Entrada Pedido.wmf] -> [..\..\..\..\Escritorio\Diagramas de secuencias\DS - Entrada Pedido.vsd]]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>C</rem:type>
-<rem:owner>GRF-0004</rem:owner><rem:date>
+<rem:owner>SOP-0001</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>17</rem:day>
@@ -4016,20 +4034,272 @@
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>SEC-0027</rem:owner><rem:date>
+<rem:owner>SOP-0001</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>17</rem:day>
 </rem:date>
-<rem:description><![CDATA[Añadido hijo nº1 ([GRF-0004] Entrada pedido)]]></rem:description>
+<rem:description><![CDATA[Propiedad [Expression.Ocl] del hijo nº3 actualizada: [true] -> [Se le ha asociado dicho objeto al objeto de la clase Cliente tal que su identificador es clienteID]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [SOP-0001]  con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>GRF-0004</rem:owner><rem:date>
+<rem:owner>SOP-0001</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>17</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [FileName] actualizada [..\..\..\..\Escritorio\Diagramas de secuencias\DS - Entrada Pedido.vsd] -> [..\..\..\..\Escritorio\Diagramas de secuencias\DS - Entrada Pedido.wmf]]]></rem:description>
+<rem:description><![CDATA[Propiedad [Description] actualizada [sdf] -> [Esta operación describe el comienzo del registro de un nuevo pedido en el sistema]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Expression.Natural] del hijo nº2 actualizada: [PD] -> []]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0028</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 ([SOP-0001] comenzarPedido)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [ResultType] actualizada [] -> [El valor del identificador del objeto de la clase Pedido que se ha creado]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [OBJ-0002] Control de ventas]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Expression.Natural] del hijo nº2 actualizada: [] -> [Se ha creado un objeto de la clase Pedido a la que se le han pasado como parámetros los datos del pedido, tal que su identificador es pedidoID]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Expression.Ocl] del hijo nº2 actualizada: [true] -> []]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Expression.Natural] del hijo nº2 actualizada: [Se ha creado un objeto de la clase Pedido a la que se le han pasado como parámetros los datos del pedido, tal que su identificador es pedidoID] -> []]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº1 ([PRE-0171] Existencia de objeto de la clase Cliente en el sistema)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Expression.Natural] del hijo nº3 actualizada: [PD] -> []]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº5 ([POS-0175] Asociación a Comercial)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Expression.Natural] del hijo nº1 actualizada: [PD] -> []]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Expression.Natural] del hijo nº4 actualizada: [PD] -> []]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº5 ([POS-0175] Asociación a Comercial)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Expression.Ocl] del hijo nº4 actualizada: [true] -> [Se le ha asociado dicho objeto al objeto de la clase Proveedor tal que su identificador es agenteID]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] del hijo nº5 actualizada: [Existencia de objeto de Proveedor] -> [Existencia de objeto de Proveedor en el sistema]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº4 ([POS-0174] Asociación a Proveedor)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 ([POS-0172] Creación de objeto de la clase Pedido)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Expression.Ocl] del hijo nº2 actualizada: [] -> [Se ha creado un objeto de la clase Pedido a la que se le han pasado como parámetros los datos del pedido, tal que su identificador es pedidoID]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadida traza hacia [OBJ-0001] Control de compras ]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Expression.Ocl] del hijo nº1 actualizada: [Existe de un objeto de la clase Cliente en el sistema tal que su identificador es clienteID] -> [Existe un objeto de la clase Cliente en el sistema tal que su identificador es clienteID]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº6 ([PAR-0178] fecha : Date)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Expression.Ocl] del hijo nº1 actualizada: [true] -> [Existencia de un objeto de la clase Cliente en el sistema tal que su identificador es clienteID]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Expression.Ocl] del hijo nº1 actualizada: [Existencia de un objeto de la clase Cliente en el sistema tal que su identificador es clienteID] -> [Existe de un objeto de la clase Cliente en el sistema tal que su identificador es clienteID]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] del hijo nº1 actualizada: [Existencia de objeto de la clase Cliente en el sistema] -> [Existencia un objeto de la clase Cliente en el sistema]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] del hijo nº1 actualizada: [Existencia un objeto de la clase Cliente en el sistema] -> [Existencia de objeto de la clase Cliente en el sistema]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>SEC-0028</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SOP-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº3 ([POS-0173] Asociación a Cliente)]]></rem:description>
 </rem:change>
 </rem:log>
