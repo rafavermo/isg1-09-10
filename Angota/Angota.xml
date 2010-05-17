@@ -4184,7 +4184,7 @@ Ninguno</rem:comments>
 <rem:section
  oid = "SEC-0027">
 <rem:name>
-Entrada Pedido</rem:name>
+Entrada pedido</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -4226,7 +4226,7 @@ Ninguno</rem:comments>
 <rem:section
  oid = "SEC-0026">
 <rem:name>
-Modelado funcional</rem:name>
+Modelado funcional del sistema</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -4240,6 +4240,103 @@ Modelado funcional</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>3 </rem:number>
+<rem:section
+ oid = "SEC-0028">
+<rem:name>
+Entrada pedido</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.1 </rem:number>
+<rem:systemOperation
+ oid = "SOP-0001">
+<rem:name>
+comenzarPedido</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Esta operación describe el comienzo del registro de un nuevo pedido en el sistema</rem:description>
+<rem:resultType>El valor del identificador del objeto de la clase Pedido que se ha creado</rem:resultType>
+<rem:parameter oid = "PAR-0178" baseType = "PVT-0005">
+<rem:name>
+fecha</rem:name>
+<rem:description>
+la fecha que se realiza el pedido</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0171">
+<rem:name>Existencia de objeto de la clase Cliente en el sistema</rem:name>
+<rem:expression>
+<rem:natural>
+</rem:natural>
+<rem:ocl><![CDATA[Existe un objeto de la clase Cliente en el sistema tal que su identificador es clienteID]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+<rem:preconditionExpression oid = "PRE-0176">
+<rem:name>Existencia de objeto de Proveedor en el sistema</rem:name>
+<rem:expression>
+<rem:natural>
+</rem:natural>
+<rem:ocl><![CDATA[Existe un objeto de la clase Proveedor en el sistema tal que su identificador es proveedorID]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+<rem:postconditionExpression oid = "POS-0172">
+<rem:name>Creación de objeto de la clase Pedido</rem:name>
+<rem:expression>
+<rem:natural>
+</rem:natural>
+<rem:ocl><![CDATA[Se ha creado un objeto de la clase Pedido a la que se le han pasado como parámetros los datos del pedido, tal que su identificador es pedidoID]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:postconditionExpression>
+<rem:postconditionExpression oid = "POS-0173">
+<rem:name>Asociación a Cliente</rem:name>
+<rem:expression>
+<rem:natural>
+</rem:natural>
+<rem:ocl><![CDATA[Se le ha asociado dicho objeto al objeto de la clase Cliente tal que su identificador es clienteID]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:postconditionExpression>
+<rem:postconditionExpression oid = "POS-0174">
+<rem:name>Asociación a Proveedor</rem:name>
+<rem:expression>
+<rem:natural>
+</rem:natural>
+<rem:ocl><![CDATA[Se le ha asociado dicho objeto al objeto de la clase Proveedor tal que su identificador es agenteID]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:postconditionExpression>
+</rem:systemOperation>
+</rem:section>
 </rem:section>
 </rem:d_requirementsSpecification>
 <rem:defectsSpecification oid = "DFS-0003">
@@ -4438,6 +4535,12 @@ Ninguno
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "UC-0037"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0001"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0001"  target = "OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
 <rem:predefinedValueTypes>
