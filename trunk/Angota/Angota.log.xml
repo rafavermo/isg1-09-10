@@ -4060,264 +4060,75 @@
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0026</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>18</rem:day>
 </rem:date>
-<rem:description><![CDATA[Creación]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0026</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>18</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [] -> [ Oficio en el que a partir de una idea o tendencias se genera un patrón.]]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0033</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>18</rem:day>
 </rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0032] Marcada del proyecto C:\Users\Rafael\Desktop\ISG1\Angota\Angota.rem]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0028</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>18</rem:day>
 </rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0027] Gerente del proyecto C:\Users\Rafael\Desktop\ISG1\Angota\Angota.rem]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0032</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>18</rem:day>
 </rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0031] Enumeración del proyecto C:\Users\Rafael\Desktop\ISG1\Angota\Angota.rem]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0032</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>18</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Enumeración] -> [Marcada]]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0027</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>18</rem:day>
 </rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0026] Diseñador del proyecto C:\Users\Rafael\Desktop\ISG1\Angota\Angota.rem]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0027</rem:owner><rem:date>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>18</rem:day>
 </rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Diseñador] -> [Gerente]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0027</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [ Oficio en el que a partir de una idea o tendencias se genera un patrón.] -> [ Es el máximo responsable y dueño de toda la empresa, tiene todos los privilegios y media en todos los procesos de negocio.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0031</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0030] Libro de muestra (o muestrario) del proyecto C:\Users\Rafael\Desktop\ISG1\Angota\Angota.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0028</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Gerente] -> [Administrador]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0028</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [ Es el máximo responsable y dueño de toda la empresa, tiene todos los privilegios y media en todos los procesos de negocio.] -> [ Son ayudantes del gerente, su finalidad en la empresa es llevar las cuentas administrar compras, ventas y pedidos.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0029</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0028] Administrador del proyecto C:\Users\Rafael\Desktop\ISG1\Angota\Angota.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0030</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0029] Modelo del proyecto C:\Users\Rafael\Desktop\ISG1\Angota\Angota.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0031</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Libro de muestra (o muestrario)] -> [Enumeración]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0030</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Modelo] -> [Muestra]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0029</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Administrador] -> [Modelo]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0029</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [ Son ayudantes del gerente, su finalidad en la empresa es llevar las cuentas administrar compras, ventas y pedidos.] -> [ Conjunto de varios patrones.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0030</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [ Conjunto de varios patrones.] -> [ Prenda de ejemplo (fabricada en muy bajas unidades) usada normalmente para fomentar sus ventas, confeccción del libro de muestras o para aprobación de la fabricacion en masa.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>GLO-0034</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [GLO-0033] Confeccionar del proyecto C:\Users\Rafael\Desktop\ISG1\Angota\Angota.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0030</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Muestra] -> [Libro de muestra (o muestrario)]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0030</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [ Prenda de ejemplo (fabricada en muy bajas unidades) usada normalmente para fomentar sus ventas, confeccción del libro de muestras o para aprobación de la fabricacion en masa.] -> [ Conjunto de muestras.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0031</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [ Conjunto de muestras.] -> [ Accion por la cual un empleado agrega referencias a tejidos cortados simultaneamente. Esto se hace para evitar posibles cambios de tonos provenientes de la propia naturaleza del tejido.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0033</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Marcada] -> [Confeccionar]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0032</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [ Accion por la cual un empleado agrega referencias a tejidos cortados simultaneamente. Esto se hace para evitar posibles cambios de tonos provenientes de la propia naturaleza del tejido.] -> [ Copia impresa de un patrón.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0033</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [ Copia impresa de un patrón.] -> [ Tarea por la cual un confeccionista une todas las piezas de la prenda para llegar a la prenda final.]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0034</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Confeccionar] -> [Etiquetado]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0034</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [ Tarea por la cual un confeccionista une todas las piezas de la prenda para llegar a la prenda final.] -> [ Introducir en la prenda información sobre como debe ser labada, planchada, numero de talla, colores, materiales...]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>GLO-0034</rem:owner><rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>18</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Text] actualizada [ Introducir en la prenda información sobre como debe ser labada, planchada, numero de talla, colores, materiales...] -> [Introducir en la prenda información sobre cómo debe ser lavada, planchada, numero de talla, colores, materiales...]]]></rem:description>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
 </rem:log>
