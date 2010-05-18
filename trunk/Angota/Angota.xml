@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Archivos de programa\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files\REM 1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Angota</rem:name>
@@ -53,7 +53,7 @@ Introducción</rem:name>
 <rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>En 2010 TextilDev aceptó el encargo de Angota Co. de desarrollar un proyecto de gestión de una empresa textil. Angota Co. se fundó en el 2004 comenzó su actividad en el poligono Store, con una pequeña nave. Actualmente, tiene 2 naves en el polígono Calonge. La empresa la componen 2 administradores, 16 representantes externos 30 operarios de confección externos, 3 cortadores, 2 patronistas, 2 diseñadores, 1 <rem:ref oid="GLO-0007">extendedor</rem:ref>, 1 preparador de <rem:ref oid="GLO-0001">fornituras</rem:ref>, 1 repasador, 1 etiquetador, 1 empaquetador, 4 miembros de atención al cliente, y transportistas. <br/><br/>La aplicación que se va a desarrollar consiste en un sistema de gestión de diferentes contenidos relacionado con la empresa Angota. Se basará en recapitular información relevante tanto a las existencias que se almacenarán, como la metodología que utiliza la empresa. La aplicación intentará recoger las peticiones en formato digital así como informatizar la mayor parte del proceso. <br/><br/>Por último el documento se desarrollará en varios apartados: el segundo apartado se presentaran los participantes del proyecto, tanto las organizaciones que participan como las personas que intervienen por cada organización. En la tercera sección se describirán los procedimientos que sigue actualmente la empresa. En la cuarta se describen los objetivos a alcanzar en la aplicación. La quinta sección es una de las más extensas, conteniendo los requisitos de información, requisitos funcionales (diagrama de acaso de uso, definición de actores y casos de usos del sistema), reglas de negocio y requisitos no funcionales. En la sexta sección se muestra un grafico con la relación que existe entre los objetivos y los diferentes requisitos. Por último tenemos las secciones glosario de términos, conflictos pendientes y 2 apéndices del sistema (documentación y entrevistas)<br/></rem:text>
+<rem:text>En 2010 TextilDev aceptó el encargo de Angota Co. de desarrollar un proyecto de gestión de una empresa textil. Angota Co. se fundó en el 2004 comenzó su actividad en el poligono Store, con una pequeña nave. Actualmente, tiene 2 naves en el polígono Calonge. La empresa la componen 2 administradores, 16 representantes externos 30 operarios de confección externos, 3 cortadores, 2 patronistas, 2 diseñadores, 1 <rem:ref oid="GLO-0007">extendedor</rem:ref>, 1 preparador de <rem:ref oid="GLO-0001">fornituras</rem:ref>, 1 repasador, 1 etiquetador, 1 empaquetador, 4 miembros de atención al cliente, y transportistas. <br/><br/>La aplicación que se va a desarrollar consiste en un sistema de gestión de diferentes contenidos relacionado con la empresa Angota. Se basará en recapitular información relevante tanto a las existencias que se almacenarán, como la metodología que utiliza la empresa. La aplicación intentará recoger las peticiones en formato digital así como informatizar la mayor parte del proceso. <br/><br/>Por último el documento se desarrollará en varios apartados: el segundo apartado se presentaran los participantes del proyecto, tanto las organizaciones que participan como las personas que intervienen por cada organización. En la tercera sección se describirán los procedimientos que sigue actualmente la empresa. En la cuarta se describen los objetivos a alcanzar en la aplicación. La quinta sección es una de las más extensas, conteniendo los requisitos de información, requisitos funcionales (diagrama de acaso de uso, definición de actores y casos de usos del sistema), reglas de negocio y requisitos no funcionales. En la sexta sección se <rem:ref oid="GLO-0030">muestra</rem:ref> un grafico con la relación que existe entre los objetivos y los diferentes requisitos. Por último tenemos las secciones glosario de términos, conflictos pendientes y 2 apéndices del sistema (documentación y entrevistas)<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -212,7 +212,7 @@ Antonio Gómez Tabuenca</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:stakeholderRole>Gerente</rem:stakeholderRole>
+<rem:stakeholderRole><rem:ref oid="GLO-0027">Gerente</rem:ref></rem:stakeholderRole>
 <rem:isCustomer/>
 <rem:isUser/>
 <rem:worksFor organization = "ORG-0002"/>
@@ -232,7 +232,7 @@ Luis López Martinez</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:stakeholderRole>Administrador</rem:stakeholderRole>
+<rem:stakeholderRole><rem:ref oid="GLO-0028">Administrador</rem:ref></rem:stakeholderRole>
 <rem:isCustomer/>
 <rem:isUser/>
 <rem:worksFor organization = "ORG-0002"/>
@@ -401,7 +401,7 @@ Descripcion</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>A continuación se muestran los pasos para llegar a seleccionar materias primas y confeccionar el libro de diseños.</rem:text>
+<rem:text>A continuación se muestran los pasos para llegar a seleccionar materias primas y <rem:ref oid="GLO-0033">confeccionar</rem:ref> el libro de diseños.</rem:text>
 </rem:paragraph>
 <rem:graphicFile
  oid = "GRF-0001">
@@ -455,7 +455,7 @@ Descripción</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>A continuación se muestra el proceso de venta de la empresa y como, partiendo de una serie de pedidos se realiza el proceso de fabricacion en masa para hacer efectivo el producto final.</rem:text>
+<rem:text>A continuación se <rem:ref oid="GLO-0030">muestra</rem:ref> el proceso de venta de la empresa y como, partiendo de una serie de pedidos se realiza el proceso de fabricacion en masa para hacer efectivo el producto final.</rem:text>
 </rem:paragraph>
 <rem:graphicFile
  oid = "GRF-0002">
@@ -509,7 +509,7 @@ Descripción</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Por ultimo se muestra el proceso de producción de diseños o pedidos.</rem:text>
+<rem:text>Por ultimo se <rem:ref oid="GLO-0030">muestra</rem:ref> el proceso de producción de diseños o pedidos.</rem:text>
 </rem:paragraph>
 <rem:graphicFile
  oid = "GRF-0003">
@@ -571,7 +571,7 @@ Ninguno</rem:comments>
 <rem:status value = "STV-0002"/>
 <rem:stability value = "SBV-0004"/>
 <rem:description>
-Controlar las compras de materias primas y otros elementos que hagan posible el finalizado del producto.</rem:description>
+Controlar las compras de materiales que hagan posible el finalizado del producto.</rem:description>
 </rem:objective>
 <rem:objective
  oid = "OBJ-0002">
@@ -1568,7 +1568,7 @@ Ninguno</rem:comments>
 <rem:actor
  oid = "ACT-0001">
 <rem:name>
-Administrador</rem:name>
+<rem:ref oid="GLO-0028">Administrador</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1582,12 +1582,12 @@ Administrador</rem:name>
 <rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:actorRole>al administrador o administradores del sistema que ademas de poseer los privilegios de empleado también tienen derecho a realizar compras, ventas y añadir clientes o trabajadores ajenos a la empresa.</rem:actorRole>
+<rem:actorRole>al <rem:ref oid="GLO-0028">administrador</rem:ref> o administradores del sistema que ademas de poseer los privilegios de empleado también tienen derecho a realizar compras, ventas y añadir clientes o trabajadores ajenos a la empresa.</rem:actorRole>
 </rem:actor>
 <rem:actor
  oid = "ACT-0004">
 <rem:name>
-Gerente</rem:name>
+<rem:ref oid="GLO-0027">Gerente</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1601,7 +1601,7 @@ Gerente</rem:name>
 <rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:actorRole>al usuario con maximos privilegios, ademas de los procesos de informacion que tiene el administrador, puede dar de alta o baja trabajadores internos de la empresa.</rem:actorRole>
+<rem:actorRole>al usuario con maximos privilegios, ademas de los procesos de informacion que tiene el <rem:ref oid="GLO-0028">administrador</rem:ref>, puede dar de alta o baja trabajadores internos de la empresa.</rem:actorRole>
 </rem:actor>
 </rem:section>
 <rem:section
@@ -1662,7 +1662,7 @@ Ninguno</rem:comments>
 <rem:triggeringEvent>
 se proceda al registro de nuevo personal en el sistema.</rem:triggeringEvent>
 <rem:precondition>
-Exista un empleado con el rol de gerente en la empresa.</rem:precondition>
+Exista un empleado con el rol de <rem:ref oid="GLO-0027">gerente</rem:ref> en la empresa.</rem:precondition>
 <rem:postcondition>
 Nuevo trabajador registrado en sistema.</rem:postcondition>
 <rem:frequency>
@@ -1684,7 +1684,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
-solicita al gerente los datos personales del personal a registrar</rem:description>
+solicita al <rem:ref oid="GLO-0027">gerente</rem:ref> los datos personales del personal a registrar</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1700,7 +1700,7 @@ proporciona al sistema los datos personales del personal.<br/></rem:description
 El NIF ya estaba en el sistema registrado</rem:condition>
 <rem:systemAction>
 <rem:description>
-no permite al gerente registrar al nuevo empleado</rem:description>
+no permite al <rem:ref oid="GLO-0027">gerente</rem:ref> registrar al nuevo empleado</rem:description>
 </rem:systemAction>
 <rem:termination value = "TEV-0003"/>
 <rem:comments>
@@ -1743,7 +1743,7 @@ Solo los gerentes del sistema tendrian acceso a realizar esta operacion.</rem:co
 <rem:triggeringEvent>
 se desea consultar informacion del personal de la empresa.</rem:triggeringEvent>
 <rem:precondition>
-Que exista un personal con rol gerente o administrador en el sistema</rem:precondition>
+Que exista un personal con rol <rem:ref oid="GLO-0027">gerente</rem:ref> o <rem:ref oid="GLO-0028">administrador</rem:ref> en el sistema</rem:precondition>
 <rem:postcondition>
 La informacion consultada debe permanecer intacta.</rem:postcondition>
 <rem:frequency>
@@ -1765,7 +1765,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
-muestra una lista con todos los empleados del sistema.</rem:description>
+<rem:ref oid="GLO-0030">muestra</rem:ref> una lista con todos los empleados del sistema.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1783,7 +1783,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-muestra la informacion del personal.</rem:description>
+<rem:ref oid="GLO-0030">muestra</rem:ref> la informacion del personal.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1847,7 +1847,7 @@ Solo los gerentes del sistema tendrian acceso a realizar esta operacion.</rem:co
 <rem:triggeringEvent>
 se realice la baja de personal del sistema.</rem:triggeringEvent>
 <rem:precondition>
-Debe haber al menos un empleado con el rol de Gerente</rem:precondition>
+Debe haber al menos un empleado con el rol de <rem:ref oid="GLO-0027">Gerente</rem:ref></rem:precondition>
 <rem:postcondition>
 El empleado seleccionado debe de estar dado de baja en el sistema.</rem:postcondition>
 <rem:frequency>
@@ -1885,7 +1885,7 @@ selecciona al empleado a dar de baja.</rem:description>
 si no existe el empleado a dar de baja</rem:condition>
 <rem:systemAction>
 <rem:description>
-muestra un mensaje de que no ha podido realizarse la accion</rem:description>
+<rem:ref oid="GLO-0030">muestra</rem:ref> un mensaje de que no ha podido realizarse la accion</rem:description>
 </rem:systemAction>
 <rem:termination value = "TEV-0003"/>
 <rem:comments>
@@ -1945,7 +1945,7 @@ Ninguno</rem:comments>
 <rem:triggeringEvent>
 se proceda a registrar una compra en el sistema.</rem:triggeringEvent>
 <rem:precondition>
-Debe existir al menos un empleado con el rol administrador o gerente</rem:precondition>
+Debe existir al menos un empleado con el rol <rem:ref oid="GLO-0028">administrador</rem:ref> o <rem:ref oid="GLO-0027">gerente</rem:ref></rem:precondition>
 <rem:postcondition>
 Tener una nueva compra en el sistema.</rem:postcondition>
 <rem:frequency>
@@ -1967,7 +1967,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
-pide al administrador los datos de código y cantidad a comprar.</rem:description>
+pide al <rem:ref oid="GLO-0028">administrador</rem:ref> los datos de código y cantidad a comprar.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1996,7 +1996,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-muestra la información de todos los productos e importe total de esa compra.</rem:description>
+<rem:ref oid="GLO-0030">muestra</rem:ref> la información de todos los productos e importe total de esa compra.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2117,7 +2117,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
-pide al administrador los productos y cantidades de la venta</rem:description>
+pide al <rem:ref oid="GLO-0028">administrador</rem:ref> los productos y cantidades de la venta</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2133,7 +2133,7 @@ introduce datos de la venta.</rem:description>
 no hay stock de alguno de los productos a vender</rem:condition>
 <rem:systemAction>
 <rem:description>
-no permite al Administrador finalizar la compra</rem:description>
+no permite al <rem:ref oid="GLO-0028">Administrador</rem:ref> finalizar la compra</rem:description>
 </rem:systemAction>
 <rem:termination value = "TEV-0002"/>
 <rem:comments>
@@ -2146,7 +2146,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-muestra la informacion de los productos y sus totales parciales</rem:description>
+<rem:ref oid="GLO-0030">muestra</rem:ref> la informacion de los productos y sus totales parciales</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2164,7 +2164,7 @@ Ninguno</rem:comments>
 <rem:number>6</rem:number>
 <rem:systemAction>
 <rem:description>
-muestra el resumen completo y la cantidad total de importe de la venta.</rem:description>
+<rem:ref oid="GLO-0030">muestra</rem:ref> el resumen completo y la cantidad total de importe de la venta.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2252,7 +2252,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-muestra la informacion de la venta.</rem:description>
+<rem:ref oid="GLO-0030">muestra</rem:ref> la informacion de la venta.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2605,7 +2605,7 @@ Solo los administradores y gerentes del sistema tendrian acceso a realizar esta 
 <rem:triggeringEvent>
 se proceda al registro de un nuevo comercial en el sistema</rem:triggeringEvent>
 <rem:precondition>
-La existencia de al menos un empleado con el rol de administrador o gerente</rem:precondition>
+La existencia de al menos un empleado con el rol de <rem:ref oid="GLO-0028">administrador</rem:ref> o <rem:ref oid="GLO-0027">gerente</rem:ref></rem:precondition>
 <rem:postcondition>
 Nuevo Agente registrado en sistema</rem:postcondition>
 <rem:frequency>
@@ -2627,7 +2627,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
-solicita al administrador los datos personales del comercial a registrar</rem:description>
+solicita al <rem:ref oid="GLO-0028">administrador</rem:ref> los datos personales del comercial a registrar</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2643,7 +2643,7 @@ proporciona al sistema los datos personales del comercial.</rem:description>
 Si el NIF ya estaba en el sistema registrado</rem:condition>
 <rem:systemAction>
 <rem:description>
-no permite al gerente registrar al nuevo comercial</rem:description>
+no permite al <rem:ref oid="GLO-0027">gerente</rem:ref> registrar al nuevo comercial</rem:description>
 </rem:systemAction>
 <rem:termination value = "TEV-0003"/>
 <rem:comments>
@@ -3205,7 +3205,7 @@ Solo los administradores y gerentes del sistema tendrian acceso a realizar esta 
 <rem:triggeringEvent>
 queramos dar de alta un pedido</rem:triggeringEvent>
 <rem:precondition>
-Debe existir al menos un empleado con el rol de administrador o gerente</rem:precondition>
+Debe existir al menos un empleado con el rol de <rem:ref oid="GLO-0028">administrador</rem:ref> o <rem:ref oid="GLO-0027">gerente</rem:ref></rem:precondition>
 <rem:postcondition>
 Pedido registrado en el sistema</rem:postcondition>
 <rem:frequency>
@@ -3227,7 +3227,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
-solicita al administrador los datos relacionados con el pedido.</rem:description>
+solicita al <rem:ref oid="GLO-0028">administrador</rem:ref> los datos relacionados con el pedido.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -3921,7 +3921,160 @@ Ninguno</rem:comments>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Oficio cuya finalidad es colocar <rem:ref oid="GLO-0003">tipos</rem:ref> uno encima de otro para que el cortador, una vez puesta la marcada, corte las telas.</rem:text>
+<rem:text> Oficio cuya finalidad es colocar <rem:ref oid="GLO-0003">tipos</rem:ref> uno encima de otro para que el cortador, una vez puesta la <rem:ref oid="GLO-0032">marcada</rem:ref>, corte las telas.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0026">
+<rem:name>
+<rem:ref oid="GLO-0026">Diseñador</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Oficio en el que a partir de una idea o tendencias se genera un <rem:ref oid="GLO-0002">patrón</rem:ref>.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0027">
+<rem:name>
+<rem:ref oid="GLO-0027">Gerente</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Es el máximo responsable y dueño de toda la empresa, tiene todos los privilegios y media en todos los procesos de negocio.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0028">
+<rem:name>
+<rem:ref oid="GLO-0028">Administrador</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Son ayudantes del <rem:ref oid="GLO-0027">gerente</rem:ref>, su finalidad en la empresa es llevar las cuentas administrar compras, ventas y pedidos.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0029">
+<rem:name>
+<rem:ref oid="GLO-0029">Modelo</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Conjunto de varios patrones.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0030">
+<rem:name>
+<rem:ref oid="GLO-0030">Libro de muestra (o muestrario)</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Conjunto de muestras.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0031">
+<rem:name>
+<rem:ref oid="GLO-0031">Enumeración</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Accion por la cual un empleado agrega referencias a tejidos cortados simultaneamente. Esto se hace para evitar posibles cambios de tonos provenientes de la propia naturaleza del tejido.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0032">
+<rem:name>
+<rem:ref oid="GLO-0032">Marcada</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Copia impresa de un <rem:ref oid="GLO-0002">patrón</rem:ref>.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0033">
+<rem:name>
+<rem:ref oid="GLO-0033">Confeccionar</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Tarea por la cual un confeccionista une todas las piezas de la prenda para llegar a la prenda final.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0034">
+<rem:name>
+<rem:ref oid="GLO-0034">Etiquetado</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>18</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Introducir en la prenda información sobre cómo debe ser lavada, planchada, numero de talla, colores, materiales...</rem:text>
 </rem:glossaryItem>
 </rem:section>
 <rem:section
