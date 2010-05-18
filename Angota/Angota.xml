@@ -53,7 +53,7 @@ Introducción</rem:name>
 <rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>En 2010 TextilDev aceptó el encargo de Angota Co. de desarrollar un proyecto de gestión de una empresa textil. Angota Co. se fundó en el 2004 comenzó su actividad en el poligono Store, con una pequeña nave. Actualmente, tiene 2 naves en el polígono Calonge. La empresa la componen 2 administradores, 16 representantes externos 30 operarios de confección externos, 3 cortadores, 2 patronistas, 2 diseñadores, 1 <rem:ref oid="GLO-0007">extendedor</rem:ref>, 1 preparador de <rem:ref oid="GLO-0001">fornituras</rem:ref>, 1 repasador, 1 etiquetador, 1 empaquetador, 4 miembros de atención al cliente, y transportistas. <br/><br/>La aplicación que se va a desarrollar consiste en un sistema de gestión de diferentes contenidos relacionado con la empresa Angota. Se basará en recapitular información relevante tanto a las existencias que se almacenarán, como la metodología que utiliza la empresa. La aplicación intentará recoger las peticiones en formato digital así como informatizar la mayor parte del proceso. <br/><br/>Por último el documento se desarrollará en varios apartados: el segundo apartado se presentaran los participantes del proyecto, tanto las organizaciones que participan como las personas que intervienen por cada organización. En la tercera sección se describirán los procedimientos que sigue actualmente la empresa. En la cuarta se describen los objetivos a alcanzar en la aplicación. La quinta sección es una de las más extensas, conteniendo los requisitos de información, requisitos funcionales (diagrama de acaso de uso, definición de actores y casos de usos del sistema), reglas de negocio y requisitos no funcionales. En la sexta sección se <rem:ref oid="GLO-0030">muestra</rem:ref> un grafico con la relación que existe entre los objetivos y los diferentes requisitos. Por último tenemos las secciones glosario de términos, conflictos pendientes y 2 apéndices del sistema (documentación y entrevistas)<br/></rem:text>
+<rem:text>En 2010 TextilDev aceptó el encargo de Angota Co. de desarrollar un proyecto de gestión de una empresa textil. Angota Co. se fundó en el 2004 comenzó su actividad en el poligono Store, con una pequeña nave. Actualmente, tiene 2 naves en el polígono Calonge. La empresa la componen 2 administradores, 16 representantes externos 30 operarios de confección externos, 3 cortadores, 2 patronistas, 2 diseñadores, 1 <rem:ref oid="GLO-0007">extendedor</rem:ref>, 1 preparador de <rem:ref oid="GLO-0001">fornituras</rem:ref>, 1 repasador, 1 etiquetador, 1 empaquetador, 4 miembros de atención al cliente, y transportistas. <br/><br/>La aplicación que se va a desarrollar consiste en un sistema de gestión de diferentes contenidos relacionado con la empresa Angota. Se basará en recapitular información relevante tanto a las existencias que se almacenarán, como la metodología que utiliza la empresa. La aplicación intentará recoger las peticiones en formato digital así como informatizar la mayor parte del proceso. <br/><br/>Por último el documento se desarrollará en varios apartados: el segundo apartado se presentaran los participantes del proyecto, tanto las organizaciones que participan como las personas que intervienen por cada organización. En la tercera sección se describirán los procedimientos que sigue actualmente la empresa. En la cuarta se describen los objetivos a alcanzar en la aplicación. La quinta sección es una de las más extensas, conteniendo los requisitos de información, requisitos funcionales (diagrama de acaso de uso, definición de actores y casos de usos del sistema), reglas de negocio y requisitos no funcionales. En la sexta sección se muestra un grafico con la relación que existe entre los objetivos y los diferentes requisitos. Por último tenemos las secciones glosario de términos, conflictos pendientes y 2 apéndices del sistema (documentación y entrevistas)<br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section
@@ -455,7 +455,7 @@ Descripción</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>A continuación se <rem:ref oid="GLO-0030">muestra</rem:ref> el proceso de venta de la empresa y como, partiendo de una serie de pedidos se realiza el proceso de fabricacion en masa para hacer efectivo el producto final.</rem:text>
+<rem:text>A continuación se muestra el proceso de venta de la empresa y como, partiendo de una serie de pedidos se realiza el proceso de fabricacion en masa para hacer efectivo el producto final.</rem:text>
 </rem:paragraph>
 <rem:graphicFile
  oid = "GRF-0002">
@@ -509,7 +509,7 @@ Descripción</rem:name>
 </rem:version>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text>Por ultimo se <rem:ref oid="GLO-0030">muestra</rem:ref> el proceso de producción de diseños o pedidos.</rem:text>
+<rem:text>Por ultimo se muestra el proceso de producción de diseños o pedidos.</rem:text>
 </rem:paragraph>
 <rem:graphicFile
  oid = "GRF-0003">
@@ -1765,7 +1765,7 @@ Ninguno</rem:comments>
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
-<rem:ref oid="GLO-0030">muestra</rem:ref> una lista con todos los empleados del sistema.</rem:description>
+muestra una lista con todos los empleados del sistema.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1783,7 +1783,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-<rem:ref oid="GLO-0030">muestra</rem:ref> la informacion del personal.</rem:description>
+muestra la informacion del personal.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -1885,7 +1885,7 @@ selecciona al empleado a dar de baja.</rem:description>
 si no existe el empleado a dar de baja</rem:condition>
 <rem:systemAction>
 <rem:description>
-<rem:ref oid="GLO-0030">muestra</rem:ref> un mensaje de que no ha podido realizarse la accion</rem:description>
+muestra un mensaje de que no ha podido realizarse la accion</rem:description>
 </rem:systemAction>
 <rem:termination value = "TEV-0003"/>
 <rem:comments>
@@ -1983,7 +1983,7 @@ introduce los datos.</rem:description>
 no existe algún material en el sistema</rem:condition>
 <rem:systemAction>
 <rem:description>
-se abre un caso de uso del tipo &quot;entrada de material&quot; por cada material que no exista en el sistema</rem:description>
+se realiza el caso de uso &quot;entrada de material&quot; por cada material que no exista en el sistema</rem:description>
 </rem:systemAction>
 <rem:termination value = "TEV-0002"/>
 <rem:comments>
@@ -1996,7 +1996,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-<rem:ref oid="GLO-0030">muestra</rem:ref> la información de todos los productos e importe total de esa compra.</rem:description>
+muestra la información de todos los productos e importe total de esa compra.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2146,7 +2146,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-<rem:ref oid="GLO-0030">muestra</rem:ref> la informacion de los productos y sus totales parciales</rem:description>
+muestra la informacion de los productos y sus totales parciales</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2164,7 +2164,7 @@ Ninguno</rem:comments>
 <rem:number>6</rem:number>
 <rem:systemAction>
 <rem:description>
-<rem:ref oid="GLO-0030">muestra</rem:ref> el resumen completo y la cantidad total de importe de la venta.</rem:description>
+muestra el resumen completo y la cantidad total de importe de la venta.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -2252,7 +2252,7 @@ Ninguno</rem:comments>
 <rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
-<rem:ref oid="GLO-0030">muestra</rem:ref> la informacion de la venta.</rem:description>
+muestra la informacion de la venta.</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
