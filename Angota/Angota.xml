@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Archivos de programa\REM 1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Angota</rem:name>
@@ -4191,15 +4191,6 @@ el nombre de la persona.</rem:description>
 Ninguno</rem:comments>
 <rem:isVariable/>
 </rem:attribute>
-<rem:attribute oid = "ATT-0144" baseType = "PVT-0004">
-<rem:name>
-Apellidos</rem:name>
-<rem:description>
-los apellidos de la persona.</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:isVariable/>
-</rem:attribute>
 <rem:attribute oid = "ATT-0145" baseType = "PVT-0004">
 <rem:name>
 Direccion</rem:name>
@@ -4214,15 +4205,6 @@ Ninguno</rem:comments>
 Telefono</rem:name>
 <rem:description>
 el numero de telefono para localizar a la persona.</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:isVariable/>
-</rem:attribute>
-<rem:attribute oid = "ATT-0147" baseType = "PVT-0002">
-<rem:name>
-Codigo Postal</rem:name>
-<rem:description>
-el numero asociado al distrito postal donde vive la persona.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:isVariable/>
