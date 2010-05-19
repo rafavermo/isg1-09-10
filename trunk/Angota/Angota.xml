@@ -4191,6 +4191,15 @@ el nombre de la persona.</rem:description>
 Ninguno</rem:comments>
 <rem:isVariable/>
 </rem:attribute>
+<rem:attribute oid = "ATT-0144" baseType = "PVT-0004">
+<rem:name>
+Apellidos</rem:name>
+<rem:description>
+los apellidos de la persona.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
 <rem:attribute oid = "ATT-0145" baseType = "PVT-0004">
 <rem:name>
 Direccion</rem:name>
@@ -4248,6 +4257,38 @@ la comision por ventas que se lleva cada comercial.</rem:description>
 Ninguno</rem:comments>
 <rem:isVariable/>
 </rem:attribute>
+<rem:attribute oid = "ATT-0179" baseType = "PVT-0004">
+<rem:name>
+Clientes</rem:name>
+<rem:description>
+La bolsa de clientes que ha atendido este comercial.</rem:description>
+<rem:isBag/>
+<rem:multiplicity>
+<rem:lowerBound>
+<rem:tbd/></rem:lowerBound>
+<rem:upperBound>
+<rem:tbd/></rem:upperBound>
+</rem:multiplicity>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0180" baseType = "PVT-0002">
+<rem:name>
+Pedidos</rem:name>
+<rem:description>
+el conjunto de pedidos que ha realizado este comercial.</rem:description>
+<rem:isSet/>
+<rem:multiplicity>
+<rem:lowerBound>
+<rem:tbd/></rem:lowerBound>
+<rem:upperBound>
+<rem:tbd/></rem:upperBound>
+</rem:multiplicity>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
 <rem:disjointSubtypes/>
 </rem:objectType>
 <rem:objectType
@@ -4269,15 +4310,6 @@ Personal</rem:name>
 Ninguno</rem:comments>
 <rem:description>
 <rem:tbd/></rem:description>
-<rem:attribute oid = "ATT-0151" baseType = "PVT-0002">
-<rem:name>
-FAX</rem:name>
-<rem:description>
-el numero del fax asociado al personal.</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:isVariable/>
-</rem:attribute>
 <rem:attribute oid = "ATT-0152" baseType = "PVT-0004">
 <rem:name>
 Categoria profesional</rem:name>
@@ -4292,6 +4324,15 @@ Ninguno</rem:comments>
 Jornada laboral</rem:name>
 <rem:description>
 el numero de horas diarias que debe trabajar.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0181" baseType = "PVT-0001">
+<rem:name>
+Sueldo</rem:name>
+<rem:description>
+El sueldo mensual de este miembro de personal.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:isVariable/>
@@ -4346,6 +4387,27 @@ Entrada pedido</rem:name>
 <rem:year>2010</rem:year>
 <rem:month>5</rem:month>
 <rem:day>17</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[..\..\..\..\Escritorio\Diagramas de secuencias\DS - Entrada Pedido.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0005">
+<rem:name>
+Copia de Entrada pedido</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>19</rem:day>
 </rem:date>
 </rem:version>
 <rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
@@ -4470,6 +4532,52 @@ Ninguno</rem:comments>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:postconditionExpression>
+</rem:systemOperation>
+</rem:section>
+<rem:section
+ oid = "SEC-0029">
+<rem:name>
+Baja pedido</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.2 </rem:number>
+<rem:systemOperation
+ oid = "SOP-0002">
+<rem:name>
+comenzarBajaPersonal</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:preconditionExpression oid = "PRE-0182">
+<rem:name>El que ejecuta esta accion de sistemas debe ser un Gerente</rem:name>
+<rem:expression>
+<rem:natural>
+<rem:tbd/></rem:natural>
+<rem:ocl><![CDATA[true]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
 </rem:systemOperation>
 </rem:section>
 </rem:section>
