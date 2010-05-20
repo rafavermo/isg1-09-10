@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Archivos de programa\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files\REM 1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Angota</rem:name>
@@ -1494,6 +1494,25 @@ Diagrama para control de compras y ventas</rem:name>
 Ninguno</rem:comments>
 <rem:text></rem:text>
 </rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0006">
+<rem:name>
+Compras y ventas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\metadatas\UC compras y ventas.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
 <rem:paragraph
  oid = "PRG-0024">
 <rem:name>
@@ -1511,6 +1530,25 @@ Diagrama para control de personal y almacén</rem:name>
 Ninguno</rem:comments>
 <rem:text></rem:text>
 </rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0007">
+<rem:name>
+Personal y almacen</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\metadatas\UC personal y material.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
 <rem:paragraph
  oid = "PRG-0025">
 <rem:name>
@@ -1528,6 +1566,25 @@ Diagrama para control de clientes y proveedores</rem:name>
 Ninguno</rem:comments>
 <rem:text></rem:text>
 </rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0008">
+<rem:name>
+Clientes y proveedores</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\metadatas\UC clientes y proveedores.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
 </rem:section>
 <rem:section
  oid = "SEC-0015">
