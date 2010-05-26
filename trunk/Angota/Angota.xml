@@ -817,6 +817,12 @@ Facturas</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
+<rem:specificData oid = "DAT-0183">
+<rem:description>
+Comercial</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
 </rem:informationRequirement>
 <rem:informationRequirement
  oid = "IRQ-0002">
