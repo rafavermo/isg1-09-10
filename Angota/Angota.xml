@@ -4455,6 +4455,47 @@ Ninguno</rem:comments>
 </rem:fileName>
 </rem:graphicFile>
 </rem:section>
+<rem:section
+ oid = "SEC-0030">
+<rem:name>
+Registrar Venta</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0006 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.2 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0009">
+<rem:name>
+Registrar venta</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0006 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\metadatas\DS - Registrar Venta.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
 </rem:section>
 <rem:section
  oid = "SEC-0026">
