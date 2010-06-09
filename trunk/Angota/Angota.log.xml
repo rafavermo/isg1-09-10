@@ -4554,4 +4554,179 @@
 </rem:date>
 <rem:description><![CDATA[Documento guardado]]></rem:description>
 </rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DRS-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>DFS-0003</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>S</rem:type>
+<rem:owner>CHS-0004</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+<rem:description><![CDATA[Documento guardado]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>MET-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>MET-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Time] actualizada [14:45] -> [15:30]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>MET-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Primera Entrevista] -> [Segunda Entrevista]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>MET-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [MET-0001] Primera Entrevista del proyecto C:\Users\Rafael\Desktop\ISG\Angota\Angota.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [MET-0002]  con 0 hijos y 1 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>MET-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido asistente [STK-0001] Rafael Gómez García]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>MET-0001</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Date] actualizada [2010/06/09] -> [2010/03/06]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>MET-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Version] actualizada [1.0 2010/06/09] -> [1.0 2010/06/26]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>MET-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido asistente [STK-0004] Antonio Gómez Tabuenca]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>MET-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Results] actualizada [La sesión comienza a las 15:30 para, una vez tenido detalles sobre el negocio y habiendo decidido los objetivos que solucionara el sistema, nos disponemos a conocer, en mucho mas detalle, lo que necesitabamos.
+
+Para empezar se hace una descripción general de los distintos departamentos que tiene angota, cuya principal finalidad es hacernos una idea de cómo es la industria textil, destacan:
+
+De esta entrevista conocimos todo el proceso de produccion, venta y compra de materiales y productos asi como las medidas y ] -> [La sesión comienza a las 15:30 para, una vez tenido detalles sobre el negocio y habiendo decidido los objetivos que solucionara el sistema, nos disponemos a conocer, en mucho mas detalle, lo que necesitabamos.
+
+Para empezar se hace una descripción general de los distintos departamentos que tiene angota, cuya principal finalidad es hacernos una idea de cómo es la industria textil, destacan:
+
+De esta entrevista conocimos todo el proceso de produccion, venta y compra de materiales y productos asi como las medidas de pago, jerarquia de la empresa, asi como otras funciones.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>MET-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Date] actualizada [2010/03/06] -> [2010/03/27]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>MET-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Time] actualizada [14:45] -> [15:30]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>MET-0002</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Results] actualizada [La sesión comienza a las 15:30 con una primera toma de contacto con Antonio Gómez Tabuenca (Gerente de Angota company).
+
+Para empezar se hace una descripción general de los distintos departamentos que tiene angota, cuya principal finalidad es hacernos una idea de cómo es la industria textil, destacan:
+
+Dpto de diseño: Es el encargado de elegir los tipos para crear un muestrario.
+Dpto de  Patronaje: Es el encargado de hacer un escalado para las distintas tallas
+Dpto de Corte: Tiene tres grandes finalidades: realiza marcadas, extiende tejidos y los corta.
+Dpto de Preparacion: Dota a todos los modelos cortados de su correspondiente fornitura,
+Dpto de Confeccion: Confecciona (cose) la prenda como objetivos principales destaca la enumeración de la prenda, cosido y planchado
+
+Al final de la reunión conseguirmos tener ideas generales de todo el negocio (en su funcionamiento) y conocer el vocabulario básico del negocio (incluido en el apartado "glosario de términos".] -> [La sesión comienza a las 15:30 para, una vez tenido detalles sobre el negocio y habiendo decidido los objetivos que solucionara el sistema, nos disponemos a conocer, en mucho mas detalle, lo que necesitabamos.
+
+Para empezar se hace una descripción general de los distintos departamentos que tiene angota, cuya principal finalidad es hacernos una idea de cómo es la industria textil, destacan:
+
+De esta entrevista conocimos todo el proceso de produccion, venta y compra de materiales y productos asi como las medidas y ]]]></rem:description>
+</rem:change>
 </rem:log>

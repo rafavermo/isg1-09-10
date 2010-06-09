@@ -4193,6 +4193,66 @@ Resúmenes de entrevistas</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>B </rem:number>
+<rem:meeting
+ oid = "MET-0001">
+<rem:name>
+Primera Entrevista</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>6</rem:day>
+</rem:date>
+<rem:time>
+<rem:hour>15</rem:hour>
+<rem:minute>30</rem:minute>
+</rem:time>
+<rem:place>Despacho de Antonio Gómez</rem:place>
+<rem:results>La sesión comienza a las 15:30 con una primera toma de contacto con Antonio Gómez Tabuenca (<rem:ref oid="GLO-0027">Gerente</rem:ref> de Angota company).<br/><br/>Para empezar se hace una descripción general de los distintos departamentos que tiene angota, cuya principal finalidad es hacernos una idea de cómo es la industria textil, destacan:<br/><br/>Dpto de diseño: Es el encargado de elegir los <rem:ref oid="GLO-0003">tipos</rem:ref> para crear un muestrario.<br/>Dpto de  Patronaje: Es el encargado de hacer un escalado para las distintas tallas<br/>Dpto de Corte: Tiene tres grandes finalidades: realiza marcadas, extiende tejidos y los corta.<br/>Dpto de Preparacion: Dota a todos los modelos cortados de su correspondiente fornitura,<br/>Dpto de Confeccion: Confecciona (cose) la prenda como objetivos principales destaca la <rem:ref oid="GLO-0031">enumeración</rem:ref> de la prenda, cosido y planchado<br/><br/>Al final de la reunión conseguirmos tener ideas generales de todo el negocio (en su funcionamiento) y conocer el vocabulario básico del negocio (incluido en el apartado &quot;glosario de términos&quot;.</rem:results>
+	<rem:attenders stakeholders ="STK-0001 STK-0004 "/>
+</rem:meeting>
+<rem:meeting
+ oid = "MET-0002">
+<rem:name>
+Segunda Entrevista</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>3</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+<rem:time>
+<rem:hour>15</rem:hour>
+<rem:minute>30</rem:minute>
+</rem:time>
+<rem:place>Despacho de Antonio Gómez</rem:place>
+<rem:results>La sesión comienza a las 15:30 para, una vez tenido detalles sobre el negocio y habiendo decidido los objetivos que solucionara el sistema, nos disponemos a conocer, en mucho mas detalle, lo que necesitabamos.<br/><br/>Para empezar se hace una descripción general de los distintos departamentos que tiene angota, cuya principal finalidad es hacernos una idea de cómo es la industria textil, destacan:<br/><br/>De esta entrevista conocimos todo el proceso de produccion, venta y compra de materiales y productos asi como las medidas de pago, jerarquia de la empresa, asi como otras funciones.</rem:results>
+	<rem:attenders stakeholders ="STK-0001 STK-0004 "/>
+</rem:meeting>
 </rem:section>
 </rem:c_requirementsSpecification>
 <rem:d_requirementsSpecification oid = "DRS-0002">
