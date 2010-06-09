@@ -731,7 +731,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0001">
 <rem:name>
-Información de clientes</rem:name>
+Información de cliente</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -779,7 +779,7 @@ Ninguno</rem:comments>
 <rem:description>
 Teléfono</rem:description>
 <rem:comments>
-Ninguno</rem:comments>
+Fijo, fax, móvil...</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0006">
 <rem:description>
@@ -791,7 +791,7 @@ Ninguno</rem:comments>
 <rem:description>
 Dirección</rem:description>
 <rem:comments>
-(Calle, ciudad, provincia, código postal)</rem:comments>
+Calle, ciudad, provincia, código postal</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0009">
 <rem:description>
@@ -827,7 +827,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0002">
 <rem:name>
-Información de proveedores</rem:name>
+Información de proveedor</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -973,21 +973,15 @@ Cliente/Proveedor</rem:description>
 <rem:comments>
 Datos del cliente o del proveedor</rem:comments>
 </rem:specificData>
-<rem:specificData oid = "DAT-0159">
-<rem:description>
-Empleado</rem:description>
-<rem:comments>
-Persona que realiza la factura</rem:comments>
-</rem:specificData>
 <rem:specificData oid = "DAT-0025">
 <rem:description>
-Lineas de factura</rem:description>
+Productos/Materiales Factura</rem:description>
 <rem:comments>
 Código, cantidad, precio, descuento, impuestos, total neto</rem:comments>
 </rem:specificData>
-<rem:specificData oid = "DAT-0026">
+<rem:specificData oid = "DAT-0029">
 <rem:description>
-Importe</rem:description>
+Forma de pago</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -997,9 +991,9 @@ IVA</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
-<rem:specificData oid = "DAT-0029">
+<rem:specificData oid = "DAT-0026">
 <rem:description>
-Forma de pago</rem:description>
+Importe</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1059,25 +1053,25 @@ Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0123">
 <rem:description>
-Cliente/Proveedores</rem:description>
+Cliente/Proveedor</rem:description>
 <rem:comments>
 Datos del cliente o del proveedor</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0160">
 <rem:description>
-Empleado/Comercial</rem:description>
+Comercial</rem:description>
 <rem:comments>
 Empleado o comercial que realiza el pedido</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0124">
 <rem:description>
-Lineas de pedido</rem:description>
+Productos/Materiales Pedido</rem:description>
 <rem:comments>
 Código, cantidad, precio, descuento, impuestos, total neto</rem:comments>
 </rem:specificData>
-<rem:specificData oid = "DAT-0125">
+<rem:specificData oid = "DAT-0128">
 <rem:description>
-Importe</rem:description>
+Forma de pago</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1087,15 +1081,15 @@ IVA</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
-<rem:specificData oid = "DAT-0127">
+<rem:specificData oid = "DAT-0125">
 <rem:description>
-Importe total</rem:description>
+Importe</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
-<rem:specificData oid = "DAT-0128">
+<rem:specificData oid = "DAT-0127">
 <rem:description>
-Forma de pago</rem:description>
+Importe total</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
@@ -1103,7 +1097,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0004">
 <rem:name>
-Informacion de comerciales</rem:name>
+Informacion de comercial</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1187,7 +1181,7 @@ Ninguno</rem:comments>
 <rem:informationRequirement
  oid = "IRQ-0005">
 <rem:name>
-Informacion de productos</rem:name>
+Informacion de producto</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1315,11 +1309,11 @@ Código</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
-<rem:specificData oid = "DAT-0117">
+<rem:specificData oid = "DAT-0052">
 <rem:description>
-Cantidad o stock</rem:description>
+Referencia</rem:description>
 <rem:comments>
-Ninguno</rem:comments>
+Código asignado por el proveedor</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0051">
 <rem:description>
@@ -1327,11 +1321,11 @@ Descripción</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:specificData>
-<rem:specificData oid = "DAT-0052">
+<rem:specificData oid = "DAT-0117">
 <rem:description>
-Referencia</rem:description>
+Cantidad o stock</rem:description>
 <rem:comments>
-Código asignado por el proveedor</rem:comments>
+Ninguno</rem:comments>
 </rem:specificData>
 <rem:specificData oid = "DAT-0053">
 <rem:description>
