@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Archivos de programa\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files\REM 1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Angota</rem:name>
@@ -4214,7 +4214,7 @@ Ninguno</rem:comments>
 <rem:minute>30</rem:minute>
 </rem:time>
 <rem:place>Despacho de Antonio Gómez</rem:place>
-<rem:results>La sesión comienza a las 15:30 con una primera toma de contacto con Antonio Gómez Tabuenca (<rem:ref oid="GLO-0027">Gerente</rem:ref> de Angota company).<br/><br/>Para empezar se hace una descripción general de los distintos departamentos que tiene angota, cuya principal finalidad es hacernos una idea de cómo es la industria textil, destacan:<br/><br/>Dpto de diseño: Es el encargado de elegir los <rem:ref oid="GLO-0003">tipos</rem:ref> para crear un muestrario.<br/>Dpto de  Patronaje: Es el encargado de hacer un escalado para las distintas tallas<br/>Dpto de Corte: Tiene tres grandes finalidades: realiza marcadas, extiende tejidos y los corta.<br/>Dpto de Preparacion: Dota a todos los modelos cortados de su correspondiente fornitura,<br/>Dpto de Confeccion: Confecciona (cose) la prenda como objetivos principales destaca la <rem:ref oid="GLO-0031">enumeración</rem:ref> de la prenda, cosido y planchado<br/><br/>Al final de la reunión conseguirmos tener ideas generales de todo el negocio (en su funcionamiento) y conocer el vocabulario básico del negocio (incluido en el apartado &quot;glosario de términos&quot;.</rem:results>
+<rem:results>La sesión comienza a las 15:30 con una primera toma de contacto con Antonio Gómez Tabuenca (<rem:ref oid="GLO-0027">Gerente</rem:ref> de Angota company).<br/><br/>Para empezar se hace una descripción general de los distintos departamentos que tiene Angota, cuya principal finalidad es hacernos una idea de cómo es la industria textil, destacan:<br/><br/>Dpto. de diseño: Es el encargado de elegir los <rem:ref oid="GLO-0003">tipos</rem:ref> para crear un muestrario.<br/><br/>Dpto. de  patronaje: Es el encargado de hacer un escalado para las distintas tallas.<br/><br/>Dpto. de corte: Tiene tres grandes finalidades: realiza marcadas, extiende tejidos y los corta.<br/><br/>Dpto. de preparación: Dota a todos los modelos cortados de su correspondiente fornitura,<br/><br/>Dpto. de confección: Confecciona la prenda. Como objetivos principales destaca la <rem:ref oid="GLO-0031">enumeración</rem:ref> de la prenda, el cosido y el planchado.<br/><br/>Dpto. de control de calidad: Su finalidad básica es detectar los posibles errores en la prenda, etiquetar, embolsar y organizar las tallas.<br/><br/>Dpto. de empaquetado: Ordena los pedidos para que estén listos para enviar.<br/><br/>Dpto. de facturación: se dedica a cobros de pedidos, control de facturación y mantiene el control de la venta.<br/><br/>Al final de la sesión conseguimos tener ideas generales de todo el negocio (en su funcionamiento) y conocer el vocabulario básico del negocio (incluido en el apartado &quot;glosario de términos&quot;.</rem:results>
 	<rem:attenders stakeholders ="STK-0001 STK-0004 "/>
 </rem:meeting>
 <rem:meeting
@@ -4244,7 +4244,7 @@ Ninguno</rem:comments>
 <rem:minute>30</rem:minute>
 </rem:time>
 <rem:place>Despacho de Antonio Gómez</rem:place>
-<rem:results>La sesión comienza a las 15:30 para, una vez tenido detalles sobre el negocio y habiendo decidido los objetivos que solucionara el sistema, nos disponemos a conocer, en mucho mas detalle, lo que necesitabamos.<br/><br/>Para empezar se hace una descripción general de los distintos departamentos que tiene angota, cuya principal finalidad es hacernos una idea de cómo es la industria textil, destacan:<br/><br/>De esta entrevista conocimos todo el proceso de produccion, venta y compra de materiales y productos asi como las medidas de pago, jerarquia de la empresa, asi como otras funciones.</rem:results>
+<rem:results>La sesión comienza a las 15:30. Una vez conocido los detalles sobre el negocio y habiendo decidido los objetivos que solucionará el sistema, nos disponemos a conocer, en mucho más detalle, lo que necesitábamos para empezar con la elicitación de requisitos y los casos de uso.<br/><br/>Para empezar se hace una descripción detallada departamentos que tiene Angota, centrándonos en los departamentos que nuestro cliente tiene más interés en automatizar.<br/><br/>De esta entrevista conocimos todo el proceso de producción, venta y compra de materiales y productos así como las medidas de pago, jerarquía de la empresa, así como otras funciones.<br/></rem:results>
 	<rem:attenders stakeholders ="STK-0001 STK-0004 "/>
 </rem:meeting>
 </rem:section>
