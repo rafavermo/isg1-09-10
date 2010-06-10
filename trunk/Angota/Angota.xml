@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Archivos de programa\REM 1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Angota</rem:name>
@@ -4458,6 +4458,26 @@ Ninguno</rem:comments>
 </rem:attribute>
 <rem:disjointSubtypes/>
 </rem:objectType>
+<rem:graphicFile
+ oid = "GRF-0010">
+<rem:name>
+Diagrama de clase</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>10</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\metadatas\diagrama de clases.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
 </rem:section>
 <rem:section
  oid = "SEC-0025">

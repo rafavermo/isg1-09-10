@@ -2,6 +2,15 @@
 <rem:log xmlns:rem="http://rem.lsi.us.es">
 <rem:change>
 <rem:type>C</rem:type>
+<rem:owner>GRF-0010</rem:owner><rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>10</rem:day>
+</rem:date>
+<rem:description><![CDATA[Creación]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
 <rem:owner>CRS-0001</rem:owner><rem:date>
 <rem:year>2010</rem:year>
 <rem:month>3</rem:month>
