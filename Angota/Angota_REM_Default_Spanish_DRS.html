@@ -195,8 +195,7 @@ Rafael Vergara Moreno</a>
 <td colspan="3" align="left" valign="top">
     Este tipo de objetos representa
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+las personas que estan registradas en el sistema.</em>
 </td>
 </tr>
 <tr>
@@ -217,6 +216,12 @@ Comercial</a>
 									[TYP-0003] 
 									
 Personal</a>
+</li>
+<li>
+<a href="&#xA;										#TYP-0005">
+									[TYP-0005] 
+									
+Cliente</a>
 </li>
 <li>
 <a href="&#xA;										#TYP-0006">
@@ -258,36 +263,6 @@ Nombre</th>
     Este atributo representa
 <em>
 el nombre de la persona.</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Tipo</th>
-<td align="left" valign="top">
-<code>
-String</code>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Comentarios</th>
-<td align="left" valign="top" colspan="1">
-Ninguno</td>
-</tr>
-</table>
-<p />
-<a name="ATT-0144" />
-<table border="1" width="100%">
-<tr bgcolor="#c8e0e0">
-<th align="left" valign="top" nowrap="1">Atributo variable</th>
-<th align="left" valign="top" width="100%">
-Persona::
-Apellidos</th>
-</tr>
-<tr>
-<th align="left" valign="top">Descripción</th>
-<td align="left" valign="top">
-    Este atributo representa
-<em>
-los apellidos de la persona.</em>
 </td>
 </tr>
 <tr>
@@ -394,6 +369,36 @@ Ninguno</td>
 </tr>
 </table>
 <p />
+<a name="ATT-0213" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Atributo variable</th>
+<th align="left" valign="top" width="100%">
+Persona::
+Email</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este atributo representa
+<em>
+el email asociado a una persona.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Tipo</th>
+<td align="left" valign="top">
+<code>
+String</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
 <a name="TYP-0003" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
@@ -438,8 +443,7 @@ Rafael Vergara Moreno</a>
 <td colspan="3" align="left" valign="top">
     Este tipo de objetos representa
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+los objetos de tipo personal los cuales son una gerneralización de persona.</em>
 </td>
 </tr>
 <tr>
@@ -607,8 +611,7 @@ Rafael Vergara Moreno</a>
 <td colspan="3" align="left" valign="top">
     Este tipo de objetos representa
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+los objetos de tipo comercial los cuales son una gerneralización de persona.</em>
 </td>
 </tr>
 <tr>
@@ -706,8 +709,7 @@ Rafael Gómez García</a>
 <td colspan="3" align="left" valign="top">
     Este tipo de objetos representa
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+los objetos de tipo pedido registrados en el sistema.</em>
 </td>
 </tr>
 <tr>
@@ -839,8 +841,7 @@ importe</th>
 <td align="left" valign="top">
     Este atributo representa
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+el importe del pedido.</em>
 </td>
 </tr>
 <tr>
@@ -914,13 +915,17 @@ Cliente</th>
 <td colspan="3" align="left" valign="top">
     Este tipo de objetos representa
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+los clientes registrados en el sistema.</em>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Supertipo</th>
-<td colspan="3" align="left" valign="top">Ninguno</td>
+<td colspan="3" align="left" valign="top">
+<a href="&#xA;								#TYP-0001">
+							[TYP-0001] 
+							
+Persona</a>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top">Subtipos</th>
@@ -1038,8 +1043,7 @@ Rafael Vergara Moreno</a>
 <td colspan="3" align="left" valign="top">
     Este tipo de objetos representa
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+los proovedores registrados en el sistema.</em>
 </td>
 </tr>
 <tr>
@@ -1123,7 +1127,7 @@ el descuento que nos realiza un proveedor.</em>
 <th align="left" valign="top">Tipo</th>
 <td align="left" valign="top">
 <code>
-Real</code>
+Integer</code>
 </td>
 </tr>
 <tr>
@@ -1197,8 +1201,7 @@ Rafael Vergara Moreno</a>
 <td colspan="3" align="left" valign="top">
     Este tipo de objetos representa
 <em>
-<font color="red"><b>PD</b></font>
-</em>
+las facturas que hay registradas en el sistema.</em>
 </td>
 </tr>
 <tr>
@@ -1999,5 +2002,48 @@ Interfaz de Usuario</h1><a name="SEC-0034" />
 <h2 align="left">4.1 
 Interfaz Comerciales</h2><a name="SEC-0035" />
 <h2 align="left">4.2 
-Interfaz Compra</h2></body>
+Interfaz Compra</h2><a name="ASO-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ASO-0001</th>
+<th align="left" valign="top" width="100%"> (
+            
+                    ?, ?
+                
+            )
+        </th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 10/06/2010 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este tipo de asociación representa el hecho de que
+<em>
+<font color="red"><b>PD</b></font>
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+</body>
 </html>
