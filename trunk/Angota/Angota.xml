@@ -4320,21 +4320,12 @@ Persona</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-<rem:tbd/></rem:description>
+las personas que estan registradas en el sistema.</rem:description>
 <rem:attribute oid = "ATT-0143" baseType = "PVT-0004">
 <rem:name>
 Nombre</rem:name>
 <rem:description>
 el nombre de la persona.</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:isVariable/>
-</rem:attribute>
-<rem:attribute oid = "ATT-0144" baseType = "PVT-0004">
-<rem:name>
-Apellidos</rem:name>
-<rem:description>
-los apellidos de la persona.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:isVariable/>
@@ -4366,6 +4357,15 @@ el documento nacional del identidad asociado a la persona.</rem:description>
 Ninguno</rem:comments>
 <rem:isVariable/>
 </rem:attribute>
+<rem:attribute oid = "ATT-0213" baseType = "PVT-0004">
+<rem:name>
+Email</rem:name>
+<rem:description>
+el email asociado a una persona.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
 <rem:disjointSubtypes/>
 </rem:objectType>
 <rem:objectType
@@ -4386,7 +4386,7 @@ Personal</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-<rem:tbd/></rem:description>
+los objetos de tipo personal los cuales son una gerneralización de persona.</rem:description>
 <rem:attribute oid = "ATT-0152" baseType = "PVT-0004">
 <rem:name>
 Categoria profesional</rem:name>
@@ -4434,7 +4434,7 @@ Comercial</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-<rem:tbd/></rem:description>
+los objetos de tipo comercial los cuales son una gerneralización de persona.</rem:description>
 <rem:attribute oid = "ATT-0150" baseType = "PVT-0001">
 <rem:name>
 comisión</rem:name>
@@ -4463,7 +4463,7 @@ Pedido</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-<rem:tbd/></rem:description>
+los objetos de tipo pedido registrados en el sistema.</rem:description>
 <rem:attribute oid = "ATT-0191" baseType = "PVT-0002">
 <rem:name>
 número</rem:name>
@@ -4495,7 +4495,7 @@ Ninguno</rem:comments>
 <rem:name>
 importe</rem:name>
 <rem:description>
-<rem:tbd/></rem:description>
+el importe del pedido.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:isDerived/>
@@ -4522,7 +4522,7 @@ Ninguno</rem:comments>
 <rem:disjointSubtypes/>
 </rem:objectType>
 <rem:objectType
- oid = "TYP-0005">
+ supertype = "TYP-0001" oid = "TYP-0005">
 <rem:name>
 Cliente</rem:name>
 <rem:version>
@@ -4537,7 +4537,7 @@ Cliente</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-<rem:tbd/></rem:description>
+los clientes registrados en el sistema.</rem:description>
 <rem:attribute oid = "ATT-0198" baseType = "PVT-0001">
 <rem:name>
 descuento</rem:name>
@@ -4576,7 +4576,7 @@ Proveedor</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-<rem:tbd/></rem:description>
+los proovedores registrados en el sistema.</rem:description>
 <rem:attribute oid = "ATT-0203" baseType = "PVT-0004">
 <rem:name>
 web</rem:name>
@@ -4586,7 +4586,7 @@ la dirección de la página web del proveedor.</rem:description>
 Ninguno</rem:comments>
 <rem:isVariable/>
 </rem:attribute>
-<rem:attribute oid = "ATT-0204" baseType = "PVT-0001">
+<rem:attribute oid = "ATT-0204" baseType = "PVT-0002">
 <rem:name>
 descuento</rem:name>
 <rem:description>
@@ -4623,7 +4623,7 @@ Factura</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-<rem:tbd/></rem:description>
+las facturas que hay registradas en el sistema.</rem:description>
 <rem:attribute oid = "ATT-0208" baseType = "PVT-0002">
 <rem:name>
 número</rem:name>
@@ -5190,6 +5190,24 @@ Ninguno</rem:comments>
 <rem:number>4.2 </rem:number>
 </rem:section>
 </rem:section>
+<rem:associationType
+ oid = "ASO-0001">
+<rem:name>
+</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>10</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+<rem:tbd/></rem:description>
+</rem:associationType>
 </rem:d_requirementsSpecification>
 <rem:defectsSpecification oid = "DFS-0003">
 <rem:name>Registro de Conflictos y Defectos</rem:name>
