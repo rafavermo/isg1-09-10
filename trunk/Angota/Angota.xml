@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Archivos de programa\REM 1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Angota</rem:name>
@@ -4551,10 +4551,133 @@ Ninguno</rem:comments>
 <rem:name>
 formaPago</rem:name>
 <rem:description>
-la forma de pago usual con la que paga el cliente</rem:description>
+la forma de pago usual con la que paga el cliente.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:isVariable/>
+</rem:attribute>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ supertype = "TYP-0001" oid = "TYP-0006">
+<rem:name>
+Proveedor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>10</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:attribute oid = "ATT-0203" baseType = "PVT-0004">
+<rem:name>
+web</rem:name>
+<rem:description>
+la dirección de la página web del proveedor.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0204" baseType = "PVT-0001">
+<rem:name>
+descuento</rem:name>
+<rem:description>
+el descuento que nos realiza un proveedor.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0205" baseType = "PVT-0004">
+<rem:name>
+formaPago</rem:name>
+<rem:description>
+la forma de pago usual con la que realizamos el pago al proveedor.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:disjointSubtypes/>
+</rem:objectType>
+<rem:objectType
+ oid = "TYP-0007">
+<rem:name>
+Factura</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>10</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:attribute oid = "ATT-0208" baseType = "PVT-0002">
+<rem:name>
+número</rem:name>
+<rem:description>
+el número correspondiente a la factura.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0209" baseType = "PVT-0005">
+<rem:name>
+fecha</rem:name>
+<rem:description>
+la fecha en la que se realiza la factura.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0210" baseType = "PVT-0002">
+<rem:name>
+IVA</rem:name>
+<rem:description>
+el IVA que tiene la factura</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isVariable/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0211" baseType = "PVT-0001">
+<rem:name>
+importe</rem:name>
+<rem:description>
+el importe sin incluir los impuesto correspondiente a la factura.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isDerived/>
+<rem:expression>
+<rem:natural>
+<rem:tbd/></rem:natural>
+<rem:ocl><![CDATA[]]></rem:ocl>
+</rem:expression>
+</rem:attribute>
+<rem:attribute oid = "ATT-0212" baseType = "PVT-0001">
+<rem:name>
+importe total</rem:name>
+<rem:description>
+el importe total incluido los impuestos y/o descuentos correspondiente a la factura.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isDerived/>
+<rem:expression>
+<rem:natural>
+<rem:tbd/></rem:natural>
+<rem:ocl><![CDATA[]]></rem:ocl>
+</rem:expression>
 </rem:attribute>
 <rem:disjointSubtypes/>
 </rem:objectType>
@@ -4706,7 +4829,7 @@ comenzarPedido</rem:name>
 <rem:day>17</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders ="STK-0001 STK-0002 STK-0003 "/>
+<rem:authors stakeholders ="STK-0002 "/>
 <rem:sources stakeholders ="STK-0005 "/>
 <rem:comments>
 Ninguno</rem:comments>
