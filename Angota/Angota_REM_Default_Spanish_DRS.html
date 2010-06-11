@@ -2140,9 +2140,24 @@ Esta operación describe el comienzo del registro de un nuevo pedido en el sistem
 <td align="left" valign="top">
 <a name="PAR-0178" />
 <code>
-fecha : <code>
-Date</code> -- <em>
-la fecha que se realiza el pedido</em></code><br />
+DNICliente : <code>
+String</code> -- <em>
+el dni correspondiente al cliente.</em></code><br />
+<a name="PAR-0243" />
+<code>
+DNIComercial : <code>
+String</code> -- <em>
+el dni correspondiente al comercial que ha realizado el pedido.</em></code><br />
+<a name="PAR-0244" />
+<code>
+DNIAdministrador : <code>
+String</code> -- <em>
+el dni correspondiente al <a href="#GLO-0028" title="Son ayudantes del gerente, su finalidad en la empresa es llevar las cuentas administrar compras, ventas y pedidos.">administrador</a>.</em></code><br />
+<a name="PAR-0245" />
+<code>
+numeroPedido : <code>
+Integer</code> -- <em>
+el número que se le asigna al pedido.</em></code><br />
 </td>
 </tr>
 <tr>
@@ -2150,36 +2165,45 @@ la fecha que se realiza el pedido</em></code><br />
 <td align="left" valign="top">
 <a name="PRE-0171" />
 <b>Existencia de objeto de la clase Cliente en el sistema</b>: 
-					<br />
+					
+Existe un objeto de la clase Cliente en el sistema tal que su identificador es DNICliente<br />
 <a name="PRE-0176" />
 <b>Existencia de objeto de Proveedor en el sistema</b>: 
-					<br />
+					
+Existe un objeto de la clase Proveedor en el sistema tal que su identificador es proveedorID<br />
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Expresiones de precondición (OCL)</th>
 <td align="left" valign="top">
-<code><b>Existencia de objeto de la clase Cliente en el sistema</b>: Existe un objeto de la clase Cliente en el sistema tal que su identificador es clienteID</code><br />
-<code><b>Existencia de objeto de Proveedor en el sistema</b>: Existe un objeto de la clase Proveedor en el sistema tal que su identificador es proveedorID</code><br />
+<code><b>Existencia de objeto de la clase Cliente en el sistema</b>: Pedido.allInstances() -&gt; one(c|c.DNI = DNICliente) </code><br />
+<code><b>Existencia de objeto de Proveedor en el sistema</b>: Pedido.allInstances() -&gt; one(p|p.DNI = DNIProveedor) </code><br />
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Expresiones de postcondición</th>
 <td align="left" valign="top">
 <a name="POS-0172" />
-<b>Creación de objeto de la clase Pedido</b>: <br />
-<a name="POS-0173" />
-<b>Asociación a Cliente</b>: <br />
-<a name="POS-0174" />
-<b>Asociación a Proveedor</b>: <br />
+<b>Creación de objeto de la clase Pedido</b>: 
+Se ha creado un objeto de la clase Pedido a la que se le han pasado como parámetros los datos del pedido, tal que su identificador es pedidoID<br />
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Expresiones de postcondición (OCL)</th>
 <td align="left" valign="top">
-<code><b>Creación de objeto de la clase Pedido</b>: Se ha creado un objeto de la clase Pedido a la que se le han pasado como parámetros los datos del pedido, tal que su identificador es pedidoID</code><br />
-<code><b>Asociación a Cliente</b>: Se le ha asociado dicho objeto al objeto de la clase Cliente tal que su identificador es clienteID</code><br />
-<code><b>Asociación a Proveedor</b>: Se le ha asociado dicho objeto al objeto de la clase Proveedor tal que su identificador es agenteID</code><br />
+<code><b>Creación de objeto de la clase Pedido</b>: let
+
+ ped : Pedido = Pedido.allInstances() -&gt; any (numero = numPed),
+
+ numPed: Integer = Pedido.allInstances() -&gt; size()+1
+
+in
+
+ped.oclIsNew() = true and
+
+ped.fecha = Date.Today() and
+
+return = ped.numero</code><br />
 </td>
 </tr>
 <tr>
@@ -3400,7 +3424,7 @@ el empleado que realiza la acción tiene que ser un <a href="#GLO-0027" title="Es
 <tr>
 <th align="left" valign="top">Expresiones de precondición (OCL)</th>
 <td align="left" valign="top">
-<code><b>El que ejecuta esta accion de sistemas debe ser un Gerente</b>: self.allInstances() -&gt; one(e|e.DNI = DNIGerente and e.categoriaProfesional = #Gerente)</code><br />
+<code><b>El que ejecuta esta accion de sistemas debe ser un Gerente</b>: Personal.allInstances() -&gt; one(e|e.DNI = DNIGerente and e.categoriaProfesional = #Gerente)</code><br />
 </td>
 </tr>
 <tr>
@@ -3477,7 +3501,7 @@ Debe existir el personal al que le corresponda el DNI pasado por parámetros.<br 
 <tr>
 <th align="left" valign="top">Expresiones de precondición (OCL)</th>
 <td align="left" valign="top">
-<code><b>Existencia de objeto Personal</b>: self.allInstances() -&gt; one(p|p.DNI = DNIPersonal)</code><br />
+<code><b>Existencia de objeto Personal</b>: Personal.allInstances() -&gt; one(p|p.DNI = DNIPersonal)</code><br />
 </td>
 </tr>
 <tr>
@@ -3493,13 +3517,13 @@ El objeto Personal dado de baja no aparece en el sistema<br />
 <td align="left" valign="top">
 <code><b>El objeto Personal dado de baja no aparece en el sistema</b>: let 
 
-per = self.allInstances() -&gt; any(p|p.DNI = DNIPersonal)
+per: Personal = self.allInstances() -&gt; any(p|p.DNI = DNIPersonal)
 
 
 
 in
 
-self.allInstances -&gt; excludes(per)
+Personal.allInstances -&gt; excludes(per)
 
 </code><br />
 </td>
@@ -3569,7 +3593,7 @@ Existencia de un empleado cuyo DNI corresponde con el pasado por parámetros.<br 
 <tr>
 <th align="left" valign="top">Expresiones de precondición (OCL)</th>
 <td align="left" valign="top">
-<code><b>Existencia de objeto Empleado en el sistema</b>: self.allInstances() -&gt; one (e|e.DNI = DNIEmpleado &amp;&amp; e.categoriaProfesional = #Empleado)</code><br />
+<code><b>Existencia de objeto Empleado en el sistema</b>: Producto.allInstances() -&gt; one (e|e.DNI = DNIEmpleado and e.categoriaProfesional = #Empleado)</code><br />
 </td>
 </tr>
 <tr>
@@ -3645,7 +3669,7 @@ el código correspondiente a un identificador del producto.</em></code><br />
 <tr>
 <th align="left" valign="top">Expresiones de precondición (OCL)</th>
 <td align="left" valign="top">
-<code><b>Existencia de objeto Producto en el sistema</b>: self.allInstances() -&gt; one (p|p.código = códigoP and p.cantidad &gt;= cant)</code><br />
+<code><b>Existencia de objeto Producto en el sistema</b>: Producto.allInstances() -&gt; one (p|p.código = códigoP and p.cantidad &gt;= cant)</code><br />
 </td>
 </tr>
 <tr>
@@ -3659,7 +3683,7 @@ Después de realizarse la operación deben quedar en el sistema el número de produ
 <tr>
 <th align="left" valign="top">Expresiones de postcondición (OCL)</th>
 <td align="left" valign="top">
-<code><b>Eliminación del sistema de objetos Producto</b>: self.allInstances()-&gt;one(p|p.código = codP and  p.cantidad = p.cantidad@pre - cant)</code><br />
+<code><b>Eliminación del sistema de objetos Producto</b>: Producto.allInstances()-&gt;one(p|p.código = codP and  p.cantidad = p.cantidad@pre - cant)</code><br />
 </td>
 </tr>
 <tr>

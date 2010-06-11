@@ -5166,11 +5166,35 @@ Ninguno</rem:comments>
 <rem:description>
 Esta operación describe el comienzo del registro de un nuevo pedido en el sistema</rem:description>
 <rem:resultType>El valor del identificador del objeto de la clase Pedido que se ha creado</rem:resultType>
-<rem:parameter oid = "PAR-0178" baseType = "PVT-0005">
+<rem:parameter oid = "PAR-0178" baseType = "PVT-0004">
 <rem:name>
-fecha</rem:name>
+DNICliente</rem:name>
 <rem:description>
-la fecha que se realiza el pedido</rem:description>
+el dni correspondiente al cliente.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0243" baseType = "PVT-0004">
+<rem:name>
+DNIComercial</rem:name>
+<rem:description>
+el dni correspondiente al comercial que ha realizado el pedido.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0244" baseType = "PVT-0004">
+<rem:name>
+DNIAdministrador</rem:name>
+<rem:description>
+el dni correspondiente al <rem:ref oid="GLO-0028">administrador</rem:ref>.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0245" baseType = "PVT-0002">
+<rem:name>
+numeroPedido</rem:name>
+<rem:description>
+el número que se le asigna al pedido.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:parameter>
@@ -5178,8 +5202,8 @@ Ninguno</rem:comments>
 <rem:name>Existencia de objeto de la clase Cliente en el sistema</rem:name>
 <rem:expression>
 <rem:natural>
-</rem:natural>
-<rem:ocl><![CDATA[Existe un objeto de la clase Cliente en el sistema tal que su identificador es clienteID]]></rem:ocl>
+Existe un objeto de la clase Cliente en el sistema tal que su identificador es DNICliente</rem:natural>
+<rem:ocl><![CDATA[Pedido.allInstances() -> one(c|c.DNI = DNICliente) ]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
@@ -5188,8 +5212,8 @@ Ninguno</rem:comments>
 <rem:name>Existencia de objeto de Proveedor en el sistema</rem:name>
 <rem:expression>
 <rem:natural>
-</rem:natural>
-<rem:ocl><![CDATA[Existe un objeto de la clase Proveedor en el sistema tal que su identificador es proveedorID]]></rem:ocl>
+Existe un objeto de la clase Proveedor en el sistema tal que su identificador es proveedorID</rem:natural>
+<rem:ocl><![CDATA[Pedido.allInstances() -> one(p|p.DNI = DNIProveedor) ]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
@@ -5198,28 +5222,14 @@ Ninguno</rem:comments>
 <rem:name>Creación de objeto de la clase Pedido</rem:name>
 <rem:expression>
 <rem:natural>
-</rem:natural>
-<rem:ocl><![CDATA[Se ha creado un objeto de la clase Pedido a la que se le han pasado como parámetros los datos del pedido, tal que su identificador es pedidoID]]></rem:ocl>
-</rem:expression>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:postconditionExpression>
-<rem:postconditionExpression oid = "POS-0173">
-<rem:name>Asociación a Cliente</rem:name>
-<rem:expression>
-<rem:natural>
-</rem:natural>
-<rem:ocl><![CDATA[Se le ha asociado dicho objeto al objeto de la clase Cliente tal que su identificador es clienteID]]></rem:ocl>
-</rem:expression>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:postconditionExpression>
-<rem:postconditionExpression oid = "POS-0174">
-<rem:name>Asociación a Proveedor</rem:name>
-<rem:expression>
-<rem:natural>
-</rem:natural>
-<rem:ocl><![CDATA[Se le ha asociado dicho objeto al objeto de la clase Proveedor tal que su identificador es agenteID]]></rem:ocl>
+Se ha creado un objeto de la clase Pedido a la que se le han pasado como parámetros los datos del pedido, tal que su identificador es pedidoID</rem:natural>
+<rem:ocl><![CDATA[let
+ ped : Pedido = Pedido.allInstances() -> any (numero = numPed),
+ numPed: Integer = Pedido.allInstances() -> size()+1
+in
+ped.oclIsNew() = true and
+ped.fecha = Date.Today() and
+return = ped.numero]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
@@ -5710,7 +5720,7 @@ Ninguno</rem:comments>
 <rem:expression>
 <rem:natural>
 el empleado que realiza la acción tiene que ser un <rem:ref oid="GLO-0027">gerente</rem:ref>.</rem:natural>
-<rem:ocl><![CDATA[self.allInstances() -> one(e|e.DNI = DNIGerente and e.categoriaProfesional = #Gerente)]]></rem:ocl>
+<rem:ocl><![CDATA[Personal.allInstances() -> one(e|e.DNI = DNIGerente and e.categoriaProfesional = #Gerente)]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
@@ -5748,7 +5758,7 @@ Ninguno</rem:comments>
 <rem:expression>
 <rem:natural>
 Debe existir el personal al que le corresponda el DNI pasado por parámetros.</rem:natural>
-<rem:ocl><![CDATA[self.allInstances() -> one(p|p.DNI = DNIPersonal)]]></rem:ocl>
+<rem:ocl><![CDATA[Personal.allInstances() -> one(p|p.DNI = DNIPersonal)]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
@@ -5759,10 +5769,10 @@ Ninguno</rem:comments>
 <rem:natural>
 El objeto Personal dado de baja no aparece en el sistema</rem:natural>
 <rem:ocl><![CDATA[let 
-per = self.allInstances() -> any(p|p.DNI = DNIPersonal)
+per: Personal = self.allInstances() -> any(p|p.DNI = DNIPersonal)
 
 in
-self.allInstances -> excludes(per)
+Personal.allInstances -> excludes(per)
 ]]></rem:ocl>
 </rem:expression>
 <rem:comments>
@@ -5821,7 +5831,7 @@ Ninguno</rem:comments>
 <rem:expression>
 <rem:natural>
 Existencia de un empleado cuyo DNI corresponde con el pasado por parámetros.</rem:natural>
-<rem:ocl><![CDATA[self.allInstances() -> one (e|e.DNI = DNIEmpleado && e.categoriaProfesional = #Empleado)]]></rem:ocl>
+<rem:ocl><![CDATA[Producto.allInstances() -> one (e|e.DNI = DNIEmpleado and e.categoriaProfesional = #Empleado)]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
@@ -5859,7 +5869,7 @@ Ninguno</rem:comments>
 <rem:expression>
 <rem:natural>
 </rem:natural>
-<rem:ocl><![CDATA[self.allInstances() -> one (p|p.código = códigoP and p.cantidad >= cant)]]></rem:ocl>
+<rem:ocl><![CDATA[Producto.allInstances() -> one (p|p.código = códigoP and p.cantidad >= cant)]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
@@ -5869,7 +5879,7 @@ Ninguno</rem:comments>
 <rem:expression>
 <rem:natural>
 Después de realizarse la operación deben quedar en el sistema el número de productos antes de realizarse la operación menos la cantidad pasada por parámetros.</rem:natural>
-<rem:ocl><![CDATA[self.allInstances()->one(p|p.código = codP and  p.cantidad = p.cantidad@pre - cant)]]></rem:ocl>
+<rem:ocl><![CDATA[Producto.allInstances()->one(p|p.código = codP and  p.cantidad = p.cantidad@pre - cant)]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 </rem:comments>
