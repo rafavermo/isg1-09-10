@@ -4151,6 +4151,23 @@ Conflictos pendientes de resolución</rem:name>
 Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>8 </rem:number>
+<rem:paragraph
+ oid = "PRG-0036">
+<rem:name>
+No hay conflictos pendientes de resolución</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text></rem:text>
+</rem:paragraph>
 </rem:section>
 <rem:section
  oid = "SEC-0012">
@@ -4446,7 +4463,7 @@ Personal</rem:name>
 Ninguno</rem:comments>
 <rem:description>
 los objetos de tipo personal los cuales son una gerneralización de persona.</rem:description>
-<rem:attribute oid = "ATT-0152" baseType = "PVT-0004">
+<rem:attribute oid = "ATT-0152" baseType = "VAL-0002">
 <rem:name>
 Categoria profesional</rem:name>
 <rem:description>
@@ -4550,6 +4567,15 @@ el IVA que tiene el pedido</rem:description>
 Ninguno</rem:comments>
 <rem:isVariable/>
 </rem:attribute>
+<rem:attribute oid = "ATT-0276" baseType = "VAL-0001">
+<rem:name>
+formaDePago</rem:name>
+<rem:description>
+la forma de pago con la que se paga el pedido</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
 <rem:attribute oid = "ATT-0194" baseType = "PVT-0001">
 <rem:name>
 importe</rem:name>
@@ -4568,7 +4594,7 @@ Ninguno</rem:comments>
 <rem:name>
 importe total</rem:name>
 <rem:description>
-<rem:tbd/></rem:description>
+el importe total de la factura.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:isDerived/>
@@ -4606,7 +4632,7 @@ el descuento que le tenemos asignado a un cliente</rem:description>
 Ninguno</rem:comments>
 <rem:isVariable/>
 </rem:attribute>
-<rem:attribute oid = "ATT-0201" baseType = "PVT-0004">
+<rem:attribute oid = "ATT-0201" baseType = "VAL-0001">
 <rem:name>
 formaPago</rem:name>
 <rem:description>
@@ -4654,7 +4680,7 @@ el descuento que nos realiza un proveedor.</rem:description>
 Ninguno</rem:comments>
 <rem:isVariable/>
 </rem:attribute>
-<rem:attribute oid = "ATT-0205" baseType = "PVT-0004">
+<rem:attribute oid = "ATT-0205" baseType = "VAL-0001">
 <rem:name>
 formaPago</rem:name>
 <rem:description>
@@ -4935,6 +4961,103 @@ Ninguno</rem:comments>
 </rem:attribute>
 <rem:disjointSubtypes/>
 </rem:objectType>
+<rem:userDefinedValueType
+ oid = "VAL-0001">
+<rem:name>
+FormaPago</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+las formas de pago con las que se puede pagar</rem:description>
+<rem:attribute oid = "ATT-0270" baseType = "PVT-0004">
+<rem:name>
+contado</rem:name>
+<rem:description>
+que la forma de pago es al contado</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0271" baseType = "PVT-0004">
+<rem:name>
+pagoAplazado</rem:name>
+<rem:description>
+que la forma de pago es a pago aplazado.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0272" baseType = "PVT-0004">
+<rem:name>
+transferencia</rem:name>
+<rem:description>
+que la forma de pago es por medio de transferencia</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:definition>
+PD
+</rem:definition>
+</rem:userDefinedValueType>
+<rem:userDefinedValueType
+ oid = "VAL-0002">
+<rem:name>
+CategoriaProfesional</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+la categoria dentro de la empresa que tiene un Personal de la misma</rem:description>
+<rem:attribute oid = "ATT-0273" baseType = "PVT-0004">
+<rem:name>
+Empleado</rem:name>
+<rem:description>
+que el personal tiene la categoria profesional de Empleado</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0274" baseType = "PVT-0004">
+<rem:name>
+<rem:ref oid="GLO-0028">Administrador</rem:ref></rem:name>
+<rem:description>
+que el personal tiene la categoria profesional de <rem:ref oid="GLO-0028">Administrador</rem:ref></rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:attribute oid = "ATT-0275" baseType = "PVT-0004">
+<rem:name>
+<rem:ref oid="GLO-0027">Gerente</rem:ref></rem:name>
+<rem:description>
+que el personal tiene la categoria profesional de <rem:ref oid="GLO-0027">gerente</rem:ref></rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:isConstant/>
+</rem:attribute>
+<rem:definition>
+PD
+</rem:definition>
+</rem:userDefinedValueType>
 </rem:section>
 <rem:section
  oid = "SEC-0025">
@@ -5498,7 +5621,7 @@ Ninguno</rem:comments>
 <rem:systemOperation
  oid = "SOP-0005">
 <rem:name>
-altaSistemaNuevoComercial</rem:name>
+altaSistemaNuevoComercial(DNIempleado)</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -5512,12 +5635,40 @@ altaSistemaNuevoComercial</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-<rem:tbd/></rem:description>
+Se procede al alta en el sistema, comprobando, que el usuario sea un <rem:ref oid="GLO-0028">administrador</rem:ref> o un <rem:ref oid="GLO-0027">gerente</rem:ref></rem:description>
+<rem:parameter oid = "PAR-0253" baseType = "PVT-0002">
+<rem:name>
+DNIempleado</rem:name>
+<rem:description>
+el DNI del empleado que se registra en el sistema.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0255">
+<rem:name>El empleado sea un administrador o un cliente</rem:name>
+<rem:expression>
+<rem:natural>
+Personal.allInstances() -&gt; one ( p| p.categoriaProfesional = #administrador or p.categoriaProfesional = #gerente)</rem:natural>
+<rem:ocl><![CDATA[true]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+<rem:postconditionExpression oid = "POS-0256">
+<rem:name>Crear un nuevo comercial</rem:name>
+<rem:expression>
+<rem:natural>
+<br/>let<br/>comer : Comercial = Comercial.allInstances() -&gt; ( c| c.IdComercial = IDCom),<br/>IDCom : Integer = Comercial.allInstances() -&gt; size() + 1<br/>in<br/>comer.oclIsNew () = true and<br/>comer.IdComercial = IDCom and<br/><br/>return = IDCom</rem:natural>
+<rem:ocl><![CDATA[true]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:postconditionExpression>
 </rem:systemOperation>
 <rem:systemOperation
  oid = "SOP-0003">
 <rem:name>
-nuevoComercial</rem:name>
+nuevoComercial(IdComercial, nombre, DNI, direccion, telefono, email, comision)</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -5532,7 +5683,63 @@ nuevoComercial</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-<rem:tbd/></rem:description>
+Se añaden los datos del comercial en el sistema.</rem:description>
+<rem:parameter oid = "PAR-0252" baseType = "PVT-0002">
+<rem:name>
+IdComercial</rem:name>
+<rem:description>
+el identificador en el sistema de un comercial.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0246" baseType = "PVT-0004">
+<rem:name>
+nombre</rem:name>
+<rem:description>
+El nombre del comercial</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0247" baseType = "PVT-0002">
+<rem:name>
+DNI</rem:name>
+<rem:description>
+el DNI del comercial</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0248" baseType = "PVT-0004">
+<rem:name>
+direccion</rem:name>
+<rem:description>
+la dirección del comercial</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0249" baseType = "PVT-0002">
+<rem:name>
+telefono</rem:name>
+<rem:description>
+el telefono del comercial</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0250" baseType = "PVT-0004">
+<rem:name>
+email</rem:name>
+<rem:description>
+el correo electronico del comercial</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0251" baseType = "PVT-0001">
+<rem:name>
+comisión</rem:name>
+<rem:description>
+la comision que se queda el comercial</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
 <rem:preconditionExpression oid = "PRE-0184">
 <rem:name>Exista el IdComercial</rem:name>
 <rem:expression>
@@ -5547,8 +5754,8 @@ Ninguno</rem:comments>
 <rem:name>Añadidos datos de comercial</rem:name>
 <rem:expression>
 <rem:natural>
-let<br/>   comer : Comercial = Personal.allInstances() -&gt; any( p | p.idComercial = idComercial and p.oclIsTypeOf(Comercial) = true)<br/><br/>in<br/>   comer.nombre = nombre and<br/>   comer.DNI = DNI and<br/>   comer.direccion = direccion and<br/>   comer.telefono = telefono and<br/>   comer.email = email and<br/>   comer.comision = comision</rem:natural>
-<rem:ocl><![CDATA[true]]></rem:ocl>
+<br/>let<br/>   comer : Comercial = Personal.allInstances() -&gt; any( p | p.idComercial = idComercial and p.oclIsTypeOf(Comercial) = true)<br/><br/>in<br/>   comer.nombre = nombre and<br/>   comer.DNI = DNI and<br/>   comer.direccion = direccion and<br/>   comer.telefono = telefono and<br/>   comer.email = email and<br/>   comer.comision = comision</rem:natural>
+<rem:ocl><![CDATA[Integer]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
@@ -5575,7 +5782,7 @@ Ninguno</rem:comments>
 <rem:systemOperation
  oid = "SOP-0006">
 <rem:name>
-nuevaCompra</rem:name>
+nuevaCompra(DNIProveedor, DNIEmpleado)</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -5589,12 +5796,67 @@ nuevaCompra</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-<rem:tbd/></rem:description>
+Comprueba que el DNIProveedor exista en el sistema y que el empleado tiene privilegios.</rem:description>
+<rem:parameter oid = "PAR-0257" baseType = "PVT-0002">
+<rem:name>
+DNIProveedor</rem:name>
+<rem:description>
+el DNI del proveedor</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0258" baseType = "PVT-0002">
+<rem:name>
+DNIEmpleado</rem:name>
+<rem:description>
+el DNI del empleado</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0259">
+<rem:name>Exista DNIProveedor</rem:name>
+<rem:expression>
+<rem:natural>
+Exista DNIProveedor y sea proveedor</rem:natural>
+<rem:ocl><![CDATA[Persona.allInstances -> one ( p| p.DNI = DNIProveedor and p.oclIsTypeOf(Proveedor))]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+<rem:preconditionExpression oid = "PRE-0260">
+<rem:name>El empleado tenga privilegios.</rem:name>
+<rem:expression>
+<rem:natural>
+El empleado tenga privilegios.</rem:natural>
+<rem:ocl><![CDATA[Personal.allInstances() -> one (p|p.categoriaProfesional = #administrador and p.categoriaProfesiona = #gerente)]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+<rem:postconditionExpression oid = "POS-0262">
+<rem:name>Crea una factura en el sistema y devuelve su numero</rem:name>
+<rem:expression>
+<rem:natural>
+Crea una factura en el sistema, se la relaciona con el Proveedor y devuelve un numero de factura</rem:natural>
+<rem:ocl><![CDATA[
+let
+fact: Factura = Factura.allInstances() -> any( f| f.numero = NUMFac),
+NUMFac: Integer = Factura.allInstances() -> size() +1,
+prov: Proveedor = Persona.allInstances() -> any (p| p.DNI = DNIProveedor)
+in
+fact.numero = NUMFac
+prov.Factura -> includes(fact) and
+fact.Proveedor = prov and
+return = NUMFac]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:postconditionExpression>
 </rem:systemOperation>
 <rem:systemOperation
  oid = "SOP-0004">
 <rem:name>
-añadirProducto</rem:name>
+añadirProducto(numeroFactura, codigo, cantidad)</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -5609,7 +5871,31 @@ añadirProducto</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-<rem:tbd/></rem:description>
+Añade un producto a la factura</rem:description>
+<rem:parameter oid = "PAR-0264" baseType = "PVT-0002">
+<rem:name>
+numeroFactura</rem:name>
+<rem:description>
+el numero de factura a agregar el producto</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0265" baseType = "PVT-0002">
+<rem:name>
+codigo</rem:name>
+<rem:description>
+el codigo del producto.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0266" baseType = "PVT-0002">
+<rem:name>
+cantidad</rem:name>
+<rem:description>
+la cantidad que queremos del producto en factura.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
 <rem:preconditionExpression oid = "PRE-0190">
 <rem:name>Exista la factura</rem:name>
 <rem:expression>
@@ -5630,25 +5916,29 @@ Producto.allInstances () -&gt; one( p| p.codigo = codigo and p.stock &gt;= canti
 <rem:comments>
 Ninguno</rem:comments>
 </rem:preconditionExpression>
-</rem:systemOperation>
-<rem:systemOperation
- oid = "SOP-0007">
-<rem:name>
-añadirNuevoProducto</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>6</rem:month>
-<rem:day>10</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 "/>
+<rem:postconditionExpression oid = "POS-0267">
+<rem:name>Actualizar el producto y devolver información.</rem:name>
+<rem:expression>
+<rem:natural>
+Eliminar la cantidad del producto en el sistema y devolver la descripcion y el totalParcial.</rem:natural>
+<rem:ocl><![CDATA[
+let
+fact : Factura = any ( numero = NumeroFactura),
+prod : Producto = any ( codigo = codigo)
+prodFact : ProductoFra = fact.productoFra.allInstances() -> (idProductoFra = IDPF),
+IDPF : Integer = ProductoFra = size()+1
+prov : Proveedor = fact.Proveedor,
+
+in
+prodFact.oclIsNew() = true and
+prodFact.cantidad = cantidad and
+prodFact.precio = prod.precio
+prod.stock = prod.stock@pre - cantidad and
+return = set{prod.descripcion,prod.precio*cantidad}]]></rem:ocl>
+</rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:description>
-<rem:tbd/></rem:description>
+</rem:postconditionExpression>
 </rem:systemOperation>
 <rem:systemOperation
  oid = "SOP-0008">
@@ -5666,7 +5956,23 @@ finalizarCompra</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
+Finaliza la compra en el sistema y devuelve el total</rem:description>
+<rem:parameter oid = "PAR-0268" baseType = "PVT-0002">
+<rem:name>
+numeroFactura</rem:name>
+<rem:description>
 <rem:tbd/></rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0269" baseType = "VAL-0001">
+<rem:name>
+formaPago</rem:name>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
 </rem:systemOperation>
 </rem:section>
 <rem:section
