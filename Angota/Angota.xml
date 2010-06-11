@@ -4540,6 +4540,31 @@ Pedido</rem:name>
 Ninguno</rem:comments>
 <rem:description>
 los objetos de tipo pedido registrados en el sistema.</rem:description>
+<rem:invariantExpression
+ oid = "INV-0277">
+<rem:name>Existencia de proveedor</rem:name>
+<rem:expression>
+<rem:natural>
+Verifica que exista un proveedor. En caso de que no exista, no puede exister comercial o cliente asociados.</rem:natural>
+<rem:ocl><![CDATA[context Pedido inv: 
+self.Proveedor -> notEmpty() implies (self.Cliente -> empty() = true and
+self.Comercial -> notEmpty() = true)]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:invariantExpression>
+<rem:invariantExpression
+ oid = "INV-0278">
+<rem:name>Existencia de proveedor respecto comercial y cliente</rem:name>
+<rem:expression>
+<rem:natural>
+En caso de existir comercial o cliente,  no puede existir un proveedor.</rem:natural>
+<rem:ocl><![CDATA[(self.Comercial  -> notEmpty() or self.Cliente -> notEmpty()) implies
+(self.Proveedor -> empty() = true)]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:invariantExpression>
 <rem:attribute oid = "ATT-0191" baseType = "PVT-0002">
 <rem:name>
 número</rem:name>
@@ -4619,6 +4644,7 @@ Cliente</rem:name>
 <rem:day>10</rem:day>
 </rem:date>
 </rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>

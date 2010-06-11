@@ -986,6 +986,62 @@ Ninguno</td>
 </tr>
 </table>
 <p />
+<a name="INV-0277" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Expresión de invariante</th>
+<th align="left" valign="top" width="100%">
+Pedido::Existencia de proveedor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top" colspan="1">
+Verifica que exista un proveedor. En caso de que no exista, no puede exister comercial o cliente asociados.</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresión OCL</th>
+<td align="left" valign="top">
+<code>context Pedido inv: 
+
+self.Proveedor -&gt; notEmpty() implies (self.Cliente -&gt; empty() = true and
+
+self.Comercial -&gt; notEmpty() = true)</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="INV-0278" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top" nowrap="1">Expresión de invariante</th>
+<th align="left" valign="top" width="100%">
+Pedido::Existencia de proveedor respecto comercial y cliente</th>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top" colspan="1">
+En caso de existir comercial o cliente,  no puede existir un proveedor.</td>
+</tr>
+<tr>
+<th align="left" valign="top">Expresión OCL</th>
+<td align="left" valign="top">
+<code>(self.Comercial  -&gt; notEmpty() or self.Cliente -&gt; notEmpty()) implies
+
+(self.Proveedor -&gt; empty() = true)</code>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
 <a name="TYP-0005" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
@@ -1002,7 +1058,13 @@ Cliente</th>
 <tr>
 <th align="left" valign="top">Autores</th>
 <td align="left" valign="top" colspan="3">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0003">
+Jesús Antonio Sánchez Méndez</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
