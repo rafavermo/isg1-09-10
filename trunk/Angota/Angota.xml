@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Archivos de programa\REM 1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Angota</rem:name>
@@ -1510,7 +1510,7 @@ Compras y ventas</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:fileName>
-<![CDATA[.\metadatas\UC compras y ventas.jpg]]>
+<![CDATA[.\metadatas\UC - compras y ventas.jpg]]>
 </rem:fileName>
 </rem:graphicFile>
 <rem:paragraph
@@ -1546,7 +1546,7 @@ Personal y almacen</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:fileName>
-<![CDATA[.\metadatas\UC personal y material.jpg]]>
+<![CDATA[.\metadatas\UC - personal y material.jpg]]>
 </rem:fileName>
 </rem:graphicFile>
 <rem:paragraph
@@ -1582,7 +1582,7 @@ Clientes y proveedores</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:fileName>
-<![CDATA[.\metadatas\UC clientes y proveedores.jpg]]>
+<![CDATA[.\metadatas\UC - clientes y proveedores.jpg]]>
 </rem:fileName>
 </rem:graphicFile>
 </rem:section>
