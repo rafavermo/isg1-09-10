@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Archivos de programa\REM 1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Angota</rem:name>
@@ -5467,52 +5467,6 @@ Ninguno</rem:comments>
 </rem:systemOperation>
 </rem:section>
 <rem:section
- oid = "SEC-0029">
-<rem:name>
-Baja pedido</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>19</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:level>2</rem:level>
-<rem:number>3.3 </rem:number>
-<rem:systemOperation
- oid = "SOP-0002">
-<rem:name>
-comenzarBajaPersonal</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>19</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:description>
-<rem:tbd/></rem:description>
-<rem:preconditionExpression oid = "PRE-0182">
-<rem:name>El que ejecuta esta accion de sistemas debe ser un Gerente</rem:name>
-<rem:expression>
-<rem:natural>
-<rem:tbd/></rem:natural>
-<rem:ocl><![CDATA[true]]></rem:ocl>
-</rem:expression>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:preconditionExpression>
-</rem:systemOperation>
-</rem:section>
-<rem:section
  oid = "SEC-0031">
 <rem:name>
 Alta Comercial</rem:name>
@@ -5530,7 +5484,7 @@ Alta Comercial</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
-<rem:number>3.4 </rem:number>
+<rem:number>3.3 </rem:number>
 <rem:systemOperation
  oid = "SOP-0005">
 <rem:name>
@@ -5607,7 +5561,7 @@ Registrar Compra</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
-<rem:number>3.5 </rem:number>
+<rem:number>3.4 </rem:number>
 <rem:systemOperation
  oid = "SOP-0006">
 <rem:name>
@@ -5703,6 +5657,223 @@ finalizarCompra</rem:name>
 Ninguno</rem:comments>
 <rem:description>
 <rem:tbd/></rem:description>
+</rem:systemOperation>
+</rem:section>
+<rem:section
+ oid = "SEC-0029">
+<rem:name>
+Baja personal</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.5 </rem:number>
+<rem:systemOperation
+ oid = "SOP-0002">
+<rem:name>
+solicitarBaja</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:parameter oid = "PAR-0239" baseType = "PVT-0004">
+<rem:name>
+DNIGerente</rem:name>
+<rem:description>
+el identificador correspondiente al <rem:ref oid="GLO-0027">gerente</rem:ref>.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0182">
+<rem:name>El que ejecuta esta accion de sistemas debe ser un Gerente</rem:name>
+<rem:expression>
+<rem:natural>
+el empleado que realiza la acción tiene que ser un <rem:ref oid="GLO-0027">gerente</rem:ref>.</rem:natural>
+<rem:ocl><![CDATA[self.allInstances() -> one(e|e.DNI = DNIGerente and e.categoriaProfesional = #Gerente)]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0020">
+<rem:name>
+darBajaPersonal</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:parameter oid = "PAR-0240" baseType = "PVT-0004">
+<rem:name>
+DNIPersonal</rem:name>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0241">
+<rem:name>Existencia de objeto Personal</rem:name>
+<rem:expression>
+<rem:natural>
+Debe existir el personal al que le corresponda el DNI pasado por parámetros.</rem:natural>
+<rem:ocl><![CDATA[self.allInstances() -> one(p|p.DNI = DNIPersonal)]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+<rem:postconditionExpression oid = "POS-0242">
+<rem:name>El objeto Personal dado de baja no aparece en el sistema</rem:name>
+<rem:expression>
+<rem:natural>
+El objeto Personal dado de baja no aparece en el sistema</rem:natural>
+<rem:ocl><![CDATA[let 
+per = self.allInstances() -> any(p|p.DNI = DNIPersonal)
+
+in
+self.allInstances -> excludes(per)
+]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:postconditionExpression>
+</rem:systemOperation>
+</rem:section>
+<rem:section
+ oid = "SEC-0039">
+<rem:name>
+Salida producto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.6 </rem:number>
+<rem:systemOperation
+ oid = "SOP-0021">
+<rem:name>
+solicitarSalidaProducto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Acceso de un empleado al sistema para realizar una salida de un producto.</rem:description>
+<rem:parameter oid = "PAR-0232" baseType = "PVT-0004">
+<rem:name>
+DNIEmpleado</rem:name>
+<rem:description>
+el DNI correspondiente al empleado que solicita la salida del producto.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0234">
+<rem:name>Existencia de objeto Empleado en el sistema</rem:name>
+<rem:expression>
+<rem:natural>
+Existencia de un empleado cuyo DNI corresponde con el pasado por parámetros.</rem:natural>
+<rem:ocl><![CDATA[self.allInstances() -> one (e|e.DNI = DNIEmpleado && e.categoriaProfesional = #Empleado)]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0022">
+<rem:name>
+salidaProducto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Suponemos que el sistema puede guardar objetos con cantidad = 0</rem:comments>
+<rem:description>
+<rem:tbd/></rem:description>
+<rem:parameter oid = "PAR-0235" baseType = "PVT-0004">
+<rem:name>
+codigo</rem:name>
+<rem:description>
+el código correspondiente a un identificador del producto.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0237">
+<rem:name>Existencia de objeto Producto en el sistema</rem:name>
+<rem:expression>
+<rem:natural>
+</rem:natural>
+<rem:ocl><![CDATA[self.allInstances() -> one (p|p.código = códigoP and p.cantidad >= cant)]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+<rem:postconditionExpression oid = "POS-0238">
+<rem:name>Eliminación del sistema de objetos Producto</rem:name>
+<rem:expression>
+<rem:natural>
+Después de realizarse la operación deben quedar en el sistema el número de productos antes de realizarse la operación menos la cantidad pasada por parámetros.</rem:natural>
+<rem:ocl><![CDATA[self.allInstances()->one(p|p.código = codP and  p.cantidad = p.cantidad@pre - cant)]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+</rem:comments>
+</rem:postconditionExpression>
 </rem:systemOperation>
 </rem:section>
 </rem:section>
