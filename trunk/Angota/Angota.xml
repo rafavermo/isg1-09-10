@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Archivos de programa\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files\REM 1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Angota</rem:name>
@@ -5373,7 +5373,7 @@ Ninguno</rem:comments>
 <rem:systemOperation
  oid = "SOP-0001">
 <rem:name>
-comenzarPedido</rem:name>
+comenzarPedido(clienteID, comercialID, administradorID, datosPedido)</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -5388,9 +5388,9 @@ comenzarPedido</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-Esta operación describe el comienzo del registro de un nuevo pedido en el sistema</rem:description>
+Operacion realizada cuando se comienza un pedido</rem:description>
 <rem:resultType>El valor del identificador del objeto de la clase Pedido que se ha creado</rem:resultType>
-<rem:parameter oid = "PAR-0178" baseType = "PVT-0004">
+<rem:parameter oid = "PAR-0178" baseType = "PVT-0002">
 <rem:name>
 DNICliente</rem:name>
 <rem:description>
@@ -5398,7 +5398,7 @@ el dni correspondiente al cliente.</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:parameter>
-<rem:parameter oid = "PAR-0243" baseType = "PVT-0004">
+<rem:parameter oid = "PAR-0243" baseType = "PVT-0002">
 <rem:name>
 DNIComercial</rem:name>
 <rem:description>
@@ -5406,7 +5406,7 @@ el dni correspondiente al comercial que ha realizado el pedido.</rem:description
 <rem:comments>
 Ninguno</rem:comments>
 </rem:parameter>
-<rem:parameter oid = "PAR-0244" baseType = "PVT-0004">
+<rem:parameter oid = "PAR-0244" baseType = "PVT-0002">
 <rem:name>
 DNIAdministrador</rem:name>
 <rem:description>
@@ -5450,6 +5450,7 @@ Se ha creado un objeto de la clase Pedido a la que se le han pasado como parámet
 <rem:ocl><![CDATA[let
  ped : Pedido = Pedido.allInstances() -> any (numero = numPed),
  numPed: Integer = Pedido.allInstances() -> size()+1
+
 in
 ped.oclIsNew() = true and
 ped.fecha = Date.Today() and
@@ -5458,106 +5459,6 @@ return = ped.numero]]></rem:ocl>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:postconditionExpression>
-</rem:systemOperation>
-<rem:systemOperation
- oid = "SOP-0009">
-<rem:name>
-añadirProducto</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>6</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0002 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:description>
-<rem:tbd/></rem:description>
-</rem:systemOperation>
-<rem:systemOperation
- oid = "SOP-0010">
-<rem:name>
-finalizarPedido</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>6</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0002 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:description>
-<rem:tbd/></rem:description>
-</rem:systemOperation>
-<rem:systemOperation
- oid = "SOP-0014">
-<rem:name>
-pagarContado</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>6</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0002 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:description>
-<rem:tbd/></rem:description>
-</rem:systemOperation>
-<rem:systemOperation
- oid = "SOP-0015">
-<rem:name>
-pagarTransferencia</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>6</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0002 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:description>
-<rem:tbd/></rem:description>
-</rem:systemOperation>
-<rem:systemOperation
- oid = "SOP-0016">
-<rem:name>
-pagarAplazado</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>6</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0002 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:description>
-<rem:tbd/></rem:description>
 </rem:systemOperation>
 </rem:section>
 <rem:section
@@ -5580,29 +5481,9 @@ Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>3.2 </rem:number>
 <rem:systemOperation
- oid = "SOP-0011">
-<rem:name>
-comenzarVenta</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>6</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0002 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:description>
-<rem:tbd/></rem:description>
-</rem:systemOperation>
-<rem:systemOperation
  oid = "SOP-0012">
 <rem:name>
-añadirProducto</rem:name>
+añadirProducto(ventaID, productoID, cant)</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -5617,246 +5498,181 @@ añadirProducto</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-<rem:tbd/></rem:description>
-</rem:systemOperation>
-<rem:systemOperation
- oid = "SOP-0013">
+Añade un producto a la venta</rem:description>
+<rem:parameter oid = "PAR-0279" baseType = "PVT-0002">
 <rem:name>
-finalizarVenta</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>6</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0002 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
+ventaID</rem:name>
 <rem:description>
-<rem:tbd/></rem:description>
-</rem:systemOperation>
-<rem:systemOperation
- oid = "SOP-0019">
-<rem:name>
-pagarContado</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>6</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0002 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:description>
-<rem:tbd/></rem:description>
-</rem:systemOperation>
-<rem:systemOperation
- oid = "SOP-0018">
-<rem:name>
-pagarTransferencia</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>6</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0002 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:description>
-<rem:tbd/></rem:description>
-</rem:systemOperation>
-<rem:systemOperation
- oid = "SOP-0017">
-<rem:name>
-pagarAplazado</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>6</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0002 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:description>
-<rem:tbd/></rem:description>
-</rem:systemOperation>
-</rem:section>
-<rem:section
- oid = "SEC-0031">
-<rem:name>
-Alta Comercial</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>6</rem:month>
-<rem:day>9</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 "/>
-<rem:sources stakeholders ="STK-0005 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:level>2</rem:level>
-<rem:number>3.3 </rem:number>
-<rem:systemOperation
- oid = "SOP-0005">
-<rem:name>
-altaSistemaNuevoComercial(DNIempleado)</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>6</rem:month>
-<rem:day>10</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0001 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:description>
-Se procede al alta en el sistema, comprobando, que el usuario sea un <rem:ref oid="GLO-0028">administrador</rem:ref> o un <rem:ref oid="GLO-0027">gerente</rem:ref></rem:description>
-<rem:parameter oid = "PAR-0253" baseType = "PVT-0002">
-<rem:name>
-DNIempleado</rem:name>
-<rem:description>
-el DNI del empleado que se registra en el sistema.</rem:description>
+el identificador de una venta</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:parameter>
-<rem:preconditionExpression oid = "PRE-0255">
-<rem:name>El empleado sea un administrador o un cliente</rem:name>
+<rem:parameter oid = "PAR-0280" baseType = "PVT-0002">
+<rem:name>
+productoID</rem:name>
+<rem:description>
+el identificador de un producto</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0281" baseType = "PVT-0002">
+<rem:name>
+cant</rem:name>
+<rem:description>
+la cantidad de un producto.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0282">
+<rem:name>Exista la factura</rem:name>
 <rem:expression>
 <rem:natural>
-Personal.allInstances() -&gt; one ( p| p.categoriaProfesional = #administrador or p.categoriaProfesional = #gerente)</rem:natural>
-<rem:ocl><![CDATA[true]]></rem:ocl>
+Exista la factura con numero &quot;ventaID&quot;</rem:natural>
+<rem:ocl><![CDATA[Factura.allInstances() -> one (f |f.numero = ventaID)]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:preconditionExpression>
-<rem:postconditionExpression oid = "POS-0256">
-<rem:name>Crear un nuevo comercial</rem:name>
+<rem:preconditionExpression oid = "PRE-0283">
+<rem:name>Exita el producto en el sistema</rem:name>
 <rem:expression>
 <rem:natural>
-<br/>let<br/>comer : Comercial = Comercial.allInstances() -&gt; ( c| c.IdComercial = IDCom),<br/>IDCom : Integer = Comercial.allInstances() -&gt; size() + 1<br/>in<br/>comer.oclIsNew () = true and<br/>comer.IdComercial = IDCom and<br/><br/>return = IDCom</rem:natural>
-<rem:ocl><![CDATA[true]]></rem:ocl>
+Exita el producto en el sistema y tenga cantidad suficiente</rem:natural>
+<rem:ocl><![CDATA[Producto.allInstances() -> one (p| p.codigo = productoID and p.stock >= cant)]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+<rem:postconditionExpression oid = "POS-0284">
+<rem:name>Actualizar el producto y devolver información.</rem:name>
+<rem:expression>
+<rem:natural>
+Actualizar el producto y devolver una tupla con el detalle del pedido y el subtotal, tambien quitar del stock la cantidad de producto agregada en la factura</rem:natural>
+<rem:ocl><![CDATA[
+let
+fact : Factura = any ( numero = NumeroFactura),
+prod : Producto = any ( codigo = codigo),
+prodFact : ProductoFra = fact.productoFra.allInstances() -> (idProductoFra = IDPF),
+IDPF : Integer = ProductoFra = size()+1,
+prov : Proveedor = fact.Proveedor,
+
+in
+prodFact.oclIsNew() = true and
+prodFact.cantidad = cantidad and
+prodFact.precio = prod.precio and
+prod.stock = prod.stock@pre - cantidad and
+return = Tuple{descripcion:String = prod.descripcion,subTotal: Integer = prod.precio*cantidad}]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:postconditionExpression>
 </rem:systemOperation>
-<rem:systemOperation
- oid = "SOP-0003">
+</rem:section>
+<rem:section
+ oid = "SEC-0029">
 <rem:name>
-nuevoComercial(IdComercial, nombre, DNI, direccion, telefono, email, comision)</rem:name>
+Baja personal</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.3 </rem:number>
+<rem:systemOperation
+ oid = "SOP-0002">
+<rem:name>
+solicitarBaja(DNIGerente)</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>5</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Acceso al sistema, para comprobar si tiene privilegios</rem:description>
+<rem:parameter oid = "PAR-0239" baseType = "PVT-0004">
+<rem:name>
+DNIGerente</rem:name>
+<rem:description>
+el identificador correspondiente al <rem:ref oid="GLO-0027">gerente</rem:ref>.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0182">
+<rem:name>El que ejecuta esta accion de sistemas debe ser un Gerente</rem:name>
+<rem:expression>
+<rem:natural>
+el empleado que realiza la acción tiene que ser un <rem:ref oid="GLO-0027">gerente</rem:ref>.</rem:natural>
+<rem:ocl><![CDATA[Personal.allInstances() -> one(e|e.DNI = DNIGerente and e.categoriaProfesional = #Gerente)]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0020">
+<rem:name>
+darBajaPersonal(DNIPersonal)</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
 <rem:year>2010</rem:year>
 <rem:month>6</rem:month>
-<rem:day>9</rem:day>
+<rem:day>11</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders ="STK-0001 "/>
-<rem:sources stakeholders ="STK-0005 "/>
+<rem:authors stakeholders ="STK-0003 "/>
+<rem:sources stakeholders ="STK-0004 "/>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:description>
-Se añaden los datos del comercial en el sistema.</rem:description>
-<rem:parameter oid = "PAR-0252" baseType = "PVT-0002">
+Da de baja a la persona con DNI (DNIPersonal)</rem:description>
+<rem:parameter oid = "PAR-0240" baseType = "PVT-0004">
 <rem:name>
-IdComercial</rem:name>
+DNIPersonal</rem:name>
 <rem:description>
-el identificador en el sistema de un comercial.</rem:description>
+el DNI de un personal de la empresa</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:parameter>
-<rem:parameter oid = "PAR-0246" baseType = "PVT-0004">
-<rem:name>
-nombre</rem:name>
-<rem:description>
-El nombre del comercial</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:parameter>
-<rem:parameter oid = "PAR-0247" baseType = "PVT-0002">
-<rem:name>
-DNI</rem:name>
-<rem:description>
-el DNI del comercial</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:parameter>
-<rem:parameter oid = "PAR-0248" baseType = "PVT-0004">
-<rem:name>
-direccion</rem:name>
-<rem:description>
-la dirección del comercial</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:parameter>
-<rem:parameter oid = "PAR-0249" baseType = "PVT-0002">
-<rem:name>
-telefono</rem:name>
-<rem:description>
-el telefono del comercial</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:parameter>
-<rem:parameter oid = "PAR-0250" baseType = "PVT-0004">
-<rem:name>
-email</rem:name>
-<rem:description>
-el correo electronico del comercial</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:parameter>
-<rem:parameter oid = "PAR-0251" baseType = "PVT-0001">
-<rem:name>
-comisión</rem:name>
-<rem:description>
-la comision que se queda el comercial</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:parameter>
-<rem:preconditionExpression oid = "PRE-0184">
-<rem:name>Exista el IdComercial</rem:name>
+<rem:preconditionExpression oid = "PRE-0241">
+<rem:name>Existencia de objeto Personal</rem:name>
 <rem:expression>
 <rem:natural>
-Personal.allInstances() -&gt; one( p | p.idComercial = idComercial and p.oclIsTypeOf(Comercial) = true)<br/></rem:natural>
-<rem:ocl><![CDATA[true]]></rem:ocl>
+Debe existir el personal al que le corresponda el DNI pasado por parámetros.</rem:natural>
+<rem:ocl><![CDATA[Personal.allInstances() -> one(p|p.DNI = DNIPersonal)]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:preconditionExpression>
-<rem:postconditionExpression oid = "POS-0186">
-<rem:name>Añadidos datos de comercial</rem:name>
+<rem:postconditionExpression oid = "POS-0242">
+<rem:name>El objeto Personal dado de baja no aparece en el sistema</rem:name>
 <rem:expression>
 <rem:natural>
-<br/>let<br/>   comer : Comercial = Personal.allInstances() -&gt; any( p | p.idComercial = idComercial and p.oclIsTypeOf(Comercial) = true)<br/><br/>in<br/>   comer.nombre = nombre and<br/>   comer.DNI = DNI and<br/>   comer.direccion = direccion and<br/>   comer.telefono = telefono and<br/>   comer.email = email and<br/>   comer.comision = comision</rem:natural>
-<rem:ocl><![CDATA[Integer]]></rem:ocl>
+El objeto Personal dado de baja no aparece en el sistema</rem:natural>
+<rem:ocl><![CDATA[let 
+per: Personal = Personal.allInstances() -> any(p|p.DNI = DNIPersonal)
+
+in
+Personal.allInstances -> excludes(per)
+]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
@@ -5944,6 +5760,7 @@ let
 fact: Factura = Factura.allInstances() -> any( f| f.numero = NUMFac),
 NUMFac: Integer = Factura.allInstances() -> size() +1,
 prov: Proveedor = Persona.allInstances() -> any (p| p.DNI = DNIProveedor)
+
 in
 fact.numero = NUMFac
 prov.Factura -> includes(fact) and
@@ -6001,186 +5818,42 @@ Ninguno</rem:comments>
 <rem:name>Exista la factura</rem:name>
 <rem:expression>
 <rem:natural>
-Factura.allInstances() -&gt; one ( f| f.numero = numeroFactura)</rem:natural>
-<rem:ocl><![CDATA[true]]></rem:ocl>
+Exista la factura en el sistema</rem:natural>
+<rem:ocl><![CDATA[Factura.allInstances() -> one ( f| f.numero = numeroFactura)]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:preconditionExpression>
 <rem:preconditionExpression oid = "PRE-0189">
-<rem:name>Exista el producto en el sistema</rem:name>
+<rem:name>Exista el material en el sistema</rem:name>
 <rem:expression>
 <rem:natural>
-Producto.allInstances () -&gt; one( p| p.codigo = codigo and p.stock &gt;= cantidad)</rem:natural>
-<rem:ocl><![CDATA[true]]></rem:ocl>
+Exista el material en el sistema</rem:natural>
+<rem:ocl><![CDATA[Material.allInstances () -> one( m| m.codigo = codigo)]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:preconditionExpression>
 <rem:postconditionExpression oid = "POS-0267">
-<rem:name>Actualizar el producto y devolver información.</rem:name>
+<rem:name>Actualizar el material y devolver información.</rem:name>
 <rem:expression>
 <rem:natural>
-Eliminar la cantidad del producto en el sistema y devolver la descripcion y el totalParcial.</rem:natural>
+Añadir la cantidad del material en el sistema, devolver la descripcion y el totalParcial.</rem:natural>
 <rem:ocl><![CDATA[
 let
 fact : Factura = any ( numero = NumeroFactura),
-prod : Producto = any ( codigo = codigo)
-prodFact : ProductoFra = fact.productoFra.allInstances() -> (idProductoFra = IDPF),
-IDPF : Integer = ProductoFra = size()+1
+mate : Material = any ( codigo = codigo)
+mateFact : MaterialFra = fact.materialFra.allInstances() -> (idMaterialFra = IDMF),
+IDMF : Integer = MaterialFra = size()+1
 prov : Proveedor = fact.Proveedor,
 
 in
-prodFact.oclIsNew() = true and
-prodFact.cantidad = cantidad and
-prodFact.precio = prod.precio
-prod.stock = prod.stock@pre - cantidad and
-return = set{prod.descripcion,prod.precio*cantidad}]]></rem:ocl>
-</rem:expression>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:postconditionExpression>
-</rem:systemOperation>
-<rem:systemOperation
- oid = "SOP-0008">
-<rem:name>
-finalizarCompra</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>6</rem:month>
-<rem:day>10</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:description>
-Finaliza la compra en el sistema y devuelve el total</rem:description>
-<rem:parameter oid = "PAR-0268" baseType = "PVT-0002">
-<rem:name>
-numeroFactura</rem:name>
-<rem:description>
-<rem:tbd/></rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:parameter>
-<rem:parameter oid = "PAR-0269" baseType = "VAL-0001">
-<rem:name>
-formaPago</rem:name>
-<rem:description>
-<rem:tbd/></rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:parameter>
-</rem:systemOperation>
-</rem:section>
-<rem:section
- oid = "SEC-0029">
-<rem:name>
-Baja personal</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>19</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0003 "/>
-<rem:sources stakeholders ="STK-0004 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:level>2</rem:level>
-<rem:number>3.5 </rem:number>
-<rem:systemOperation
- oid = "SOP-0002">
-<rem:name>
-solicitarBaja</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>5</rem:month>
-<rem:day>19</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0003 "/>
-<rem:sources stakeholders ="STK-0004 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:description>
-<rem:tbd/></rem:description>
-<rem:parameter oid = "PAR-0239" baseType = "PVT-0004">
-<rem:name>
-DNIGerente</rem:name>
-<rem:description>
-el identificador correspondiente al <rem:ref oid="GLO-0027">gerente</rem:ref>.</rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:parameter>
-<rem:preconditionExpression oid = "PRE-0182">
-<rem:name>El que ejecuta esta accion de sistemas debe ser un Gerente</rem:name>
-<rem:expression>
-<rem:natural>
-el empleado que realiza la acción tiene que ser un <rem:ref oid="GLO-0027">gerente</rem:ref>.</rem:natural>
-<rem:ocl><![CDATA[Personal.allInstances() -> one(e|e.DNI = DNIGerente and e.categoriaProfesional = #Gerente)]]></rem:ocl>
-</rem:expression>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:preconditionExpression>
-</rem:systemOperation>
-<rem:systemOperation
- oid = "SOP-0020">
-<rem:name>
-darBajaPersonal</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2010</rem:year>
-<rem:month>6</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0003 "/>
-<rem:sources stakeholders ="STK-0004 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:description>
-<rem:tbd/></rem:description>
-<rem:parameter oid = "PAR-0240" baseType = "PVT-0004">
-<rem:name>
-DNIPersonal</rem:name>
-<rem:description>
-<rem:tbd/></rem:description>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:parameter>
-<rem:preconditionExpression oid = "PRE-0241">
-<rem:name>Existencia de objeto Personal</rem:name>
-<rem:expression>
-<rem:natural>
-Debe existir el personal al que le corresponda el DNI pasado por parámetros.</rem:natural>
-<rem:ocl><![CDATA[Personal.allInstances() -> one(p|p.DNI = DNIPersonal)]]></rem:ocl>
-</rem:expression>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:preconditionExpression>
-<rem:postconditionExpression oid = "POS-0242">
-<rem:name>El objeto Personal dado de baja no aparece en el sistema</rem:name>
-<rem:expression>
-<rem:natural>
-El objeto Personal dado de baja no aparece en el sistema</rem:natural>
-<rem:ocl><![CDATA[let 
-per: Personal = self.allInstances() -> any(p|p.DNI = DNIPersonal)
+mateFact.oclIsNew() = true and
+mateFact.cantidad = cantidad and
+mateFact.precio = mate.precio
+mate.stock = mate.stock@pre + cantidad and
 
-in
-Personal.allInstances -> excludes(per)
-]]></rem:ocl>
+return = Tuple{descripcion: String = mate.descripcion, subtotal: Integer = mate.precio*cantidad}]]></rem:ocl>
 </rem:expression>
 <rem:comments>
 Ninguno</rem:comments>
@@ -6205,11 +5878,11 @@ Salida producto</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
-<rem:number>3.6 </rem:number>
+<rem:number>3.5 </rem:number>
 <rem:systemOperation
  oid = "SOP-0021">
 <rem:name>
-solicitarSalidaProducto</rem:name>
+solicitarSalidaProducto(DNIEmpleado)</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -6247,7 +5920,7 @@ Ninguno</rem:comments>
 <rem:systemOperation
  oid = "SOP-0022">
 <rem:name>
-salidaProducto</rem:name>
+salidaProducto(códP, cant)</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -6262,7 +5935,7 @@ salidaProducto</rem:name>
 <rem:comments>
 Suponemos que el sistema puede guardar objetos con cantidad = 0</rem:comments>
 <rem:description>
-<rem:tbd/></rem:description>
+Registra la salida de un producto del sistema</rem:description>
 <rem:parameter oid = "PAR-0235" baseType = "PVT-0004">
 <rem:name>
 codigo</rem:name>
@@ -6290,6 +5963,188 @@ Después de realizarse la operación deben quedar en el sistema el número de produ
 </rem:expression>
 <rem:comments>
 </rem:comments>
+</rem:postconditionExpression>
+</rem:systemOperation>
+</rem:section>
+<rem:section
+ oid = "SEC-0031">
+<rem:name>
+Alta Comercial</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.6 </rem:number>
+<rem:systemOperation
+ oid = "SOP-0005">
+<rem:name>
+altaSistemaNuevoComercial(DNIempleado)</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>10</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Se procede al alta en el sistema, comprobando, que el usuario sea un <rem:ref oid="GLO-0028">administrador</rem:ref> o un <rem:ref oid="GLO-0027">gerente</rem:ref></rem:description>
+<rem:parameter oid = "PAR-0253" baseType = "PVT-0002">
+<rem:name>
+DNIempleado</rem:name>
+<rem:description>
+el DNI del empleado que se registra en el sistema.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0255">
+<rem:name>El empleado sea un administrador o un cliente</rem:name>
+<rem:expression>
+<rem:natural>
+El empleado sea un <rem:ref oid="GLO-0028">administrador</rem:ref> o un cliente</rem:natural>
+<rem:ocl><![CDATA[Personal.allInstances() -> one ( p| p.categoriaProfesional = #administrador or p.categoriaProfesional = #gerente)]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+<rem:postconditionExpression oid = "POS-0256">
+<rem:name>Crear un nuevo comercial</rem:name>
+<rem:expression>
+<rem:natural>
+Crear un nuevo comercial</rem:natural>
+<rem:ocl><![CDATA[
+let
+comer : Comercial = Comercial.allInstances() -> ( c| c.IdComercial = IDCom),
+IDCom : Integer = Comercial.allInstances() -> size() + 1
+
+in
+comer.oclIsNew () = true and
+comer.IdComercial = IDCom and
+return = IDCom]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:postconditionExpression>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0003">
+<rem:name>
+nuevoComercial(IdComercial, nombre, DNI, direccion, telefono, email, comision)</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+Se añaden los datos del comercial en el sistema.</rem:description>
+<rem:parameter oid = "PAR-0252" baseType = "PVT-0002">
+<rem:name>
+IdComercial</rem:name>
+<rem:description>
+el identificador en el sistema de un comercial.</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0246" baseType = "PVT-0004">
+<rem:name>
+nombre</rem:name>
+<rem:description>
+El nombre del comercial</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0247" baseType = "PVT-0002">
+<rem:name>
+DNI</rem:name>
+<rem:description>
+el DNI del comercial</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0248" baseType = "PVT-0004">
+<rem:name>
+direccion</rem:name>
+<rem:description>
+la dirección del comercial</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0249" baseType = "PVT-0002">
+<rem:name>
+telefono</rem:name>
+<rem:description>
+el telefono del comercial</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0250" baseType = "PVT-0004">
+<rem:name>
+email</rem:name>
+<rem:description>
+el correo electronico del comercial</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:parameter oid = "PAR-0251" baseType = "PVT-0001">
+<rem:name>
+comisión</rem:name>
+<rem:description>
+la comision que se queda el comercial</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:parameter>
+<rem:preconditionExpression oid = "PRE-0184">
+<rem:name>Exista el IdComercial</rem:name>
+<rem:expression>
+<rem:natural>
+Exista el IdComercial</rem:natural>
+<rem:ocl><![CDATA[Personal.allInstances() -> one( p | p.idComercial = idComercial and p.oclIsTypeOf(Comercial) = true)
+]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:preconditionExpression>
+<rem:postconditionExpression oid = "POS-0186">
+<rem:name>Añadidos datos de comercial</rem:name>
+<rem:expression>
+<rem:natural>
+Añadidos datos de comercial</rem:natural>
+<rem:ocl><![CDATA[
+let
+   comer : Comercial = Personal.allInstances() -> any( p | p.idComercial = idComercial and p.oclIsTypeOf(Comercial) = true)
+
+in
+   comer.nombre = nombre and
+   comer.DNI = DNI and
+   comer.direccion = direccion and
+   comer.telefono = telefono and
+   comer.email = email and
+   comer.comision = comision]]></rem:ocl>
+</rem:expression>
+<rem:comments>
+Ninguno</rem:comments>
 </rem:postconditionExpression>
 </rem:systemOperation>
 </rem:section>
@@ -6737,6 +6592,42 @@ Ninguno
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source = "SOP-0001"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0002"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0004"  target = "OBJ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0004"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0006"  target = "OBJ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0006"  target = "OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0012"  target = "OBJ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0003"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0005"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0012"  target = "OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0020"  target = "OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0021"  target = "OBJ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "SOP-0022"  target = "OBJ-0004" >
 <rem:isChecked/>
 </rem:trace>
 <rem:predefinedValueTypes>
