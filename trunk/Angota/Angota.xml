@@ -5149,6 +5149,126 @@ Ninguno</rem:comments>
 Ninguno</rem:comments>
 </rem:postconditionExpression>
 </rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0009">
+<rem:name>
+añadirProducto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+<rem:tbd/></rem:description>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0010">
+<rem:name>
+finalizarPedido</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+<rem:tbd/></rem:description>
+</rem:systemOperation>
+</rem:section>
+<rem:section
+ oid = "SEC-0036">
+<rem:name>
+Registrar venta</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.2 </rem:number>
+<rem:systemOperation
+ oid = "SOP-0011">
+<rem:name>
+comenzarVenta</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+<rem:tbd/></rem:description>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0012">
+<rem:name>
+añadirProducto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+<rem:tbd/></rem:description>
+</rem:systemOperation>
+<rem:systemOperation
+ oid = "SOP-0013">
+<rem:name>
+finalizarVenta</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2010</rem:year>
+<rem:month>6</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:description>
+<rem:tbd/></rem:description>
+</rem:systemOperation>
 </rem:section>
 <rem:section
  oid = "SEC-0029">
@@ -5166,7 +5286,7 @@ Baja pedido</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
-<rem:number>3.2 </rem:number>
+<rem:number>3.3 </rem:number>
 <rem:systemOperation
  oid = "SOP-0002">
 <rem:name>
@@ -5214,7 +5334,7 @@ Alta Comercial</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
-<rem:number>3.3 </rem:number>
+<rem:number>3.4 </rem:number>
 <rem:systemOperation
  oid = "SOP-0005">
 <rem:name>
@@ -5291,7 +5411,7 @@ Registrar Compra</rem:name>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:level>2</rem:level>
-<rem:number>3.4 </rem:number>
+<rem:number>3.5 </rem:number>
 <rem:systemOperation
  oid = "SOP-0006">
 <rem:name>
